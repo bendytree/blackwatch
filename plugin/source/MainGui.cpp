@@ -1,16 +1,13 @@
 
 
 #include "./MainGui.h"
-#include "./MainAudio.h"
+#include "juce_gui_extra/juce_gui_extra.h"
+#include "Browser.h"
 
 namespace audio_plugin {
 MainGui::MainGui(MainAudio& p) : juce::AudioProcessorEditor (&p), mainAudio(p)
 {
-  webBrowser = std::make_unique<BrowserComponent>(
-      juce::WebBrowserComponent::Options()
-      //.withEventListener("load", [this](const juce::var& event) { onPageLoad(event); })
-      .withNativeIntegrationEnabled(true)
-    );
+  webBrowser = std::make_unique<BrowserComponent>();
 
 
   juce::ignoreUnused(mainAudio);
@@ -20,8 +17,7 @@ MainGui::MainGui(MainAudio& p) : juce::AudioProcessorEditor (&p), mainAudio(p)
   // Set the initial size of the editor
   setSize(800, 600);
 
-  // Load the ESPN website
-  webBrowser->goToURL("http://0.0.0.0:3000");
+
 }
 
 MainGui::~MainGui()

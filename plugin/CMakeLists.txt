@@ -45,8 +45,8 @@ FetchContent_MakeAvailable(httplib)
 # set(SourceFiles Source/PluginEditor.h Source/PluginProcessor.h Source/PluginEditor.cpp Source/PluginProcessor.cpp)
 # file(GLOB_RECURSE SourceFiles CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/source/*.h")
 set(SourceFiles
-        source/Server.h
-        source/Server.cpp
+        source/Types.h
+        source/Types.cpp
         source/Browser.h
         source/MainAudio.h
         source/MainAudio.cpp
@@ -54,6 +54,9 @@ set(SourceFiles
         source/MainGui.cpp
 )
 target_sources(${PROJECT_NAME} INTERFACE ${SourceFiles})
+
+juce_add_binary_data(MyBinaryData SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/../gui-web/dist/index.html)
+
 
 # Sets the include directories of the plugin project.
 target_include_directories(${PROJECT_NAME}
@@ -73,6 +76,7 @@ target_link_libraries(${PROJECT_NAME}
         juce::juce_gui_extra
         nlohmann_json::nlohmann_json
         httplib::httplib
+        MyBinaryData
     PUBLIC
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags
