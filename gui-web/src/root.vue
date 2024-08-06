@@ -11,10 +11,13 @@ onMounted(() => {
   autoResizeRootEl(elRef.value);
 });
 
-const hpFreqArgs:IKnobArgs = {
-
-};
-
+const hpFreqArgs:IKnobArgs = reactive({
+  value: 0,
+  min: 0,
+  max: 20000,
+  scale: 'pitch',
+  decimals: 0,
+});
 
 </script>
 
