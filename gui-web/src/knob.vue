@@ -5,9 +5,31 @@ import { clamp, roundTo } from '@/utils/math';
 const props = defineProps<{ args: IKnobArgs }>();
 const divRef = ref<HTMLDivElement | null>(null);
 
-export declare type IKnobScaleType = 'linear'
-    | 'pitch' // log2
-    | 'decibels'; // log10
+const { scale, min, max } = props.args;
+const scalers = [
+  {
+    type: 'linear' as const,
+    percToVal: (p:number) => min + p * (max - min),
+    valToPerc: (val:number) => (val - min) / (max - min),
+    suffix: '',
+  },
+  // log2
+  {
+    type: 'pitch' as const,
+    percToVal: (p:number) => effectiveMin * Math.pow(2, p * Math.log2(max / effectiveMin)),
+    valToPerc: (val:number) => Math.log2(val / effectiveMin) / Math.log2(max / effectiveMin),
+    suffix: 'Hz',
+  },
+  // log10
+  {
+    type: 'decibels' as const,
+    percToVal: (p:number) => effectiveMin * Math.pow(10, p * (Math.log10(max / effectiveMin))),
+    valToPerc: (val:number) => Math.log10(val / effectiveMin) / Math.log10(max / effectiveMin),
+    suffix: 'dB',
+  },
+];
+
+export declare type IKnobScaleType = typeof scalers[number]['type'];
 
 export interface IKnobArgs {
   value: number;
@@ -17,46 +39,49 @@ export interface IKnobArgs {
   decimals: number;
 }
 
-const { scale, min, max } = props.args;
-const effectiveMin = Math.max(min, 20);
+const effectiveMin = Math.max(min, 10);
+const scaler = scalers.find(s => s.type === props.args.scale);
 const percToVal = (p: number): number => {
-  const v = (() => {
-    if (scale === 'linear') return min + p * (max - min);
-    if (scale === 'pitch') return effectiveMin * Math.pow(2, p * Math.log2(max / effectiveMin));
-    if (scale === 'decibels') return effectiveMin * Math.pow(10, p * (Math.log10(max / effectiveMin)));
-    return min;
-  })();
+  const v = scaler.percToVal(p);
   return roundTo(clamp(v, min, max), props.args.decimals || 0);
 };
 
 const valToPerc = (val: number): number => {
-  const p = (() => {
-    if (scale === 'linear') return (val - min) / (max - min);
-    if (scale === 'pitch') return Math.log2(val / effectiveMin) / Math.log2(max / effectiveMin);
-    if (scale === 'decibels') return Math.log10(val / effectiveMin) / Math.log10(max / effectiveMin);
-    return 0;
-  })();
+  const p = scaler.valToPerc(val);
   return clamp(p, 0, 1);
 };
 
 const active = ref<boolean>(false);
-let toActive:number = 0;
 const perc = ref<number>(valToPerc(props.args.value));
-
 const rotation = computed(() => perc.value * 278);
+const label = computed(() => {
+  let x = props.args.value;
+  const power = (() => {
+    if (x >= 1000000000) {
+      x /= 1000000000;
+      return 'G';
+    } else if (x >= 1000000) {
+      x /= 1000000;
+      return 'M';
+    } else if (x >= 1000) {
+      x /= 1000;
+      return 'K';
+    }
+  })();
+  const suffix = [power, scaler.suffix].filter(x => x).join('');
+  return `${roundTo(x, 1)}${suffix ? ` ${suffix}` : ``}`;
+});
 
 watch(() => perc.value, (p: number) => {
   props.args.value = percToVal(p);
-  active.value = true;
-  clearTimeout(toActive);
-  toActive = setTimeout(() => active.value = false, 1000);
-})
+});
 
 let startY = 0;
 let startVal = 0;
 
 onMounted(() => {
   divRef.value.addEventListener('mousedown', (event) => {
+    active.value = true;
     startY = event.clientY;
     startVal = perc.value;
     document.addEventListener('mousemove', onMouseMove);
@@ -74,21 +99,21 @@ function onMouseMove(event:MouseEvent) {
 function onMouseUp() {
   document.removeEventListener('mousemove', onMouseMove);
   document.removeEventListener('mouseup', onMouseUp);
+  active.value = false;
 }
 
 function onDoubleClick() {
-  const newValStr = prompt(`Hz`, String(props.args.value ?? ''));
+  const newValStr = prompt(scaler.suffix, String(props.args.value ?? ''));
   const newVal = parseFloat(newValStr || '');
   if (isNaN(newVal)) return;
   perc.value = valToPerc(newVal);
 }
-
 </script>
 
 <template>
   <div class="knob" ref="divRef" :class="{ active }" @dblclick="onDoubleClick">
     <div class="knob-marker" :style="{ transform: `rotate(${rotation}deg)` }"></div>
-    <div class="knob-label">{{ props.args.value.toLocaleString() }} Hz</div>
+    <div class="knob-label">{{ label }}</div>
   </div>
 </template>
 
@@ -96,7 +121,7 @@ function onDoubleClick() {
 .knob {
   width: unit((351 / 2), px);
   height: unit((351 / 2), px);
-  position: relative;
+  position: absolute;
   //box-shadow: 0 0 5px yellow;
   display: flex;
   flex-direction: row;
@@ -106,21 +131,26 @@ function onDoubleClick() {
   .knob-marker {
     width: 100%;
     height: 100%;
-    background-image: url('./images/knob-marker.png');
+    background-image: url('./images/knob-marker-off.png');
     position: absolute;
     background-size: 100% 100%;
     pointer-events: none;
   }
 
   .knob-label {
-    font-size:32px;
-    color: #aaa;
+    font-size:30px;
+    font-weight: bold;
+    color: #999;
     user-select: none;
     pointer-events: none;
     transition: color 200ms ease-in-out;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5), -2px -2px 3px rgba(0,0,0,0.5), 2px -2px 3px rgba(0,0,0,0.5), -2px 2px 3px rgba(0,0,0,0.5);
   }
 
   &.active {
+    .knob-marker {
+      background-image: url('./images/knob-marker-on.png');
+    }
     .knob-label {
       color: #fff;
     }

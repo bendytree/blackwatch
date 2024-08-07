@@ -12,11 +12,43 @@ onMounted(() => {
 });
 
 const hpFreqArgs:IKnobArgs = reactive({
-  value: 0,
-  min: 0,
+  value: 10,
+  min: 10,
   max: 20000,
   scale: 'pitch',
   decimals: 0,
+});
+
+const hpResonanceArgs:IKnobArgs = reactive({
+  value: 1.0 / Math.sqrt(2.0),
+  min: 0,
+  max: 2,
+  scale: 'linear',
+  decimals: 2,
+});
+
+const lpFreqArgs:IKnobArgs = reactive({
+  value: 40000,
+  min: 10,
+  max: 40000,
+  scale: 'pitch',
+  decimals: 0,
+});
+
+const lpResonanceArgs:IKnobArgs = reactive({
+  value: 1.0 / Math.sqrt(2.0),
+  min: 0,
+  max: 2,
+  scale: 'linear',
+  decimals: 2,
+});
+
+const modulationMixArgs:IKnobArgs = reactive({
+  value: 0.5,
+  min: 0,
+  max: 1,
+  scale: 'linear',
+  decimals: 2,
 });
 
 </script>
@@ -24,10 +56,13 @@ const hpFreqArgs:IKnobArgs = reactive({
 <template>
   <div class="root" ref="elRef">
     <knob :style="{ left: `${629/2}px`, top: `${1474/2}px` }" :args="hpFreqArgs" />
+    <knob :style="{ left: `${1256/2}px`, top: `${1474/2}px` }" :args="hpResonanceArgs" />
+    <knob :style="{ left: `${3214/2}px`, top: `${1474/2}px` }" :args="lpFreqArgs" />
+    <knob :style="{ left: `${3845/2}px`, top: `${1474/2}px` }" :args="lpResonanceArgs" />
+
+    <knob :style="{ left: `${3214/2}px`, top: `${568/2}px` }" :args="modulationMixArgs" />
   </div>
 </template>
-
-<style src="./reset.less" />
 
 <style lang="less" scoped>
 .root {
