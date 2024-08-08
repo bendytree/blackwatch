@@ -3,6 +3,7 @@ import { onMounted, reactive, ref } from 'vue';
 import { juce } from '@/juce';
 import { autoResizeRootEl } from '@/root-auto-size';
 import Knob, { type IKnobArgs } from '@/knob.vue';
+import LedDisplay from '@/led-display.vue';
 
 const model = reactive<IGuiModel>({ } as any);
 const elRef = ref<HTMLDivElement>(null as any);
@@ -55,6 +56,7 @@ const modulationMixArgs:IKnobArgs = reactive({
 
 <template>
   <div class="root" ref="elRef">
+    <led-display :title="'01. CONCERT WAVE'" />
     <knob :style="{ left: `${629/2}px`, top: `${1474/2}px` }" :args="hpFreqArgs" />
     <knob :style="{ left: `${1256/2}px`, top: `${1474/2}px` }" :args="hpResonanceArgs" />
     <knob :style="{ left: `${3214/2}px`, top: `${1474/2}px` }" :args="lpFreqArgs" />
