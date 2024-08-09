@@ -1,5 +1,5 @@
 
-import { getNativeFunction } from '../../libs/juce/modules/juce_gui_extra/native/javascript/index.js';
+import { getNativeFunction } from '../../../libs/juce/modules/juce_gui_extra/native/javascript/index.js';
 
 export const juce = {
   async getModel ():Promise<IGuiModel> {

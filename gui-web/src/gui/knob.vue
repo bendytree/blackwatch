@@ -112,6 +112,7 @@ function onDoubleClick() {
 
 <template>
   <div class="knob" ref="divRef" :class="{ active }" @dblclick="onDoubleClick">
+    <div class="knob-circle"></div>
     <div class="knob-marker" :style="{ transform: `rotate(${rotation}deg)` }"></div>
     <div class="knob-label">{{ label }}</div>
   </div>
@@ -128,10 +129,25 @@ function onDoubleClick() {
   justify-content: center;
   align-items: center;
 
+  .knob-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: background-color 200ms ease-in-out;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .knob-circle {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+
   .knob-marker {
     width: 100%;
     height: 100%;
-    background-image: url('./images/knob-marker-off.png');
+    background-image: url('imagesnob-marker-off.png');
     position: absolute;
     background-size: 100% 100%;
     pointer-events: none;
@@ -149,7 +165,7 @@ function onDoubleClick() {
 
   &.active {
     .knob-marker {
-      background-image: url('./images/knob-marker-on.png');
+      background-image: url('imagesnob-marker-on.png');
     }
     .knob-label {
       color: #fff;

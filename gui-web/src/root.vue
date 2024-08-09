@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue';
-import { juce } from '@/juce';
-import { autoResizeRootEl } from '@/root-auto-size';
-import Knob, { type IKnobArgs } from '@/knob.vue';
-import LedDisplay from '@/led-display.vue';
+import { juce } from '@/gui/juce';
+import { autoResizeRootEl } from '@/gui/root-auto-size';
+import Knob, { type IKnobArgs } from '@/gui/knob.vue';
+import LedDisplay from '@/gui/led-display.vue';
 
 const model = reactive<IGuiModel>({ } as any);
 const elRef = ref<HTMLDivElement>(null as any);
@@ -68,7 +68,7 @@ const modulationMixArgs:IKnobArgs = reactive({
 
 <style lang="less" scoped>
 .root {
-  background-image: url("./images/bg.jpg");
+  background-image: url("gui/images/bg.jpg");
   background-size: 100% 100%;
   width: 2400px;
   height: 1212px;

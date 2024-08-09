@@ -1,21 +1,47 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue';
+import { showPicker } from '@/picker';
+import repo from '../../../repo.json';
 
 const props = defineProps<{ title: string }>();
 
-const label = computed<string>(() => {
-  const t = String(props.title || '');
-  if (t.length <= 20) return t;
-  return t.substring(0, 19).replace(/\s+$/, '') + '…';
+const sampleId = ref(repo.samples[0].id.toString());
+
+const sample = computed(() => {
+  return repo.samples.find(s => s.id.toString() === sampleId.value);
 });
+
+const label = computed<string>(() => {
+  const t = String(sample.value?.title || '');
+  if (t.length <= 19) return t;
+  return t.substring(0, 18).replace(/\s+$/, '') + '…';
+});
+
+const clickDisplay = async () => {
+  const results = await showPicker({
+    initialValue: sampleId.value,
+    title: 'Choose One',
+    options: repo.samples.map(s => ({ value: s.id.toString(), label: s.title })),
+  });
+
+  if (results.value) {
+    sampleId.value = results.value;
+  }
+};
+
+const move = async (dir:number) => {
+  let idx = repo.samples.indexOf(sample.value as any);
+  idx = ((idx + dir) + repo.samples.length) % repo.samples.length;
+  sampleId.value = repo.samples[idx].id.toString();
+};
 </script>
 
 <template>
-  <div class="led-display" ref="divRef">
+  <div class="led-display" ref="divRef" @click="clickDisplay">
     <div class="led-display-text">{{ label }}</div>
   </div>
-  <div class="btn-led-up"></div>
-  <div class="btn-led-down"></div>
+  <div class="btn-led-up" @click="move(1)"></div>
+  <div class="btn-led-down" @click="move(-1)"></div>
 </template>
 
 <style scoped lang="less">
