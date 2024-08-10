@@ -76,7 +76,7 @@ function handleEscapeKey(event: KeyboardEvent) {
 .picker-modal {
   position: fixed;
   inset: 0 0 0 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -84,7 +84,7 @@ function handleEscapeKey(event: KeyboardEvent) {
   overflow-y: scroll;
 
   .picker-modal-body {
-    background-color: #fff;
+    background-color: #444;
     border-radius: 25px;
     padding: 20px;
     margin:50px 25px;
@@ -96,7 +96,7 @@ function handleEscapeKey(event: KeyboardEvent) {
       right: 5px;
       width: 40px;
       height: 40px;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.7);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -116,14 +116,16 @@ function handleEscapeKey(event: KeyboardEvent) {
       column-fill: balance;
 
       .picker-option {
-        background-color: #f6f6f6;
+        color: #fff;
+        background-color: #555;
         border-radius: 4px;
         margin-bottom: 2px;
-        padding: 3px 10px;
+        padding: 5px 10px 3px;
         cursor: pointer;
 
         &:hover {
           background-color: #ddd;
+          color: #000;
         }
 
         &.active {

@@ -4,12 +4,71 @@ import { juce } from '@/gui/juce';
 import { autoResizeRootEl } from '@/gui/root-auto-size';
 import Knob, { type IKnobArgs } from '@/gui/knob.vue';
 import LedDisplay from '@/gui/led-display.vue';
+import TheFader, { type IFaderArgs } from '@/gui/fader.vue';
+import { clamp, roundTo } from '@/utils/math';
 
 const model = reactive<IGuiModel>({ } as any);
 const elRef = ref<HTMLDivElement>(null as any);
 
 onMounted(() => {
   autoResizeRootEl(elRef.value);
+});
+
+const timeFaderArgs:Omit<IFaderArgs, 'value'> = {
+  valToLabel: s => `${roundTo(s, 3)}s`,
+  valToPerc: val => Math.pow(clamp((val - 0.01) / 4.99, 0, 1), 1/2),
+  percToVal: p => 0.01 + Math.pow(clamp(p, 0, 1), 2) * 4.99,
+};
+
+const attackArgs:IFaderArgs = reactive({
+  value: 0.1,
+  ...timeFaderArgs,
+});
+
+const decayArgs:IFaderArgs = reactive({
+  value: 0.1,
+  ...timeFaderArgs,
+});
+
+const sustainArgs:IFaderArgs = reactive({
+  value: 1,
+  valToLabel: s => `${roundTo(s * 100, 0)}%`,
+  valToPerc: val => clamp(val, 0, 1),
+  percToVal: p => clamp(p, 0, 1),
+  valToStr: (val:number) => {
+    return String(roundTo(val * 100, 0));
+  },
+  strToVal: (s) => {
+    const x = parseFloat(s) / 100;
+    return clamp(x, 0, 1);
+  },
+});
+
+const releaseArgs:IFaderArgs = reactive({
+  value: 0.1,
+  ...timeFaderArgs,
+});
+
+const modDepthArgs:IFaderArgs = reactive({
+  value: 0.1,
+  valToLabel: s => `${roundTo(s * 100, 0)}%`,
+  valToPerc: val => clamp(val, 0, 1),
+  percToVal: p => clamp(p, 0, 1),
+  valToStr: (val:number) => {
+    return String(roundTo(val * 100, 0));
+  },
+  strToVal: (s) => {
+    const x = parseFloat(s) / 100;
+    return clamp(x, 0, 1);
+  },
+});
+
+const modRateArgs:IFaderArgs = reactive({
+  value: 1,
+  valToLabel: s => `${roundTo(s, 1)} Hz`,
+  valToPerc: val => Math.pow(clamp(val / 20, 0, 1), 1/3),
+  percToVal: p => 0.1 + Math.pow(clamp(p, 0, 1), 3) * 19.9,
+  parse: (s:string) => parseFloat(s),
 });
 
 const hpFreqArgs:IKnobArgs = reactive({
@@ -61,8 +120,14 @@ const modulationMixArgs:IKnobArgs = reactive({
     <knob :style="{ left: `${1256/2}px`, top: `${1474/2}px` }" :args="hpResonanceArgs" />
     <knob :style="{ left: `${3214/2}px`, top: `${1474/2}px` }" :args="lpFreqArgs" />
     <knob :style="{ left: `${3845/2}px`, top: `${1474/2}px` }" :args="lpResonanceArgs" />
-
     <knob :style="{ left: `${3214/2}px`, top: `${568/2}px` }" :args="modulationMixArgs" />
+    <the-fader :style="{ left: `${1992/2}px`, top: `728px` }" :args="attackArgs" />
+    <the-fader :style="{ left: `${2204/2}px`, top: `728px` }" :args="decayArgs" />
+    <the-fader :style="{ left: `${2416/2}px`, top: `728px` }" :args="sustainArgs" />
+    <the-fader :style="{ left: `${2628/2}px`, top: `728px` }" :args="releaseArgs" />
+
+    <the-fader :style="{ left: `1870px`, top: `232px` }" :args="modDepthArgs" />
+    <the-fader :style="{ left: `1996px`, top: `232px` }" :args="modRateArgs" />
   </div>
 </template>
 
