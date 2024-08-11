@@ -47,6 +47,8 @@ FetchContent_MakeAvailable(httplib)
 set(SourceFiles
         source/Types.h
         source/Types.cpp
+        source/Repo.h
+        source/Repo.cpp
         source/Browser.h
         source/MainAudio.h
         source/MainAudio.cpp
@@ -55,7 +57,11 @@ set(SourceFiles
 )
 target_sources(${PROJECT_NAME} INTERFACE ${SourceFiles})
 
-juce_add_binary_data(MyBinaryData SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/../gui-web/dist/index.html)
+juce_add_binary_data(MyBinaryData
+        SOURCES
+        ${CMAKE_CURRENT_SOURCE_DIR}/../gui-web/dist/index.html
+        ${CMAKE_CURRENT_SOURCE_DIR}/../repo.json
+)
 
 
 # Sets the include directories of the plugin project.

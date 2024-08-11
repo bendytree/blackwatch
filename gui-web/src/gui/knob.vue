@@ -147,7 +147,7 @@ function onDoubleClick() {
   .knob-marker {
     width: 100%;
     height: 100%;
-    background-image: url('imagesnob-marker-off.png');
+    background-image: url('./images/knob-marker-off.png');
     position: absolute;
     background-size: 100% 100%;
     pointer-events: none;
@@ -165,7 +165,7 @@ function onDoubleClick() {
 
   &.active {
     .knob-marker {
-      background-image: url('imagesnob-marker-on.png');
+      background-image: url('./images/knob-marker-on.png');
     }
     .knob-label {
       color: #fff;

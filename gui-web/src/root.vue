@@ -5,6 +5,7 @@ import { autoResizeRootEl } from '@/gui/root-auto-size';
 import Knob, { type IKnobArgs } from '@/gui/knob.vue';
 import LedDisplay from '@/gui/led-display.vue';
 import TheFader, { type IFaderArgs } from '@/gui/fader.vue';
+import TheMeter, { type IMeterArgs } from '@/gui/meter.vue';
 import { clamp, roundTo } from '@/utils/math';
 
 const model = reactive<IGuiModel>({ } as any);
@@ -88,9 +89,9 @@ const hpResonanceArgs:IKnobArgs = reactive({
 });
 
 const lpFreqArgs:IKnobArgs = reactive({
-  value: 40000,
+  value: 30000,
   min: 10,
-  max: 40000,
+  max: 30000,
   scale: 'pitch',
   decimals: 0,
 });
@@ -111,6 +112,18 @@ const modulationMixArgs:IKnobArgs = reactive({
   decimals: 2,
 });
 
+const lMeterArgs:IMeterArgs = reactive({
+  value: 0,
+});
+
+const rMeterArgs:IMeterArgs = reactive({
+  value: 0,
+});
+
+setInterval(() => {
+  rMeterArgs.value = lMeterArgs.value = Math.random();
+}, 100);
+
 </script>
 
 <template>
@@ -128,6 +141,9 @@ const modulationMixArgs:IKnobArgs = reactive({
 
     <the-fader :style="{ left: `1870px`, top: `232px` }" :args="modDepthArgs" />
     <the-fader :style="{ left: `1996px`, top: `232px` }" :args="modRateArgs" />
+
+    <the-meter :style="{ left: `1130px`, top: `200px` }" :args="lMeterArgs" />
+    <the-meter :style="{ left: `1220px`, top: `200px` }" :args="rMeterArgs" />
   </div>
 </template>
 

@@ -2,8 +2,8 @@
 
 #include "juce_core/juce_core.h"
 #include "juce_gui_extra/juce_gui_extra.h"
-#include "BinaryData.h"
 #include "Types.h"
+#include "BinaryData.h"
 
 // text/html, text/plain, text/javascript
 static juce::WebBrowserComponent::Resource createResource(const juce::String& data, const juce::String& mimeType)
@@ -39,7 +39,6 @@ public:
                                                                 return createResource("Not Found", "text/plain");
                                                               }
                                                             })
-                                      //.withEventListener("load", [this](const juce::var& event) { onPageLoad(event); })
                                       .withNativeIntegrationEnabled(true))
   {
 #if JUCE_DEBUG
