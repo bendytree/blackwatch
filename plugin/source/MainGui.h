@@ -17,6 +17,7 @@ public:
 private:
   MainAudio& mainAudio;
   std::unique_ptr<BrowserComponent> webBrowser;
+  std::unique_ptr<juce::ComponentBoundsConstrainer> constrainer;
 
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainGui)
 };

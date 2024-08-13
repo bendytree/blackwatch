@@ -1,5 +1,6 @@
 #include "./MainAudio.h"
 #include "./MainGui.h"
+#include "RmsChangedEvent.h"
 
 namespace audio_plugin {
 MainAudio::MainAudio()
@@ -116,12 +117,7 @@ void MainAudio::processBlock(juce::AudioBuffer<float>& buffer,
   auto totalNumInputChannels = getTotalNumInputChannels();
   auto totalNumOutputChannels = getTotalNumOutputChannels();
 
-  // In case we have more outputs than inputs, this code clears any output
-  // channels that didn't contain input data, (because these aren't
-  // guaranteed to be empty - they may contain garbage).
-  // This is here to avoid people getting screaming feedback
-  // when they first compile a plugin, but obviously you don't need to keep
-  // this code if your algorithm always overwrites all the output channels.
+  // this code clears any output channels that didn't contain input data
   for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
     buffer.clear(i, 0, buffer.getNumSamples());
 
@@ -135,6 +131,19 @@ void MainAudio::processBlock(juce::AudioBuffer<float>& buffer,
     auto* channelData = buffer.getWritePointer(channel);
     juce::ignoreUnused(channelData);
     // ..do something to the data...
+  }
+
+  // Calculate RMS every 100ms
+  static int sampleCounter = 0;
+  static int samplesPer100ms = static_cast<int>(0.1 * getSampleRate());
+  if (sampleCounter >= samplesPer100ms) {
+    float leftRMS = buffer.getRMSLevel(0, 0, buffer.getNumSamples());
+    float rightRMS = buffer.getRMSLevel(1, 0, buffer.getNumSamples());
+
+    RmsChangedEvent::trigger(leftRMS, rightRMS);
+
+    // Reset the counter
+    sampleCounter = 0;
   }
 }
 

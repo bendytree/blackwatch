@@ -2,8 +2,10 @@
 
 #include "juce_core/juce_core.h"
 #include "juce_gui_extra/juce_gui_extra.h"
-#include "Types.h"
+#include "IGuiModel.h"
 #include "BinaryData.h"
+#include "AppSettings.h"
+#include "RmsChangedEvent.h"
 
 // text/html, text/plain, text/javascript
 static juce::WebBrowserComponent::Resource createResource(const juce::String& data, const juce::String& mimeType)
@@ -18,17 +20,18 @@ public:
   explicit BrowserComponent()
       : juce::WebBrowserComponent(juce::WebBrowserComponent::Options()
                                       .withNativeFunction(
-                                          juce::Identifier("getModel"),
+                                          juce::Identifier("getAppSettings"),
                                           [](const juce::Array<juce::var>& args, const juce::WebBrowserComponent::NativeFunctionCompletion& completion) {
-                                            juce::var result = juce::var(IGuiModel::current.to_json());
+                                            juce::var result = juce::var(IAppSettings::current.to_json());
                                             completion(result);
                                           })
                                       .withNativeFunction(
-                                          juce::Identifier("setModel"),
+                                          juce::Identifier("setAppSettings"),
                                           [](const juce::Array<juce::var>& args, const juce::WebBrowserComponent::NativeFunctionCompletion& completion) {
-                                            juce::String firstArg = args[0].toString();
-                                            auto m = IGuiModel::from_json(firstArg);
-                                            IGuiModel::current.assign(m);
+                                            juce::String json = args[0].toString();
+                                            auto s = IAppSettings::from_json(json);
+                                            IAppSettings::current.assign(s);
+                                            IAppSettings::current.save();
                                             completion(juce::var("ok"));
                                           })
                                       .withResourceProvider([](const juce::String& path) -> std::optional<juce::WebBrowserComponent::Resource>
@@ -46,7 +49,14 @@ public:
 #else
     this->goToURL(BrowserComponent::getResourceProviderRoot());
 #endif
+
+    RmsChangedEvent::subscribe([this](float left, float right) {
+      this->evaluateJavascript("window.updateRmsLevels(" + std::to_string(left) + ", " + std::to_string(right) + ");");
+    });
   }
+
+
 private:
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(BrowserComponent)
+
 };

@@ -45,11 +45,15 @@ FetchContent_MakeAvailable(httplib)
 # set(SourceFiles Source/PluginEditor.h Source/PluginProcessor.h Source/PluginEditor.cpp Source/PluginProcessor.cpp)
 # file(GLOB_RECURSE SourceFiles CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/source/*.h")
 set(SourceFiles
-        source/Types.h
-        source/Types.cpp
+        source/IGuiModel.h
+        source/IGuiModel.cpp
+        source/AppSettings.h
+        source/AppSettings.cpp
         source/Repo.h
         source/Repo.cpp
         source/Browser.h
+        source/RmsChangedEvent.h
+        source/RmsChangedEvent.cpp
         source/MainAudio.h
         source/MainAudio.cpp
         source/MainGui.h

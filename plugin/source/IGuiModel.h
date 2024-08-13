@@ -20,12 +20,10 @@ struct IGuiModel {
 
   void assign(const IGuiModel& other);
 
-  static IGuiModel current;
-
   static IGuiModel from_json(const juce::String& jsonString);
   [[nodiscard]] juce::String to_json() const;
 
-  IGuiModel getDefault();
+  static IGuiModel getDefault();
 };
 
 #endif // TYPES_H

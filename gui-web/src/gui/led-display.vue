@@ -3,12 +3,10 @@ import { computed, onMounted, ref, watch } from 'vue';
 import { showPicker } from '@/picker';
 import repo from '../../../repo.json';
 
-const props = defineProps<{ title: string }>();
-
-const sampleId = ref(repo.samples[0].id.toString());
+const model = defineModel<string>();
 
 const sample = computed(() => {
-  return repo.samples.find(s => s.id.toString() === sampleId.value);
+  return repo.samples.find(s => s.id.toString() === model.value);
 });
 
 const label = computed<string>(() => {
@@ -19,20 +17,20 @@ const label = computed<string>(() => {
 
 const clickDisplay = async () => {
   const results = await showPicker({
-    initialValue: sampleId.value,
+    initialValue: model.value,
     title: 'Choose One',
     options: repo.samples.map(s => ({ value: s.id.toString(), label: s.title })),
   });
 
   if (results.value) {
-    sampleId.value = results.value;
+    model.value = results.value;
   }
 };
 
 const move = async (dir:number) => {
   let idx = repo.samples.indexOf(sample.value as any);
   idx = ((idx + dir) + repo.samples.length) % repo.samples.length;
-  sampleId.value = repo.samples[idx].id.toString();
+  model.value = repo.samples[idx].id.toString();
 };
 </script>
 

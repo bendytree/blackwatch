@@ -33,5 +33,5 @@ struct IRepo
   static IRepo from_json(const juce::String& jsonString);
   [[nodiscard]] juce::String to_json() const;
 
-  static IRepo current; // Singleton
+  static IRepo current(); // Singleton
 };

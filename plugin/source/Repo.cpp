@@ -61,7 +61,9 @@ juce::String IRepo::to_json() const
   return juce::String(json.dump());
 }
 
+IRepo IRepo::current() {
+  juce::String json = juce::String(juce::CharPointer_UTF8(BinaryData::repo_json), BinaryData::repo_jsonSize);
+  return IRepo::from_json(json);
+}
 
-juce::String json = juce::String(juce::CharPointer_UTF8(BinaryData::repo_json), BinaryData::repo_jsonSize);
-IRepo IRepo::current = IRepo::from_json(json);
 

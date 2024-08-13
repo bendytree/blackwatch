@@ -23,7 +23,7 @@ const scalers = [
   // log10
   {
     type: 'decibels' as const,
-    percToVal: (p:number) => effectiveMin * Math.pow(10, p * (Math.log10(max / effectiveMin))),
+    percToVal: (p:number) => roundTo(effectiveMin * Math.pow(10, p * (Math.log10(max / effectiveMin))), 4),
     valToPerc: (val:number) => Math.log10(val / effectiveMin) / Math.log10(max / effectiveMin),
     suffix: 'dB',
   },
