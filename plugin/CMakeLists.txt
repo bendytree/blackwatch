@@ -19,7 +19,7 @@ juce_add_plugin(${PROJECT_NAME}
     NEEDS_MIDI_OUTPUT TRUE # may change this
     PLUGIN_MANUFACTURER_CODE BLKW # change this
     PLUGIN_CODE BWST # change this
-    FORMATS Standalone VST3 AUv3 # may change this
+    FORMATS Standalone VST3 AU # may change this
     PRODUCT_NAME "BlackWatch" # change this
     AU_MAIN_TYPE "kAudioUnitType_MusicDevice"
     NEEDS_WEBVIEW2 true
