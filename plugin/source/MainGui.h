@@ -4,7 +4,6 @@
 #include "Browser.h"
 #include <juce_gui_extra/juce_gui_extra.h>
 
-namespace audio_plugin {
 
 class MainGui : public juce::AudioProcessorEditor {
 public:
@@ -21,4 +20,3 @@ private:
 
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainGui)
 };
-}  // namespace audio_plugin

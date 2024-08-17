@@ -1,8 +1,8 @@
 #pragma once
 
 #include "juce_audio_processors/juce_audio_processors.h"
+#include "MySynth.h"
 
-namespace audio_plugin {
 class MainAudio : public juce::AudioProcessor {
 public:
   MainAudio();
@@ -36,6 +36,6 @@ public:
   void setStateInformation(const void* data, int sizeInBytes) override;
 
 private:
+  MySynth mySynth;
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainAudio)
 };
-}  // namespace audio_plugin

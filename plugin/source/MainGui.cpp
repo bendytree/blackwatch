@@ -4,7 +4,6 @@
 #include "juce_gui_extra/juce_gui_extra.h"
 #include "Browser.h"
 
-namespace audio_plugin {
 MainGui::MainGui(MainAudio& p) : juce::AudioProcessorEditor (&p), mainAudio(p)
 {
   webBrowser = std::make_unique<BrowserComponent>();
@@ -43,4 +42,3 @@ void MainGui::resized() {
 }
 
 
-}  // namespace audio_plugin

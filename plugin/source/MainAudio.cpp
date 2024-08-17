@@ -1,8 +1,8 @@
 #include "./MainAudio.h"
 #include "./MainGui.h"
 #include "RmsChangedEvent.h"
+#include "BwLogger.h"
 
-namespace audio_plugin {
 MainAudio::MainAudio()
     : AudioProcessor(
           BusesProperties()
@@ -76,8 +76,11 @@ void MainAudio::changeProgramName(int index,
 void MainAudio::prepareToPlay(double sampleRate,
                                               int samplesPerBlock) {
   // Use this method as the place to do any pre-playback
-  // initialisation that you need..
+  // initialisation that you need...
   juce::ignoreUnused(sampleRate, samplesPerBlock);
+
+  BwLogger::log("MainAudio.prepareToPlay: " + juce::String(sampleRate));
+  mySynth.synth.setCurrentPlaybackSampleRate(sampleRate);
 }
 
 void MainAudio::releaseResources() {
@@ -100,7 +103,7 @@ bool MainAudio::isBusesLayoutSupported(
     return false;
 
     // This checks if the input layout matches the output layout
-#if !JucePlugin_IsSynth
+#if ! JucePlugin_IsSynth
   if (layouts.getMainOutputChannelSet() != layouts.getMainInputChannelSet())
     return false;
 #endif
@@ -111,47 +114,48 @@ bool MainAudio::isBusesLayoutSupported(
 
 void MainAudio::processBlock(juce::AudioBuffer<float>& buffer,
                                              juce::MidiBuffer& midiMessages) {
-  juce::ignoreUnused(midiMessages);
 
-  juce::ScopedNoDenormals noDenormals;
-  auto totalNumInputChannels = getTotalNumInputChannels();
-  auto totalNumOutputChannels = getTotalNumOutputChannels();
+//  juce::ScopedNoDenormals noDenormals;
+//
+  // Clear the buffer
+  buffer.clear();
 
-  // this code clears any output channels that didn't contain input data
-  for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
-    buffer.clear(i, 0, buffer.getNumSamples());
+//  juce::MidiMessage m;
+//  int time;
+//  juce::MidiBuffer::Iterator it(midiMessages);
+//  while (it.getNextEvent(m, time)) {
+//    if (m.isNoteOn()) {
+//      mySynth.synth.noteOn(m.getChannel(), m.getNoteNumber(), m.getFloatVelocity());
+//    } else if (m.isNoteOff()) {
+//      mySynth.synth.noteOff(m.getChannel(), m.getNoteNumber(), m.getFloatVelocity(), true);
+//    }
+//  }
 
-  // This is the place where you'd normally do the guts of your plugin's
-  // audio processing...
-  // Make sure to reset the state if your inner loop is processing
-  // the samples and the outer loop is handling the channels.
-  // Alternatively, you can process the samples with the channels
-  // interleaved by keeping the same state.
-  for (int channel = 0; channel < totalNumInputChannels; ++channel) {
-    auto* channelData = buffer.getWritePointer(channel);
-    juce::ignoreUnused(channelData);
-    // ..do something to the data...
-  }
+  // Render audio from your synth into the buffer
+  mySynth.synth.renderNextBlock(buffer, midiMessages, 0, buffer.getNumSamples());
 
-  // Calculate RMS every 100ms
-  static int sampleCounter = 0;
-  static int samplesPer100ms = static_cast<int>(0.1 * getSampleRate());
-  if (sampleCounter >= samplesPer100ms) {
-    float leftRMS = buffer.getRMSLevel(0, 0, buffer.getNumSamples());
-    float rightRMS = buffer.getRMSLevel(1, 0, buffer.getNumSamples());
-
-    RmsChangedEvent::trigger(leftRMS, rightRMS);
-
-    // Reset the counter
-    sampleCounter = 0;
-  }
+  midiMessages.clear();
 }
+
+//  // Calculate RMS every 100ms
+//  static int sampleCounter = 0;
+//  static int samplesPer100ms = static_cast<int>(0.1 * getSampleRate());
+//  if (sampleCounter >= samplesPer100ms) {
+//    float leftRMS = buffer.getRMSLevel(0, 0, buffer.getNumSamples());
+//    float rightRMS = buffer.getRMSLevel(1, 0, buffer.getNumSamples());
+//
+//    RmsChangedEvent::trigger(leftRMS, rightRMS);
+//
+//    // Reset the counter
+//    sampleCounter = 0;
+//  }
 
 bool MainAudio::hasEditor() const {
   return true;  // (change this to false if you choose to not supply an editor)
 }
 
 juce::AudioProcessorEditor* MainAudio::createEditor() {
+  BwLogger::log("createEditor");
   return new MainGui(*this);
 }
 
@@ -170,10 +174,9 @@ void MainAudio::setStateInformation(const void* data,
   // call.
   juce::ignoreUnused(data, sizeInBytes);
 }
-}  // namespace audio_plugin
 
 // This creates new instances of the plugin.
 // This function definition must be in the global namespace.
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter() {
-  return new audio_plugin::MainAudio();
+  return new MainAudio();
 }

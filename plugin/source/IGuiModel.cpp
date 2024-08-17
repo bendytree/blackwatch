@@ -1,5 +1,7 @@
 #include "IGuiModel.h"
 #include "Repo.h"
+#include "PubSub.h"
+#include "BwLogger.h"
 
 IGuiModel IGuiModel::from_json(const juce::String& jsonString) {
   auto json = nlohmann::json::parse(jsonString.toStdString());
@@ -37,6 +39,8 @@ juce::String IGuiModel::to_json() const {
 }
 
 void IGuiModel::assign(const IGuiModel& other) {
+  BwLogger::log("guiModel.assign");
+  bool didSampleChange = sampleId != other.sampleId;
   sampleId = other.sampleId;
   attack = other.attack;
   decay = other.decay;
@@ -49,6 +53,11 @@ void IGuiModel::assign(const IGuiModel& other) {
   modDepth = other.modDepth;
   modMix = other.modMix;
   modRate = other.modRate;
+  if (didSampleChange) {
+    PubSub::shared().trigger(PubSubEvent::GuiModelSampleChanged);
+  } else {
+    PubSub::shared().trigger(PubSubEvent::GuiModelSettingsChanged);
+  }
 }
 
 IGuiModel IGuiModel::getDefault() {

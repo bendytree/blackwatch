@@ -52,7 +52,7 @@ juce::String IAppSettings::to_json() const
 }
 
 void IAppSettings::assign(const IAppSettings& other) {
-  gui = other.gui;
+  gui.assign(other.gui);
 }
 
 

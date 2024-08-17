@@ -1,29 +1,30 @@
 cmake_minimum_required(VERSION 3.24.1)
 
 # Version is needed by JUCE.
-project(BlackWatchPlugin VERSION 0.1.0)
+project(BlackwatchPlugin VERSION 0.1.1)
 
 add_compile_options(-w) # Suppresses all warnings.
 
 # Adding a directory with the library/application name as a subfolder of the
 # include folder is a good practice. It helps avoid name clashes later on.
-set(INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/BlackWatchStudio")
+set(INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/BlackwatchStudios")
 
 file(READ "${CMAKE_CURRENT_SOURCE_DIR}/info.plist" plist_content_to_merge)
 
 # Adds a plugin target (that's basically what the Projucer does).
 juce_add_plugin(${PROJECT_NAME}
-    COMPANY_NAME BlackWatch # change this
+    COMPANY_NAME "BlackwatchStudios" # change this
+    BUNDLE_ID "com.blackwatch.juce"
     IS_SYNTH TRUE # may change this
     NEEDS_MIDI_INPUT TRUE # may change this
-    NEEDS_MIDI_OUTPUT TRUE # may change this
     PLUGIN_MANUFACTURER_CODE BLKW # change this
     PLUGIN_CODE BWST # change this
     FORMATS Standalone VST3 AU # may change this
-    PRODUCT_NAME "BlackWatch" # change this
-    AU_MAIN_TYPE "kAudioUnitType_MusicDevice"
+    PRODUCT_NAME "BlackwatchPlugin" # change this
     NEEDS_WEBVIEW2 true
     PLIST_TO_MERGE "${plist_content_to_merge}"
+    AU_MAIN_TYPE "kAudioUnitType_MusicDevice"
+    COPY_PLUGIN_AFTER_BUILD TRUE
 )
 
 include(FetchContent)
@@ -45,6 +46,12 @@ FetchContent_MakeAvailable(httplib)
 # set(SourceFiles Source/PluginEditor.h Source/PluginProcessor.h Source/PluginEditor.cpp Source/PluginProcessor.cpp)
 # file(GLOB_RECURSE SourceFiles CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/source/*.h")
 set(SourceFiles
+        source/BwLogger.h
+        source/BwLogger.cpp
+        source/MySynth.h
+        source/MySynth.cpp
+        source/PubSub.h
+        source/PubSub.cpp
         source/IGuiModel.h
         source/IGuiModel.cpp
         source/AppSettings.h
@@ -108,6 +115,8 @@ target_compile_definitions(${PROJECT_NAME}
         JUCE_USE_CURL=0
         JUCE_VST3_CAN_REPLACE_VST2=0
         JUCE_USE_WIN_WEBVIEW2_WITH_STATIC_LINKING=1
+        CMAKE_BUILD_TYPE="${CMAKE_BUILD_TYPE}"
+        PRODUCT_NAME_WITHOUT_VERSION="Blackwatch"
 )
 
 # Enables all warnings and treats warnings as errors.
@@ -124,3 +133,9 @@ endif()
 
 # In Visual Studio this command provides a nice grouping of source files in "filters".
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR}/..)
+
+#if(CMAKE_BUILD_TYPE STREQUAL "Release")
+#    add_custom_command(TARGET "${PROJECT_NAME}_All" POST_BUILD
+#            COMMAND ${CMAKE_COMMAND} -E echo "Running post-build script on Release build..."
+#            COMMAND bash ${CMAKE_SOURCE_DIR}/source/build-installer.sh)
+#endif()
