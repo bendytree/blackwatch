@@ -116,11 +116,10 @@ void MySynth::reload() {
 
 void MySynth::updateSettings() {
   BwLogger::log("MySynth.updateSettings...");
-  return;
 
   // Effects
   auto& settings = IAppSettings::current;
-  BwLogger::log("MySynth.settings: " + settings.to_json());
+//  BwLogger::log("MySynth.settings: " + settings.to_json());
 //  lpFilter.setMode(juce::dsp::LadderFilter<float>::Mode::LPF12);
 //  lpFilter.setCutoffFrequencyHz(settings.gui.lpFreq);
 //  lpFilter.setResonance(settings.gui.lpResonance);
@@ -133,16 +132,18 @@ void MySynth::updateSettings() {
 //  chorusFilter.setDepth(settings.gui.modDepth);
 //  chorusFilter.setMix(settings.gui.modMix);
 
-  auto* sound = dynamic_cast<juce::SamplerSound*>(synth.getSound(0).get());
-  if (sound != nullptr) {
-    juce::ADSR::Parameters adsr;
-    adsr.attack = settings.gui.attack;
-    adsr.decay = settings.gui.decay;
-    adsr.sustain = settings.gui.sustain;
-    adsr.release = settings.gui.release;
-    sound->setEnvelopeParameters(adsr);
+  juce::ADSR::Parameters adsr;
+  adsr.attack = settings.gui.attack;
+  adsr.decay = settings.gui.decay;
+  adsr.sustain = settings.gui.sustain;
+  adsr.release = settings.gui.release;
+  for (int i = 0; i < synth.getNumSounds(); ++i)
+  {
+    if (auto* sound = dynamic_cast<juce::SamplerSound*>(synth.getSound(i).get()))
+    {
+      sound->setEnvelopeParameters(adsr);
+    }
   }
-
 }
 
 

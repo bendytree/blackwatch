@@ -1,7 +1,9 @@
 #pragma once
 
 #include "juce_audio_processors/juce_audio_processors.h"
+#include "juce_dsp/juce_dsp.h"
 #include "MySynth.h"
+#include "BwRMS.h"
 
 class MainAudio : public juce::AudioProcessor {
 public:
@@ -36,6 +38,7 @@ public:
   void setStateInformation(const void* data, int sizeInBytes) override;
 
 private:
+  BwRMS rms;
   MySynth mySynth;
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainAudio)
 };

@@ -4,7 +4,7 @@
 #include "BwLogger.h"
 
 MainAudio::MainAudio()
-    : AudioProcessor(
+    : rms(4000), AudioProcessor(
           BusesProperties()
 #if !JucePlugin_IsMidiEffect
 #if !JucePlugin_IsSynth
@@ -115,40 +115,50 @@ bool MainAudio::isBusesLayoutSupported(
 void MainAudio::processBlock(juce::AudioBuffer<float>& buffer,
                                              juce::MidiBuffer& midiMessages) {
 
-//  juce::ScopedNoDenormals noDenormals;
+  juce::ScopedNoDenormals noDenormals;
 //
   // Clear the buffer
   buffer.clear();
 
-//  juce::MidiMessage m;
-//  int time;
-//  juce::MidiBuffer::Iterator it(midiMessages);
-//  while (it.getNextEvent(m, time)) {
-//    if (m.isNoteOn()) {
-//      mySynth.synth.noteOn(m.getChannel(), m.getNoteNumber(), m.getFloatVelocity());
-//    } else if (m.isNoteOff()) {
-//      mySynth.synth.noteOff(m.getChannel(), m.getNoteNumber(), m.getFloatVelocity(), true);
-//    }
-//  }
+  juce::MidiMessage m;
+  int time;
+  juce::MidiBuffer::Iterator it(midiMessages);
+  while (it.getNextEvent(m, time)) {
+    if (m.isNoteOn()) {
+      mySynth.synth.noteOn(m.getChannel(), m.getNoteNumber(), m.getFloatVelocity());
+    } else if (m.isNoteOff()) {
+      mySynth.synth.noteOff(m.getChannel(), m.getNoteNumber(), m.getFloatVelocity(), true);
+    }
+  }
 
   // Render audio from your synth into the buffer
-  mySynth.synth.renderNextBlock(buffer, midiMessages, 0, buffer.getNumSamples());
+  mySynth.synth.renderNextBlock(buffer, juce::MidiBuffer(), 0, buffer.getNumSamples());
 
   midiMessages.clear();
+
+  // Calculate RMS every 100ms
+  static int sampleCounter = 0;
+  static float perMs = 100;
+  static float msPerSecond = 1000;
+  static int samplesPerLog = static_cast<int>((perMs / msPerSecond) * getSampleRate());
+  sampleCounter += buffer.getNumSamples();
+  rms.addBuffer(buffer);
+  if (sampleCounter >= samplesPerLog) {
+    float leftRMS = rms.getLeftRMS();
+    bool isBufferMono = (buffer.getNumChannels() == 1);
+
+    float rightRMS = isBufferMono ? leftRMS : rms.getRightRMS();
+
+//    BwLogger::log("RMS: mono: "+juce::String(isBufferMono ? "true" : "false"));
+//    BwLogger::log("RMS: "+juce::String(leftRMS)+", "+juce::String(rightRMS));
+
+    RmsChangedEvent::trigger(leftRMS, rightRMS);
+
+    // Reset the counter
+    sampleCounter = 0;
+  }
 }
 
-//  // Calculate RMS every 100ms
-//  static int sampleCounter = 0;
-//  static int samplesPer100ms = static_cast<int>(0.1 * getSampleRate());
-//  if (sampleCounter >= samplesPer100ms) {
-//    float leftRMS = buffer.getRMSLevel(0, 0, buffer.getNumSamples());
-//    float rightRMS = buffer.getRMSLevel(1, 0, buffer.getNumSamples());
-//
-//    RmsChangedEvent::trigger(leftRMS, rightRMS);
-//
-//    // Reset the counter
-//    sampleCounter = 0;
-//  }
 
 bool MainAudio::hasEditor() const {
   return true;  // (change this to false if you choose to not supply an editor)

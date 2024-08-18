@@ -46,6 +46,8 @@ FetchContent_MakeAvailable(httplib)
 # set(SourceFiles Source/PluginEditor.h Source/PluginProcessor.h Source/PluginEditor.cpp Source/PluginProcessor.cpp)
 # file(GLOB_RECURSE SourceFiles CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/source/*.h")
 set(SourceFiles
+        source/BwRMS.h
+        source/BwRMS.cpp
         source/BwLogger.h
         source/BwLogger.cpp
         source/MySynth.h

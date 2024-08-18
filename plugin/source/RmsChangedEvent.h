@@ -16,6 +16,7 @@ public:
 
   static void trigger(float left, float right);
   static void subscribe(Callback callback);
+  static void unsubscribe();
 
 private:
   static Callback callback;

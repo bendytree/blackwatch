@@ -27,7 +27,7 @@ const bulbs = [
   { image: images.green, min: (0.316 / 5) * 4 },
   { image: images.green, min: (0.316 / 5) * 3 },
   { image: images.green, min: (0.316 / 5) * 2 },
-  { image: images.green, min: (0.316 / 5) * 1 },
+  { image: images.green, min: .02 },
 ];
 
 const getBulb = (n:number):string => {
