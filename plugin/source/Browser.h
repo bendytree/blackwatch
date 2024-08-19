@@ -44,11 +44,11 @@ public:
                                                             })
                                       .withNativeIntegrationEnabled(true))
   {
-#if JUCE_DEBUG
-    this->goToURL("http://localhost:8531");
-#else
+//#if JUCE_DEBUG
+//    this->goToURL("http://localhost:8531");
+//#else
     this->goToURL(BrowserComponent::getResourceProviderRoot());
-#endif
+//#endif
 
     RmsChangedEvent::subscribe([this](float left, float right) {
       this->evaluateJavascript("window.updateRmsLevels(" + std::to_string(left) + ", " + std::to_string(right) + ");");

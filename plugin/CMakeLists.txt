@@ -27,6 +27,10 @@ juce_add_plugin(${PROJECT_NAME}
     COPY_PLUGIN_AFTER_BUILD TRUE
 )
 
+
+add_custom_command(TARGET "${PROJECT_NAME}" PRE_BUILD
+        COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh)
+
 include(FetchContent)
 FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
 FetchContent_MakeAvailable(json)
