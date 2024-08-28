@@ -7,10 +7,10 @@
 #include "BwLogger.h"
 
 MySynth::MySynth()
-//    :
-//      lpFilter(effectsChain.get<0>()),
-//      hpFilter(effectsChain.get<1>()),
-//      chorusFilter(effectsChain.get<2>())
+    :
+      lpFilter(effectsChain.get<0>()),
+      hpFilter(effectsChain.get<1>()),
+      chorusFilter(effectsChain.get<2>())
 {
     synth.clearSounds();
 
@@ -117,20 +117,20 @@ void MySynth::reload() {
 void MySynth::updateSettings() {
   BwLogger::log("MySynth.updateSettings...");
 
-  // Effects
   auto& settings = IAppSettings::current;
-//  BwLogger::log("MySynth.settings: " + settings.to_json());
-//  lpFilter.setMode(juce::dsp::LadderFilter<float>::Mode::LPF12);
-//  lpFilter.setCutoffFrequencyHz(settings.gui.lpFreq);
-//  lpFilter.setResonance(settings.gui.lpResonance);
-//
-//  hpFilter.setMode(juce::dsp::LadderFilter<float>::Mode::HPF12);
-//  hpFilter.setCutoffFrequencyHz(settings.gui.hpFreq);
-//  hpFilter.setResonance(settings.gui.hpResonance);
-//
-//  chorusFilter.setRate(settings.gui.modRate);
-//  chorusFilter.setDepth(settings.gui.modDepth);
-//  chorusFilter.setMix(settings.gui.modMix);
+  // Effects
+  BwLogger::log("MySynth.settings: " + settings.to_json());
+  lpFilter.setMode(juce::dsp::LadderFilter<float>::Mode::LPF12);
+  lpFilter.setCutoffFrequencyHz(settings.gui.lpFreq);
+  lpFilter.setResonance(settings.gui.lpResonance);
+
+  hpFilter.setMode(juce::dsp::LadderFilter<float>::Mode::HPF12);
+  hpFilter.setCutoffFrequencyHz(settings.gui.hpFreq);
+  hpFilter.setResonance(settings.gui.hpResonance);
+
+  chorusFilter.setRate(settings.gui.modRate);
+  chorusFilter.setDepth(settings.gui.modDepth);
+  chorusFilter.setMix(settings.gui.modMix);
 
   juce::ADSR::Parameters adsr;
   adsr.attack = settings.gui.attack;
@@ -146,17 +146,28 @@ void MySynth::updateSettings() {
   }
 }
 
+void MySynth::prepareToPlay(double sampleRate, int samplesPerBlock, int numChannels){
+  BwLogger::log("MainAudio.prepareToPlay: " + juce::String(sampleRate));
+  synth.setCurrentPlaybackSampleRate(sampleRate);
 
-void MySynth::renderNextBlock(juce::AudioBuffer<float>& outputBuffer, int startSample, int numSamples, juce::MidiBuffer& midiMessages) {
-
-  // Render the sound
 
 
+  juce::dsp::ProcessSpec spec;
+  spec.sampleRate = sampleRate;
+  spec.maximumBlockSize = samplesPerBlock;
+  spec.numChannels = numChannels;  // or however many channels you're using
+
+  effectsChain.prepare(spec);
+}
+
+void MySynth::renderNextBlock(juce::AudioBuffer<float>& buffer) {
 //    // Clear MIDI messages after processing
 //    midiMessages.clear();
 
-//  // Effects
-//  juce::dsp::AudioBlock<float> audioBlock(outputBuffer);
-//  juce::dsp::ProcessContextReplacing<float> context(audioBlock);
-//  effectsChain.process(context);
+  synth.renderNextBlock(buffer, juce::MidiBuffer(), 0, buffer.getNumSamples());
+
+  // Effects
+  juce::dsp::AudioBlock<float> audioBlock(buffer);
+  juce::dsp::ProcessContextReplacing<float> context(audioBlock);
+  effectsChain.process(context);
 }

@@ -8,19 +8,20 @@ class MySynth {
 public:
     MySynth();
     void reload();
-    void renderNextBlock(juce::AudioBuffer<float>& outputBuffer, int startSample, int numSamples, juce::MidiBuffer& midiMessages);
+    void prepareToPlay(double sampleRate, int samplesPerBlock, int numChannels);
+    void renderNextBlock(juce::AudioBuffer<float>& outputBuffer);
 
     juce::Synthesiser synth;
 
   private:
     void updateSettings();
 
-    //    juce::dsp::LadderFilter<float>& lpFilter;
-//    juce::dsp::LadderFilter<float>& hpFilter;
-//    juce::dsp::Chorus<float>& chorusFilter;
-//    juce::dsp::ProcessorChain<
-//        juce::dsp::LadderFilter<float>,
-//        juce::dsp::LadderFilter<float>,
-//        juce::dsp::Chorus<float>
-//    > effectsChain;
+    juce::dsp::LadderFilter<float>& lpFilter;
+    juce::dsp::LadderFilter<float>& hpFilter;
+    juce::dsp::Chorus<float>& chorusFilter;
+    juce::dsp::ProcessorChain<
+        juce::dsp::LadderFilter<float>,
+        juce::dsp::LadderFilter<float>,
+        juce::dsp::Chorus<float>
+    > effectsChain;
 };

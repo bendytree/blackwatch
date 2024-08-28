@@ -11,9 +11,9 @@ struct IGuiModel {
   float sustain; //0 through 1
   float release; //seconds
   float hpFreq; // Hz
-  float hpResonance; // 0 through 2
+  float hpResonance; // 0 through 1
   float lpFreq; // Hz
-  float lpResonance; // 0 through 2
+  float lpResonance; // 0 through 1
   float modMix; // 0 through 1
   float modDepth; // 0 through 1
   float modRate; // Hz

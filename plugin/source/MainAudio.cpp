@@ -79,8 +79,14 @@ void MainAudio::prepareToPlay(double sampleRate,
   // initialisation that you need...
   juce::ignoreUnused(sampleRate, samplesPerBlock);
 
-  BwLogger::log("MainAudio.prepareToPlay: " + juce::String(sampleRate));
-  mySynth.synth.setCurrentPlaybackSampleRate(sampleRate);
+  int numChannels;
+  if (auto* processor = dynamic_cast<juce::AudioProcessor*>(this)) {
+    numChannels = processor->getMainBusNumOutputChannels();
+  } else {
+    numChannels = 2; // Default to stereo
+  }
+
+  mySynth.prepareToPlay(sampleRate, samplesPerBlock, numChannels);
 }
 
 void MainAudio::releaseResources() {
@@ -132,7 +138,8 @@ void MainAudio::processBlock(juce::AudioBuffer<float>& buffer,
   }
 
   // Render audio from your synth into the buffer
-  mySynth.synth.renderNextBlock(buffer, juce::MidiBuffer(), 0, buffer.getNumSamples());
+  //mySynth.synth.renderNextBlock(buffer, juce::MidiBuffer(), 0, buffer.getNumSamples());
+  mySynth.renderNextBlock(buffer);
 
   midiMessages.clear();
 

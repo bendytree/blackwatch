@@ -85,7 +85,7 @@ const hpFreqArgs:IKnobArgs = reactive({
 const hpResonanceArgs:IKnobArgs = reactive({
   value: toRef(settings.gui, 'hpResonance'),
   min: 0,
-  max: 2,
+  max: 1,
   scale: 'linear',
   decimals: 2,
 });
@@ -101,7 +101,7 @@ const lpFreqArgs:IKnobArgs = reactive({
 const lpResonanceArgs:IKnobArgs = reactive({
   value: toRef(settings.gui, 'lpResonance'),
   min: 0,
-  max: 2,
+  max: 1,
   scale: 'linear',
   decimals: 2,
 });
@@ -125,7 +125,7 @@ const rMeterArgs:IMeterArgs = reactive({
 window.updateRmsLevels = (l:number, r:number) => {
   lMeterArgs.value = l;
   rMeterArgs.value = r;
-  console.log(`window.updateRmsLevels`, l, r);
+  //console.log(`window.updateRmsLevels`, l, r);
 };
 
 // setInterval(() => {

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+  <title>Blackwatch Plugin</title>
+  <options customize="never" allow-external-scripts="no"/>
+  <choices-outline>
+    <line choice="vst_choice"/>
+    <line choice="au_choice"/>
+    <line choice="wavs_choice"/>
+  </choices-outline>
+
+  <choice id="wavs_choice" title="Install WAV Files">
+    <pkg-ref id="com.allstarapps.blackwatchwavs"/>
+  </choice>
+
+  <choice id="vst_choice" title="Install VST3 Plugin">
+    <pkg-ref id="com.allstarapps.blackwatchvst3"/>
+  </choice>
+
+  <choice id="au_choice" title="Install AU Plugin">
+    <pkg-ref id="com.allstarapps.blackwatchau"/>
+  </choice>
+
+  <pkg-ref id="com.allstarapps.blackwatchvst3" version="1.0.0">
+    vst3.pkg
+  </pkg-ref>
+  <pkg-ref id="com.allstarapps.blackwatchau" version="1.0.0">
+    au.pkg
+  </pkg-ref>
+  <pkg-ref id="com.allstarapps.blackwatchwavs" version="1.0.0">
+    wavs.pkg
+  </pkg-ref>
+</installer-gui-script>

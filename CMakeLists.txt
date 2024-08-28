@@ -15,7 +15,13 @@ if (APPLE)
     set(CMAKE_CXX_STANDARD 20)
 endif()
 
-set(CMAKE_BUILD_TYPE Debug)
+#set(CMAKE_BUILD_TYPE Debug)
+#if (APPLE)
+#    set(CMAKE_OSX_ARCHITECTURES "x86_64;arm64" CACHE INTERNAL "")
+#endif()
+set(CMAKE_XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "Developer ID Application: All Star Apps, LLC (768Z86F8ET)")
+set(CMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM "768Z86F8ET")
+
 
 # I like to download the dependencies to the same folder as the project.
 # If you want to install them system wide, set CPM_SOURCE_CACHE with the path to the dependencies

@@ -45,7 +45,7 @@ juce::String IRepoSample::to_json() const
 
 
 juce::File IRepo::getAudioFileDir() {
-  return juce::File("/Users/josh/Library/BlackWatchStudios/wavs/");
+  return juce::File("/Library/Application Support/BlackwatchStudios/wavs/");
 //  juce::File appDataDir = juce::File::getSpecialLocation(juce::File::SpecialLocationType::userApplicationDataDirectory);
 //  juce::File blackwatchDir = appDataDir.getChildFile("blackwatch");
 //  if (!blackwatchDir.exists()) {
