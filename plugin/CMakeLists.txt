@@ -13,27 +13,22 @@ file(READ "${CMAKE_CURRENT_SOURCE_DIR}/info.plist" plist_content_to_merge)
 
 # Adds a plugin target (that's basically what the Projucer does).
 juce_add_plugin(${PROJECT_NAME}
-    COMPANY_NAME "BlackwatchStudios" # change this
+    COMPANY_NAME "Blackwatch Studios" # change this
     BUNDLE_ID "com.blackwatch.juce"
     IS_SYNTH TRUE # may change this
     NEEDS_MIDI_INPUT TRUE # may change this
     PLUGIN_MANUFACTURER_CODE BLKW # change this
     PLUGIN_CODE BWST # change this
     FORMATS Standalone VST3 AU # may change this
-    PRODUCT_NAME "BlackwatchPlugin" # change this
+    PRODUCT_NAME "Blackwatch Studios" # change this
     NEEDS_WEBVIEW2 true
     PLIST_TO_MERGE "${plist_content_to_merge}"
     AU_MAIN_TYPE "kAudioUnitType_MusicDevice"
     COPY_PLUGIN_AFTER_BUILD TRUE
 )
 
-add_custom_command(
-        OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/../plugin/include/BlackwatchStudios/index.html"
-        COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh
-        DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh"
-)
-add_custom_target(run_pre_build ALL DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/../plugin/include/BlackwatchStudios/index.html")
-add_dependencies(${PROJECT_NAME} run_pre_build)
+add_custom_command(TARGET "${PROJECT_NAME}" PRE_BUILD
+        COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh)
 
 
 
