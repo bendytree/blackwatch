@@ -57,9 +57,9 @@ public:
     });
 
     BwLogger::log("Browser - midiSubscribe...");
-    MidiChangedEvent::subscribe([this](int num, int val) {
+    MidiChangedEvent::subscribe([this](int num, int val, std::string deviceName) {
       BwLogger::log("Browser - midiSubscribe.callback" + std::to_string(num) + ", " + std::to_string(val));
-      this->evaluateJavascript("window.midiChanged(" + std::to_string(num) + ", " + std::to_string(val) + ");");
+      this->evaluateJavascript("window.midiChanged(" + std::to_string(num) + ", " + std::to_string(val) + ", `" + deviceName + "`);");
     });
   }
 

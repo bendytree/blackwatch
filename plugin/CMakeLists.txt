@@ -27,12 +27,14 @@ juce_add_plugin(${PROJECT_NAME}
     COPY_PLUGIN_AFTER_BUILD TRUE
 )
 
-#if(CMAKE_BUILD_TYPE STREQUAL "Release")
-#    # done by release script
-#else()
-    add_custom_command(TARGET "${PROJECT_NAME}" PRE_BUILD
-            COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh ALWAYS)
-#endif()
+add_custom_command(
+        OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/../plugin/include/BlackwatchStudios/index.html"
+        COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh
+        DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh"
+)
+add_custom_target(run_pre_build ALL DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/../plugin/include/BlackwatchStudios/index.html")
+add_dependencies(${PROJECT_NAME} run_pre_build)
+
 
 
 include(FetchContent)

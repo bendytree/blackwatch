@@ -4,11 +4,11 @@
 
 MidiChangedEvent::Callback MidiChangedEvent::callback;
 
-void MidiChangedEvent::trigger(int num, int val)
+void MidiChangedEvent::trigger(int num, int val, std::string deviceName)
 {
   if (MidiChangedEvent::callback)
   {
-    MidiChangedEvent::callback(num, val);
+    MidiChangedEvent::callback(num, val, std::move(deviceName));
   }
 }
 

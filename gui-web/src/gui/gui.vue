@@ -128,12 +128,6 @@ window.updateRmsLevels = (l:number, r:number) => {
   //console.log(`window.updateRmsLevels`, l, r);
 };
 
-let has = false;
-window.midiChanged = (num: number, val: number) => {
-  if (has) return;
-  has = true;
-  alert(JSON.stringify({ num, val }));
-};
 
 // setInterval(() => {
 //   rMeterArgs.value = lMeterArgs.value = Math.random();

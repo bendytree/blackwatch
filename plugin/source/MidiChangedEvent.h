@@ -12,9 +12,9 @@ public:
     std::function<void()> unsubscribe;
   };
 
-  using Callback = std::function<void(int num, int val)>;
+  using Callback = std::function<void(int num, int val, std::string deviceName)>;
 
-  static void trigger(int num, int val);
+  static void trigger(int num, int val, std::string deviceName);
   static void subscribe(Callback callback);
   static void unsubscribe();
 

@@ -81,6 +81,8 @@ let startVal = 0;
 
 onMounted(() => {
   divRef.value.addEventListener('mousedown', (event) => {
+    if (event.button === 2) return;
+
     active.value = true;
     startY = event.clientY;
     startVal = perc.value;

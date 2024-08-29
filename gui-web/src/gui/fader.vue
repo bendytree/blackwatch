@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue';
 import { clamp, roundTo } from '@/utils/math';
+import { setupMidiController } from '@/gui/midi-controller';
 
 const props = defineProps<{ args: IFaderArgs }>();
 const divRef = ref<HTMLDivElement | null>(null);
@@ -42,7 +43,14 @@ let startY = 0;
 let startVal = 0;
 
 onMounted(() => {
+  setupMidiController({
+    el: divRef.value as HTMLDivElement,
+    perc,
+  });
+
   divRef.value.addEventListener('mousedown', (event) => {
+    if (event.button === 2) return;
+
     active.value = true;
     startY = event.clientY;
     startVal = perc.value;
