@@ -69,8 +69,12 @@ set(SourceFiles
         source/Repo.h
         source/Repo.cpp
         source/Browser.h
+        source/MidiChangedEvent.h
+        source/MidiChangedEvent.cpp
         source/RmsChangedEvent.h
         source/RmsChangedEvent.cpp
+        source/MyMidiProcessor.h
+        source/MyMidiProcessor.cpp
         source/MainAudio.h
         source/MainAudio.cpp
         source/MainGui.h

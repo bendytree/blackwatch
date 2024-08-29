@@ -13,6 +13,7 @@ MainAudio::MainAudio()
               .withOutput("Output", juce::AudioChannelSet::stereo(), true)
 #endif
       ) {
+  midiProcessor = std::make_unique<MyMidiProcessor>();
 }
 
 MainAudio::~MainAudio() {}
@@ -165,7 +166,6 @@ void MainAudio::processBlock(juce::AudioBuffer<float>& buffer,
     sampleCounter = 0;
   }
 }
-
 
 bool MainAudio::hasEditor() const {
   return true;  // (change this to false if you choose to not supply an editor)

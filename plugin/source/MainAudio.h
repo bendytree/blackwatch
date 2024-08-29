@@ -4,6 +4,7 @@
 #include "juce_dsp/juce_dsp.h"
 #include "MySynth.h"
 #include "BwRMS.h"
+#include "MyMidiProcessor.h"
 
 class MainAudio : public juce::AudioProcessor {
 public:
@@ -40,5 +41,6 @@ public:
 private:
   BwRMS rms;
   MySynth mySynth;
+  std::unique_ptr<MyMidiProcessor> midiProcessor;
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainAudio)
 };

@@ -6,6 +6,8 @@
 #include "BinaryData.h"
 #include "AppSettings.h"
 #include "RmsChangedEvent.h"
+#include "MidiChangedEvent.h"
+#include "BwLogger.h"
 
 // text/html, text/plain, text/javascript
 static juce::WebBrowserComponent::Resource createResource(const juce::String& data, const juce::String& mimeType)
@@ -52,6 +54,12 @@ public:
 
     RmsChangedEvent::subscribe([this](float left, float right) {
       this->evaluateJavascript("window.updateRmsLevels(" + std::to_string(left) + ", " + std::to_string(right) + ");");
+    });
+
+    BwLogger::log("Browser - midiSubscribe...");
+    MidiChangedEvent::subscribe([this](int num, int val) {
+      BwLogger::log("Browser - midiSubscribe.callback" + std::to_string(num) + ", " + std::to_string(val));
+      this->evaluateJavascript("window.midiChanged(" + std::to_string(num) + ", " + std::to_string(val) + ");");
     });
   }
 

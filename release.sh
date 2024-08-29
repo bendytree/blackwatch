@@ -67,74 +67,74 @@ function notarize_app() {
     fi
 }
 
-#echo "Clear out dir..."
-#rm -rf out/*
-#
-#echo "Run pre-build..."
-#./plugin/pre-build.sh
-#cd "$(dirname "$0")"
-#
-#echo "Setup universal build..."
-#mkdir -p out/plugins/arm64
-#cmake -S . -B out/plugins/arm64  -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES="arm64" # x86_64;arm64
-#
-#echo "Building plugins..."
-#cmake --build ./out/plugins/arm64 -j 6 --config Release
-#
-#echo "Sign AU..."
-#sign_file out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/AU/BlackwatchPlugin.component
-#
-#echo "Sign VST3..."
-#sign_file out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/VST3/BlackwatchPlugin.vst3
-#
-#echo "Build AU pkg..."
-#mkdir -p out/temp_installers/au_root
-#mkdir -p out/temp_installers/unsigned_pkgs
-#mkdir -p out/temp_installers/signed_pkgs
-#cp -R out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/AU/BlackwatchPlugin.component out/temp_installers/au_root/BlackwatchPlugin.component
-#pkgbuild --root out/temp_installers/au_root \
-#         --identifier com.allstarapps.blackwatchau \
-#         --version 1.0.0 \
-#         --install-location /Library/Audio/Plug-Ins/Components \
-#         out/temp_installers/unsigned_pkgs/au.pkg
-#sign_installer out/temp_installers/unsigned_pkgs/au.pkg out/temp_installers/signed_pkgs/au.pkg
-#
-#echo "Build VST3 pkg..."
-#mkdir -p out/temp_installers/vst_root
-#cp -R out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/VST3/BlackwatchPlugin.vst3 out/temp_installers/vst_root/BlackwatchPlugin.vst3
-#pkgbuild --root out/temp_installers/vst_root \
-#         --identifier com.allstarapps.blackwatchvst3 \
-#         --version 1.0.0 \
-#         --install-location /Library/Audio/Plug-Ins/VST3 \
-#         out/temp_installers/unsigned_pkgs/vst3.pkg
-#sign_installer out/temp_installers/unsigned_pkgs/vst3.pkg out/temp_installers/signed_pkgs/vst3.pkg
-#
-#
-#if true; then
-#echo "Build wavs pkg..."
-#rm -rf "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs"
-#mkdir -p "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/unsigned"
-#mkdir -p "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/signed"
-#pkgbuild --root "/Library/Application Support/BlackwatchStudiosDevelopment/wavs" \
-#         --install-location "/Library/Application Support/BlackwatchStudios/wavs" \
-#         --identifier com.allstarapps.blackwatchpluginwavs \
-#         --version 1.0 \
-#         "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/unsigned/wavs.pkg"
-#echo "Sign wavs.pkg..."
-#sign_installer "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/unsigned/wavs.pkg" "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/signed/wavs.pkg"
-#fi
-#
-#echo "Combine installers..."
-#mkdir -p out/installers
-#productbuild --distribution productbuild.xml \
-#             --package-path out/temp_installers/signed_pkgs \
-#             --package-path "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/signed" \
-#             --sign "Developer ID Installer: All Star Apps, LLC (768Z86F8ET)" \
-#             out/temp_installers/InstallBlackwatchUnsigned.pkg
-#sign_installer out/temp_installers/InstallBlackwatchUnsigned.pkg out/installers/InstallBlackwatch.pkg
-#
-#echo "Notarize..."
-#notarize_app out/installers/InstallBlackwatch.pkg
+echo "Clear out dir..."
+rm -rf out/*
+
+echo "Run pre-build..."
+./plugin/pre-build.sh
+cd "$(dirname "$0")"
+
+echo "Setup universal build..."
+mkdir -p out/plugins/arm64
+cmake -S . -B out/plugins/arm64  -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES="arm64" # x86_64;arm64
+
+echo "Building plugins..."
+cmake --build ./out/plugins/arm64 -j 6 --config Release
+
+echo "Sign AU..."
+sign_file out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/AU/BlackwatchPlugin.component
+
+echo "Sign VST3..."
+sign_file out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/VST3/BlackwatchPlugin.vst3
+
+echo "Build AU pkg..."
+mkdir -p out/temp_installers/au_root
+mkdir -p out/temp_installers/unsigned_pkgs
+mkdir -p out/temp_installers/signed_pkgs
+cp -R out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/AU/BlackwatchPlugin.component out/temp_installers/au_root/BlackwatchPlugin.component
+pkgbuild --root out/temp_installers/au_root \
+         --identifier com.allstarapps.blackwatchau \
+         --version 1.0.0 \
+         --install-location /Library/Audio/Plug-Ins/Components \
+         out/temp_installers/unsigned_pkgs/au.pkg
+sign_installer out/temp_installers/unsigned_pkgs/au.pkg out/temp_installers/signed_pkgs/au.pkg
+
+echo "Build VST3 pkg..."
+mkdir -p out/temp_installers/vst_root
+cp -R out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/VST3/BlackwatchPlugin.vst3 out/temp_installers/vst_root/BlackwatchPlugin.vst3
+pkgbuild --root out/temp_installers/vst_root \
+         --identifier com.allstarapps.blackwatchvst3 \
+         --version 1.0.0 \
+         --install-location /Library/Audio/Plug-Ins/VST3 \
+         out/temp_installers/unsigned_pkgs/vst3.pkg
+sign_installer out/temp_installers/unsigned_pkgs/vst3.pkg out/temp_installers/signed_pkgs/vst3.pkg
+
+
+if true; then
+echo "Build wavs pkg..."
+rm -rf "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs"
+mkdir -p "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/unsigned"
+mkdir -p "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/signed"
+pkgbuild --root "/Library/Application Support/BlackwatchStudiosDevelopment/wavs" \
+         --install-location "/Library/Application Support/BlackwatchStudios/wavs" \
+         --identifier com.allstarapps.blackwatchpluginwavs \
+         --version 1.0 \
+         "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/unsigned/wavs.pkg"
+echo "Sign wavs.pkg..."
+sign_installer "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/unsigned/wavs.pkg" "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/signed/wavs.pkg"
+fi
+
+echo "Combine installers..."
+mkdir -p out/installers
+productbuild --distribution productbuild.xml \
+             --package-path out/temp_installers/signed_pkgs \
+             --package-path "/Library/Application Support/BlackwatchStudiosDevelopment/pkgs/signed" \
+             --sign "Developer ID Installer: All Star Apps, LLC (768Z86F8ET)" \
+             out/temp_installers/InstallBlackwatchUnsigned.pkg
+sign_installer out/temp_installers/InstallBlackwatchUnsigned.pkg out/installers/InstallBlackwatch.pkg
+
+echo "Notarize..."
+notarize_app out/installers/InstallBlackwatch.pkg
 
 
 echo "Uploading..."
