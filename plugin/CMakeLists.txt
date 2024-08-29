@@ -13,14 +13,14 @@ file(READ "${CMAKE_CURRENT_SOURCE_DIR}/info.plist" plist_content_to_merge)
 
 # Adds a plugin target (that's basically what the Projucer does).
 juce_add_plugin(${PROJECT_NAME}
-    COMPANY_NAME "Blackwatch Studios" # change this
+    COMPANY_NAME "BlackwatchPlugin" # change this
     BUNDLE_ID "com.blackwatch.juce"
     IS_SYNTH TRUE # may change this
     NEEDS_MIDI_INPUT TRUE # may change this
     PLUGIN_MANUFACTURER_CODE BLKW # change this
     PLUGIN_CODE BWST # change this
     FORMATS Standalone VST3 AU # may change this
-    PRODUCT_NAME "Blackwatch Studios" # change this
+    PRODUCT_NAME "BlackwatchPlugin" # change this
     NEEDS_WEBVIEW2 true
     PLIST_TO_MERGE "${plist_content_to_merge}"
     AU_MAIN_TYPE "kAudioUnitType_MusicDevice"
