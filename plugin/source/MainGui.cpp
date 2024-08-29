@@ -6,7 +6,8 @@
 
 
 
-MainGui::MainGui(MainAudio& p) : juce::AudioProcessorEditor (&p), mainAudio(p)
+MainGui::MainGui(MainAudio& p) : juce::AudioProcessorEditor (&p),
+      mainAudio(p)
 {
   webBrowser = std::make_unique<BrowserComponent>();
 

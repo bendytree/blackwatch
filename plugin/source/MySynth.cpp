@@ -36,7 +36,7 @@ void MySynth::reload() {
 
     BwLogger::log("MySynth.reload...");
 
-    auto& settings = IAppSettings::current;
+    IAppSettings settings = IAppSettings::getCurrent();
     std::string sampleId;
     sampleId = settings.gui.sampleId;
     BwLogger::log("MySynth.sampleId: "+sampleId);
@@ -68,7 +68,9 @@ void MySynth::reload() {
         int endNote = 127;
         auto sound = sounds[i];
         auto exists = sound.exists();
-        BwLogger::log("MySynth.sound["+juce::String(i)+"].exists = "+(exists ? "true" : "false"));
+        if (i == 0) {
+          BwLogger::log("MySynth.sound["+juce::String(i)+"].exists = "+(exists ? "true" : "false"));
+        }
         if (!exists) {
           throw std::runtime_error( "sound does not exist" );
           continue;
@@ -104,7 +106,7 @@ void MySynth::reload() {
                                              maxSeconds  // max sample length in seconds
 
         );
-        BwLogger::log("MySynth.addSound!");
+        if (i == 0) { BwLogger::log("MySynth.addSound!"); }
         synth.addSound(synthSound);
     }
 
@@ -117,7 +119,7 @@ void MySynth::reload() {
 void MySynth::updateSettings() {
   BwLogger::log("MySynth.updateSettings...");
 
-  auto& settings = IAppSettings::current;
+  IAppSettings settings = IAppSettings::getCurrent();
   // Effects
   BwLogger::log("MySynth.settings: " + settings.to_json());
   lpFilter.setMode(juce::dsp::LadderFilter<float>::Mode::LPF12);

@@ -1,9 +1,10 @@
 #include "AppSettings.h"
+#include "MainAudio.h"
+#include "BwLogger.h"
 
-static juce::File getSettingsFile()
-{
-  return juce::File::getSpecialLocation(juce::File::userApplicationDataDirectory).getChildFile("BlackWatchStudios/settings.json");
-}
+static bool hasLoaded = false;
+IAppSettings IAppSettings::current = IAppSettings();
+std::mutex IAppSettings::settingsMutex;
 
 static IAppSettings getDefaultSettings()
 {
@@ -14,27 +15,20 @@ static IAppSettings getDefaultSettings()
 
 static IAppSettings loadSettings()
 {
-  juce::File settingsFile = getSettingsFile();
-  if (settingsFile.existsAsFile())
-  {
-    try {
-      auto json = settingsFile.loadFileAsString();
-      return IAppSettings::from_json(json);
-    }catch (const std::exception& e){}
-  }
+//  if (MainAudio::current)
+//  {
+//    BwLogger::log("AppSettings.loadSettings MainAudio::current IS OK");
+//    try {
+//      auto json = MainAudio::current->settingsRepo.load();
+//      BwLogger::log("AppSettings.loadSettings MainAudio::current.load is: "+json);
+//      return IAppSettings::from_json(json);
+//    }catch (const std::exception& e){}
+//  }else{
+//    BwLogger::log("AppSettings.loadSettings MainAudio::current IS NULL");
+//  }
   return getDefaultSettings();
 }
 
-void IAppSettings::save()
-{
-  std::string json = this->to_json().toStdString();
-  juce::File settingsFile = getSettingsFile();
-  if (!settingsFile.getParentDirectory().exists())
-  {
-    settingsFile.getParentDirectory().createDirectory();
-  }
-  settingsFile.replaceWithText(json);
-}
 
 IAppSettings IAppSettings::from_json(const juce::String& jsonString)
 {
@@ -55,5 +49,19 @@ void IAppSettings::assign(const IAppSettings& other) {
   gui.assign(other.gui);
 }
 
+void IAppSettings::assignCurrent(const IAppSettings& settings)
+{
+  //std::lock_guard<std::mutex> lock(settingsMutex);
+  current.assign(settings);
+}
 
-IAppSettings IAppSettings::current = loadSettings();
+IAppSettings IAppSettings::getCurrent()
+{
+  //std::lock_guard<std::mutex> lock(settingsMutex);
+  if (!hasLoaded) {
+    hasLoaded = true;
+    current.assign(loadSettings());
+  }
+  BwLogger::log("IAppSettings.getCurrent: "+current.to_json());
+  return current;
+}

@@ -66,6 +66,8 @@ set(SourceFiles
         source/PubSub.cpp
         source/IGuiModel.h
         source/IGuiModel.cpp
+        source/SettingsRepo.h
+        source/SettingsRepo.cpp
         source/AppSettings.h
         source/AppSettings.cpp
         source/Repo.h

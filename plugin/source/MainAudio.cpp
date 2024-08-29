@@ -3,8 +3,13 @@
 #include "RmsChangedEvent.h"
 #include "BwLogger.h"
 
+MainAudio* MainAudio::current = nullptr;
+
 MainAudio::MainAudio()
-    : rms(4000), AudioProcessor(
+    : rms(4000),
+      settingsRepo(*this),
+      mySynth(),
+      AudioProcessor(
           BusesProperties()
 #if !JucePlugin_IsMidiEffect
 #if !JucePlugin_IsSynth
@@ -13,6 +18,7 @@ MainAudio::MainAudio()
               .withOutput("Output", juce::AudioChannelSet::stereo(), true)
 #endif
       ) {
+  current = this;
   midiProcessor = std::make_unique<MyMidiProcessor>();
 }
 
@@ -181,7 +187,8 @@ void MainAudio::getStateInformation(
   // You should use this method to store your parameters in the memory block.
   // You could do that either as raw data, or use the XML or ValueTree classes
   // as intermediaries to make it easy to save and load complex data.
-  juce::ignoreUnused(destData);
+  BwLogger::log("MainAudio.JUCECALLED.getState!");
+  settingsRepo.getStateInformation(destData);
 }
 
 void MainAudio::setStateInformation(const void* data,
@@ -189,7 +196,8 @@ void MainAudio::setStateInformation(const void* data,
   // You should use this method to restore your parameters from this memory
   // block, whose contents will have been created by the getStateInformation()
   // call.
-  juce::ignoreUnused(data, sizeInBytes);
+  BwLogger::log("MainAudio.JUCECALLED.setState!");
+  settingsRepo.setStateInformation(data, sizeInBytes);
 }
 
 // This creates new instances of the plugin.

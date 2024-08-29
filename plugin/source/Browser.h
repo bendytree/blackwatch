@@ -24,7 +24,7 @@ public:
                                       .withNativeFunction(
                                           juce::Identifier("getAppSettings"),
                                           [](const juce::Array<juce::var>& args, const juce::WebBrowserComponent::NativeFunctionCompletion& completion) {
-                                            juce::var result = juce::var(IAppSettings::current.to_json());
+                                            juce::var result = juce::var(IAppSettings::getCurrent().to_json());
                                             completion(result);
                                           })
                                       .withNativeFunction(
@@ -32,8 +32,7 @@ public:
                                           [](const juce::Array<juce::var>& args, const juce::WebBrowserComponent::NativeFunctionCompletion& completion) {
                                             juce::String json = args[0].toString();
                                             auto s = IAppSettings::from_json(json);
-                                            IAppSettings::current.assign(s);
-                                            IAppSettings::current.save();
+                                            IAppSettings::assignCurrent(s);
                                             completion(juce::var("ok"));
                                           })
                                       .withResourceProvider([](const juce::String& path) -> std::optional<juce::WebBrowserComponent::Resource>
