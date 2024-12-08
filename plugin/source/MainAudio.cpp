@@ -20,6 +20,7 @@ MainAudio::MainAudio()
       ) {
   current = this;
   midiProcessor = std::make_unique<MyMidiProcessor>();
+  BwLogger::log("MainAudio::init");
 }
 
 MainAudio::~MainAudio() {}

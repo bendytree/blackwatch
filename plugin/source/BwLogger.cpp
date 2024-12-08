@@ -7,6 +7,7 @@
 #include <iomanip>
 #include <execinfo.h>
 #include <print>
+#include <unistd.h>
 
 
 void BwLogger::setupLogger() {

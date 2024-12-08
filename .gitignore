@@ -8,6 +8,9 @@ out/
 vs-build/
 **/Builds
 **/JuceLibraryCode
+test
+
+gui-web/node_modules
 
 # Prerequisites
 *.d
