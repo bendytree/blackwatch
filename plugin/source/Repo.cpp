@@ -45,7 +45,10 @@ juce::String IRepoSample::to_json() const
 
 
 juce::File IRepo::getAudioFileDir() {
-  return juce::File("/Library/Application Support/BlackwatchStudios/wavs/");
+  juce::File dir("/Library/Application Support/BlackwatchStudios/wavs/");
+  if (!dir.exists() || !dir.isDirectory())
+    throw std::runtime_error("The directory '/Library/Application Support/BlackwatchStudios/wavs/' does not exist. Please run ./release.sh and it will setup the directory.");
+  return dir;
 }
 
 juce::File IRepoSampleSound::getFile() const {
