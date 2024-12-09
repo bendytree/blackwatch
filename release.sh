@@ -120,6 +120,8 @@ pkgbuild --root out/temp_installers/vst_root \
 sign_installer out/temp_installers/unsigned_pkgs/vst3.pkg out/temp_installers/signed_pkgs/vst3.pkg
 
 
+
+
 if true; then
 echo "Build wavs pkg..."
 rm -rf "$pathToTemp/pkgs"

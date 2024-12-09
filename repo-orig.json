@@ -1,0 +1,5967 @@
+{
+  "version": 1,
+  "samples": [
+    {
+      "id": "ax60-area-69",
+      "title": "AX60 Area 69",
+      "sounds": [
+        {
+          "filename": "AX60_Area_69-A0-99-GJN4.wav",
+          "note": 9
+        },
+        {
+          "filename": "AX60_Area_69-A1-99-MU1A.wav",
+          "note": 33
+        },
+        {
+          "filename": "AX60_Area_69-A2-99-AQ3W.wav",
+          "note": 45
+        },
+        {
+          "filename": "AX60_Area_69-A3-99-FV53.wav",
+          "note": 57
+        },
+        {
+          "filename": "AX60_Area_69-A4-99-5W7F.wav",
+          "note": 69
+        },
+        {
+          "filename": "AX60_Area_69-A5-99-9G8W.wav",
+          "note": 81
+        },
+        {
+          "filename": "AX60_Area_69-C0-99-JCFY.wav",
+          "note": 0
+        },
+        {
+          "filename": "AX60_Area_69-C1-99-XU31.wav",
+          "note": 24
+        },
+        {
+          "filename": "AX60_Area_69-C2-99-B1VD.wav",
+          "note": 36
+        },
+        {
+          "filename": "AX60_Area_69-C3-99-HXJV.wav",
+          "note": 48
+        },
+        {
+          "filename": "AX60_Area_69-C4-99-W0QW.wav",
+          "note": 60
+        },
+        {
+          "filename": "AX60_Area_69-C5-99-79JB.wav",
+          "note": 72
+        },
+        {
+          "filename": "AX60_Area_69-C6-99-M504.wav",
+          "note": 84
+        },
+        {
+          "filename": "AX60_Area_69-D#0-99-2L6T.wav",
+          "note": 3
+        },
+        {
+          "filename": "AX60_Area_69-D#1-99-1F4D.wav",
+          "note": 27
+        },
+        {
+          "filename": "AX60_Area_69-D#2-99-DQAU.wav",
+          "note": 39
+        },
+        {
+          "filename": "AX60_Area_69-D#3-99-I4RU.wav",
+          "note": 51
+        },
+        {
+          "filename": "AX60_Area_69-D#4-99-G5WG.wav",
+          "note": 63
+        },
+        {
+          "filename": "AX60_Area_69-D#5-99-9MLK.wav",
+          "note": 75
+        },
+        {
+          "filename": "AX60_Area_69-F#0-99-TW29.wav",
+          "note": 6
+        },
+        {
+          "filename": "AX60_Area_69-F#1-99-F60A.wav",
+          "note": 30
+        },
+        {
+          "filename": "AX60_Area_69-F#2-99-H99F.wav",
+          "note": 42
+        },
+        {
+          "filename": "AX60_Area_69-F#3-99-K35U.wav",
+          "note": 54
+        },
+        {
+          "filename": "AX60_Area_69-F#4-99-LMJ5.wav",
+          "note": 66
+        },
+        {
+          "filename": "AX60_Area_69-F#5-99-26SF.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "ax60-cloak-and-dagger",
+      "title": "AX60 Cloak and Dagger",
+      "sounds": [
+        {
+          "filename": "AX60_Cloak_and_Dagger-A1-99-35R8.wav",
+          "note": 33
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-A2-99-KR2O.wav",
+          "note": 45
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-A3-99-0D5B.wav",
+          "note": 57
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-A4-99-K5KE.wav",
+          "note": 69
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-A5-99-GUCU.wav",
+          "note": 81
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-A6-99-GOOI.wav",
+          "note": 93
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-C1-99-1I2V.wav",
+          "note": 24
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-C2-99-VLQA.wav",
+          "note": 36
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-C3-99-9XS4.wav",
+          "note": 48
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-C4-99-FY03.wav",
+          "note": 60
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-C5-99-BK5U.wav",
+          "note": 72
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-C6-99-8FPQ.wav",
+          "note": 84
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-C7-99-6OB4.wav",
+          "note": 96
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-D#1-99-0ZBN.wav",
+          "note": 27
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-D#2-99-9Z3X.wav",
+          "note": 39
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-D#3-99-MQAN.wav",
+          "note": 51
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-D#4-99-VF1B.wav",
+          "note": 63
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-D#5-99-TVXK.wav",
+          "note": 75
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-D#6-99-S9PR.wav",
+          "note": 87
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-F#1-99-YOWB.wav",
+          "note": 30
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-F#2-99-74XJ.wav",
+          "note": 42
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-F#3-99-N6GE.wav",
+          "note": 54
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-F#4-99-NKX6.wav",
+          "note": 66
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-F#5-99-HUX3.wav",
+          "note": 78
+        },
+        {
+          "filename": "AX60_Cloak_and_Dagger-F#6-99-I7ZH.wav",
+          "note": 90
+        }
+      ]
+    },
+    {
+      "id": "ax60-soft-piano",
+      "title": "AX60 Soft Piano",
+      "sounds": [
+        {
+          "filename": "AX60_Soft_Piano-A1-99-UB7B.wav",
+          "note": 33
+        },
+        {
+          "filename": "AX60_Soft_Piano-A2-99-C3ES.wav",
+          "note": 45
+        },
+        {
+          "filename": "AX60_Soft_Piano-A3-99-CJ9E.wav",
+          "note": 57
+        },
+        {
+          "filename": "AX60_Soft_Piano-A4-99-XUBC.wav",
+          "note": 69
+        },
+        {
+          "filename": "AX60_Soft_Piano-A5-99-TCMR.wav",
+          "note": 81
+        },
+        {
+          "filename": "AX60_Soft_Piano-A6-99-N6J6.wav",
+          "note": 93
+        },
+        {
+          "filename": "AX60_Soft_Piano-C1-99-SX4B.wav",
+          "note": 24
+        },
+        {
+          "filename": "AX60_Soft_Piano-C2-99-2SP9.wav",
+          "note": 36
+        },
+        {
+          "filename": "AX60_Soft_Piano-C3-99-6CI2.wav",
+          "note": 48
+        },
+        {
+          "filename": "AX60_Soft_Piano-C4-99-VC8G.wav",
+          "note": 60
+        },
+        {
+          "filename": "AX60_Soft_Piano-C5-99-C2H9.wav",
+          "note": 72
+        },
+        {
+          "filename": "AX60_Soft_Piano-C6-99-4LZX.wav",
+          "note": 84
+        },
+        {
+          "filename": "AX60_Soft_Piano-C7-99-Y4B2.wav",
+          "note": 96
+        },
+        {
+          "filename": "AX60_Soft_Piano-D#1-99-ASHS.wav",
+          "note": 27
+        },
+        {
+          "filename": "AX60_Soft_Piano-D#2-99-FZCN.wav",
+          "note": 39
+        },
+        {
+          "filename": "AX60_Soft_Piano-D#3-99-ESMD.wav",
+          "note": 51
+        },
+        {
+          "filename": "AX60_Soft_Piano-D#4-99-BT7L.wav",
+          "note": 63
+        },
+        {
+          "filename": "AX60_Soft_Piano-D#5-99-1FB2.wav",
+          "note": 75
+        },
+        {
+          "filename": "AX60_Soft_Piano-D#6-99-2WJM.wav",
+          "note": 87
+        },
+        {
+          "filename": "AX60_Soft_Piano-F#1-99-7ALY.wav",
+          "note": 30
+        },
+        {
+          "filename": "AX60_Soft_Piano-F#2-99-RG1A.wav",
+          "note": 42
+        },
+        {
+          "filename": "AX60_Soft_Piano-F#3-99-Z7S1.wav",
+          "note": 54
+        },
+        {
+          "filename": "AX60_Soft_Piano-F#4-99-QYZ2.wav",
+          "note": 66
+        },
+        {
+          "filename": "AX60_Soft_Piano-F#5-99-WW7L.wav",
+          "note": 78
+        },
+        {
+          "filename": "AX60_Soft_Piano-F#6-99-G21U.wav",
+          "note": 90
+        }
+      ]
+    },
+    {
+      "id": "axxe-porta",
+      "title": "AXXE Porta",
+      "sounds": [
+        {
+          "filename": "AXXE_Porta_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "AXXE_Porta_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "AXXE_Porta_C3.wav",
+          "note": 48
+        },
+        {
+          "filename": "AXXE_Porta_C4-[2].wav",
+          "note": 60
+        },
+        {
+          "filename": "AXXE_Porta_F#1.wav",
+          "note": 30
+        },
+        {
+          "filename": "AXXE_Porta_F#2.wav",
+          "note": 42
+        },
+        {
+          "filename": "AXXE_Porta_F#3.wav",
+          "note": 54
+        }
+      ]
+    },
+    {
+      "id": "axxe-saw",
+      "title": "AXXE Saw",
+      "sounds": [
+        {
+          "filename": "AXXE_Saw_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "AXXE_Saw_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "AXXE_Saw_C3.wav",
+          "note": 48
+        },
+        {
+          "filename": "AXXE_Saw_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "AXXE_Saw_F#1.wav",
+          "note": 30
+        },
+        {
+          "filename": "AXXE_Saw_F#2.wav",
+          "note": 42
+        },
+        {
+          "filename": "AXXE_Saw_F#3.wav",
+          "note": 54
+        }
+      ]
+    },
+    {
+      "id": "axxe-slow",
+      "title": "AXXE Slow",
+      "sounds": [
+        {
+          "filename": "AXXE_Slow_C1_1.wav",
+          "note": 24
+        },
+        {
+          "filename": "AXXE_Slow_C2_2.wav",
+          "note": 36
+        },
+        {
+          "filename": "AXXE_Slow_C3_2.wav",
+          "note": 48
+        },
+        {
+          "filename": "AXXE_Slow_C4_1.wav",
+          "note": 60
+        },
+        {
+          "filename": "AXXE_Slow_F#1_2.wav",
+          "note": 30
+        },
+        {
+          "filename": "AXXE_Slow_F#2_2.wav",
+          "note": 42
+        },
+        {
+          "filename": "AXXE_Slow_F#3_1.wav",
+          "note": 54
+        }
+      ]
+    },
+    {
+      "id": "axxe-square",
+      "title": "AXXE Square",
+      "sounds": [
+        {
+          "filename": "AXXE_Square_C1_3.wav",
+          "note": 24
+        },
+        {
+          "filename": "AXXE_Square_C2_2.wav",
+          "note": 36
+        },
+        {
+          "filename": "AXXE_Square_C3_2.wav",
+          "note": 48
+        },
+        {
+          "filename": "AXXE_Square_C4_2.wav",
+          "note": 60
+        },
+        {
+          "filename": "AXXE_Square_F#1_2.wav",
+          "note": 30
+        },
+        {
+          "filename": "AXXE_Square_F#2_2.wav",
+          "note": 42
+        },
+        {
+          "filename": "AXXE_Square_F#3_2.wav",
+          "note": 54
+        }
+      ]
+    },
+    {
+      "id": "ax-analog-bass",
+      "title": "AX Analog Bass",
+      "sounds": [
+        {
+          "filename": "AX_Analog_Bass-A0-100-HRRF.wav",
+          "note": 9
+        },
+        {
+          "filename": "AX_Analog_Bass-A1-100-O4OG.wav",
+          "note": 33
+        },
+        {
+          "filename": "AX_Analog_Bass-A2-100-JCPA.wav",
+          "note": 45
+        },
+        {
+          "filename": "AX_Analog_Bass-A3-100-UMKE.wav",
+          "note": 57
+        },
+        {
+          "filename": "AX_Analog_Bass-A4-100-MF90.wav",
+          "note": 69
+        },
+        {
+          "filename": "AX_Analog_Bass-A5-100-ZAND.wav",
+          "note": 81
+        },
+        {
+          "filename": "AX_Analog_Bass-C0-100-VXED.wav",
+          "note": 0
+        },
+        {
+          "filename": "AX_Analog_Bass-C1-100-D5PW.wav",
+          "note": 24
+        },
+        {
+          "filename": "AX_Analog_Bass-C2-100-KPAA.wav",
+          "note": 36
+        },
+        {
+          "filename": "AX_Analog_Bass-C3-100-EKWI.wav",
+          "note": 48
+        },
+        {
+          "filename": "AX_Analog_Bass-C4-100-YSCM.wav",
+          "note": 60
+        },
+        {
+          "filename": "AX_Analog_Bass-C5-100-TWRC.wav",
+          "note": 72
+        },
+        {
+          "filename": "AX_Analog_Bass-C6-100-0ZR9.wav",
+          "note": 84
+        },
+        {
+          "filename": "AX_Analog_Bass-D#0-100-9SZA.wav",
+          "note": 3
+        },
+        {
+          "filename": "AX_Analog_Bass-D#1-100-YIUI.wav",
+          "note": 27
+        },
+        {
+          "filename": "AX_Analog_Bass-D#2-100-ANMX.wav",
+          "note": 39
+        },
+        {
+          "filename": "AX_Analog_Bass-D#3-100-PIJ6.wav",
+          "note": 51
+        },
+        {
+          "filename": "AX_Analog_Bass-D#4-100-AXTL.wav",
+          "note": 63
+        },
+        {
+          "filename": "AX_Analog_Bass-D#5-100-UCP0.wav",
+          "note": 75
+        },
+        {
+          "filename": "AX_Analog_Bass-F#0-100-IIC2.wav",
+          "note": 6
+        },
+        {
+          "filename": "AX_Analog_Bass-F#1-100-XWGP.wav",
+          "note": 30
+        },
+        {
+          "filename": "AX_Analog_Bass-F#2-100-FHF7.wav",
+          "note": 42
+        },
+        {
+          "filename": "AX_Analog_Bass-F#3-100-1HYL.wav",
+          "note": 54
+        },
+        {
+          "filename": "AX_Analog_Bass-F#4-100-3M2J.wav",
+          "note": 66
+        },
+        {
+          "filename": "AX_Analog_Bass-F#5-100-ZXIS.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "ax-jim-e-bass",
+      "title": "AX Jim e Bass",
+      "sounds": [
+        {
+          "filename": "AX_Jim-e_Bass-A0-100-G25L.wav",
+          "note": 9
+        },
+        {
+          "filename": "AX_Jim-e_Bass-A1-100-Q3QY.wav",
+          "note": 33
+        },
+        {
+          "filename": "AX_Jim-e_Bass-A2-100-F6U0.wav",
+          "note": 45
+        },
+        {
+          "filename": "AX_Jim-e_Bass-A3-100-VW6P.wav",
+          "note": 57
+        },
+        {
+          "filename": "AX_Jim-e_Bass-A4-100-OT27.wav",
+          "note": 69
+        },
+        {
+          "filename": "AX_Jim-e_Bass-A5-100-GYOF.wav",
+          "note": 81
+        },
+        {
+          "filename": "AX_Jim-e_Bass-C0-100-1Z94.wav",
+          "note": 0
+        },
+        {
+          "filename": "AX_Jim-e_Bass-C1-100-MTM4.wav",
+          "note": 24
+        },
+        {
+          "filename": "AX_Jim-e_Bass-C2-100-O8AX.wav",
+          "note": 36
+        },
+        {
+          "filename": "AX_Jim-e_Bass-C3-100-ES46.wav",
+          "note": 48
+        },
+        {
+          "filename": "AX_Jim-e_Bass-C4-100-LXR9.wav",
+          "note": 60
+        },
+        {
+          "filename": "AX_Jim-e_Bass-C5-100-A5LH.wav",
+          "note": 72
+        },
+        {
+          "filename": "AX_Jim-e_Bass-C6-100-7GQN.wav",
+          "note": 84
+        },
+        {
+          "filename": "AX_Jim-e_Bass-D#0-100-M439.wav",
+          "note": 3
+        },
+        {
+          "filename": "AX_Jim-e_Bass-D#1-100-ZQ9T.wav",
+          "note": 27
+        },
+        {
+          "filename": "AX_Jim-e_Bass-D#2-100-A85W.wav",
+          "note": 39
+        },
+        {
+          "filename": "AX_Jim-e_Bass-D#3-100-3SIO.wav",
+          "note": 51
+        },
+        {
+          "filename": "AX_Jim-e_Bass-D#4-100-A1B5.wav",
+          "note": 63
+        },
+        {
+          "filename": "AX_Jim-e_Bass-D#5-100-OQL3.wav",
+          "note": 75
+        },
+        {
+          "filename": "AX_Jim-e_Bass-F#0-100-J9O7.wav",
+          "note": 6
+        },
+        {
+          "filename": "AX_Jim-e_Bass-F#1-100-5Q3O.wav",
+          "note": 30
+        },
+        {
+          "filename": "AX_Jim-e_Bass-F#2-100-CL6B.wav",
+          "note": 42
+        },
+        {
+          "filename": "AX_Jim-e_Bass-F#3-100-ZGI8.wav",
+          "note": 54
+        },
+        {
+          "filename": "AX_Jim-e_Bass-F#4-100-WDO6.wav",
+          "note": 66
+        },
+        {
+          "filename": "AX_Jim-e_Bass-F#5-100-C3KQ.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "ax-poolside-perc",
+      "title": "AX Poolside Perc",
+      "sounds": [
+        {
+          "filename": "AX_Poolside_Perc-A1-100-SZ48.wav",
+          "note": 33
+        },
+        {
+          "filename": "AX_Poolside_Perc-A2-100-4D0E.wav",
+          "note": 45
+        },
+        {
+          "filename": "AX_Poolside_Perc-A3-100-2BSN.wav",
+          "note": 57
+        },
+        {
+          "filename": "AX_Poolside_Perc-A4-100-EDVE.wav",
+          "note": 69
+        },
+        {
+          "filename": "AX_Poolside_Perc-A5-100-551Z.wav",
+          "note": 81
+        },
+        {
+          "filename": "AX_Poolside_Perc-C1-100-V7CF.wav",
+          "note": 24
+        },
+        {
+          "filename": "AX_Poolside_Perc-C2-100-QMA3.wav",
+          "note": 36
+        },
+        {
+          "filename": "AX_Poolside_Perc-C3-100-ZDF8.wav",
+          "note": 48
+        },
+        {
+          "filename": "AX_Poolside_Perc-C4-100-K4OU.wav",
+          "note": 60
+        },
+        {
+          "filename": "AX_Poolside_Perc-C5-100-74T0.wav",
+          "note": 72
+        },
+        {
+          "filename": "AX_Poolside_Perc-D#1-100-SSJA.wav",
+          "note": 27
+        },
+        {
+          "filename": "AX_Poolside_Perc-D#2-100-ZU2W.wav",
+          "note": 39
+        },
+        {
+          "filename": "AX_Poolside_Perc-D#3-100-E8J9.wav",
+          "note": 51
+        },
+        {
+          "filename": "AX_Poolside_Perc-D#4-100-0ABE.wav",
+          "note": 63
+        },
+        {
+          "filename": "AX_Poolside_Perc-D#5-100-Z8VP.wav",
+          "note": 75
+        },
+        {
+          "filename": "AX_Poolside_Perc-F#1-100-8ZJE.wav",
+          "note": 30
+        },
+        {
+          "filename": "AX_Poolside_Perc-F#2-100-CVNO.wav",
+          "note": 42
+        },
+        {
+          "filename": "AX_Poolside_Perc-F#3-100-UDEZ.wav",
+          "note": 54
+        },
+        {
+          "filename": "AX_Poolside_Perc-F#4-100-0XEN.wav",
+          "note": 66
+        },
+        {
+          "filename": "AX_Poolside_Perc-F#5-100-XUBD.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "ax-so-hot-perc",
+      "title": "AX So Hot Perc",
+      "sounds": [
+        {
+          "filename": "AX_So_Hot_Perc-A0-100-UGWP.wav",
+          "note": 9
+        },
+        {
+          "filename": "AX_So_Hot_Perc-A1-100-LHUD.wav",
+          "note": 33
+        },
+        {
+          "filename": "AX_So_Hot_Perc-A2-100-L79E.wav",
+          "note": 45
+        },
+        {
+          "filename": "AX_So_Hot_Perc-A3-100-JOWG.wav",
+          "note": 57
+        },
+        {
+          "filename": "AX_So_Hot_Perc-A4-100-NHH2.wav",
+          "note": 69
+        },
+        {
+          "filename": "AX_So_Hot_Perc-A5-100-IR29.wav",
+          "note": 81
+        },
+        {
+          "filename": "AX_So_Hot_Perc-C0-100-WWLQ.wav",
+          "note": 0
+        },
+        {
+          "filename": "AX_So_Hot_Perc-C1-100-8VA8.wav",
+          "note": 24
+        },
+        {
+          "filename": "AX_So_Hot_Perc-C2-100-I1V4.wav",
+          "note": 36
+        },
+        {
+          "filename": "AX_So_Hot_Perc-C3-100-965U.wav",
+          "note": 48
+        },
+        {
+          "filename": "AX_So_Hot_Perc-C4-100-CPV4.wav",
+          "note": 60
+        },
+        {
+          "filename": "AX_So_Hot_Perc-C5-100-5RFY.wav",
+          "note": 72
+        },
+        {
+          "filename": "AX_So_Hot_Perc-C6-100-21PC.wav",
+          "note": 84
+        },
+        {
+          "filename": "AX_So_Hot_Perc-D#0-100-II8A.wav",
+          "note": 3
+        },
+        {
+          "filename": "AX_So_Hot_Perc-D#1-100-3X94.wav",
+          "note": 27
+        },
+        {
+          "filename": "AX_So_Hot_Perc-D#2-100-O7WT.wav",
+          "note": 39
+        },
+        {
+          "filename": "AX_So_Hot_Perc-D#3-100-C2A9.wav",
+          "note": 51
+        },
+        {
+          "filename": "AX_So_Hot_Perc-D#4-100-YJ0C.wav",
+          "note": 63
+        },
+        {
+          "filename": "AX_So_Hot_Perc-D#5-100-9CIR.wav",
+          "note": 75
+        },
+        {
+          "filename": "AX_So_Hot_Perc-F#0-100-L35G.wav",
+          "note": 6
+        },
+        {
+          "filename": "AX_So_Hot_Perc-F#1-100-GHFE.wav",
+          "note": 30
+        },
+        {
+          "filename": "AX_So_Hot_Perc-F#2-100-KZ5S.wav",
+          "note": 42
+        },
+        {
+          "filename": "AX_So_Hot_Perc-F#3-100-4MN2.wav",
+          "note": 54
+        },
+        {
+          "filename": "AX_So_Hot_Perc-F#4-100-DRNM.wav",
+          "note": 66
+        },
+        {
+          "filename": "AX_So_Hot_Perc-F#5-100-OI0P.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "ax-violins",
+      "title": "AX Violins",
+      "sounds": [
+        {
+          "filename": "AX_Violins-A0-100-DMQA.wav",
+          "note": 9
+        },
+        {
+          "filename": "AX_Violins-A1-100-C8Y5.wav",
+          "note": 33
+        },
+        {
+          "filename": "AX_Violins-A2-100-8QXV.wav",
+          "note": 45
+        },
+        {
+          "filename": "AX_Violins-A3-100-2253.wav",
+          "note": 57
+        },
+        {
+          "filename": "AX_Violins-A4-100-5FW6.wav",
+          "note": 69
+        },
+        {
+          "filename": "AX_Violins-C0-100-7462.wav",
+          "note": 0
+        },
+        {
+          "filename": "AX_Violins-C1-100-71B7.wav",
+          "note": 24
+        },
+        {
+          "filename": "AX_Violins-C2-100-BBIK.wav",
+          "note": 36
+        },
+        {
+          "filename": "AX_Violins-C3-100-5DGF.wav",
+          "note": 48
+        },
+        {
+          "filename": "AX_Violins-C4-100-671E.wav",
+          "note": 60
+        },
+        {
+          "filename": "AX_Violins-C5-100-QRBM.wav",
+          "note": 72
+        },
+        {
+          "filename": "AX_Violins-D#0-100-23ZF.wav",
+          "note": 3
+        },
+        {
+          "filename": "AX_Violins-D#1-100-A6UF.wav",
+          "note": 27
+        },
+        {
+          "filename": "AX_Violins-D#2-100-FGU0.wav",
+          "note": 39
+        },
+        {
+          "filename": "AX_Violins-D#3-100-3P89.wav",
+          "note": 51
+        },
+        {
+          "filename": "AX_Violins-D#4-100-DLOT.wav",
+          "note": 63
+        },
+        {
+          "filename": "AX_Violins-F#0-100-5DOE.wav",
+          "note": 6
+        },
+        {
+          "filename": "AX_Violins-F#1-100-6PKJ.wav",
+          "note": 30
+        },
+        {
+          "filename": "AX_Violins-F#2-100-KJKI.wav",
+          "note": 42
+        },
+        {
+          "filename": "AX_Violins-F#3-100-THEY.wav",
+          "note": 54
+        },
+        {
+          "filename": "AX_Violins-F#4-100-KJ7P.wav",
+          "note": 66
+        }
+      ]
+    },
+    {
+      "id": "broken-flute",
+      "title": "Broken Flute",
+      "sounds": [
+        {
+          "filename": "BrokenFlute_Ab3.wav",
+          "note": 56
+        },
+        {
+          "filename": "BrokenFlute_B2.wav",
+          "note": 47
+        },
+        {
+          "filename": "BrokenFlute_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "BrokenFlute_C#4.wav",
+          "note": 61
+        },
+        {
+          "filename": "BrokenFlute_Eb3.wav",
+          "note": 51
+        },
+        {
+          "filename": "BrokenFlute_Eb5.wav",
+          "note": 75
+        },
+        {
+          "filename": "BrokenFlute_F#2.wav",
+          "note": 42
+        },
+        {
+          "filename": "BrokenFlute_F#4.wav",
+          "note": 66
+        },
+        {
+          "filename": "BrokenFlute_F3.wav",
+          "note": 53
+        }
+      ]
+    },
+    {
+      "id": "cs50-flute",
+      "title": "CS50 Flute",
+      "sounds": [
+        {
+          "filename": "CS50_Flute_A1_1.wav",
+          "note": 33
+        },
+        {
+          "filename": "CS50_Flute_A2_1.wav",
+          "note": 45
+        },
+        {
+          "filename": "CS50_Flute_A3_1.wav",
+          "note": 57
+        },
+        {
+          "filename": "CS50_Flute_A4_1.wav",
+          "note": 69
+        },
+        {
+          "filename": "CS50_Flute_C1_1.wav",
+          "note": 24
+        },
+        {
+          "filename": "CS50_Flute_C2_1.wav",
+          "note": 36
+        },
+        {
+          "filename": "CS50_Flute_C3_1.wav",
+          "note": 48
+        },
+        {
+          "filename": "CS50_Flute_C4_1.wav",
+          "note": 60
+        },
+        {
+          "filename": "CS50_Flute_C5_1.wav",
+          "note": 72
+        },
+        {
+          "filename": "CS50_Flute_D#1_1.wav",
+          "note": 27
+        },
+        {
+          "filename": "CS50_Flute_D#2_1.wav",
+          "note": 39
+        },
+        {
+          "filename": "CS50_Flute_D#3_1.wav",
+          "note": 51
+        },
+        {
+          "filename": "CS50_Flute_D#4_1.wav",
+          "note": 63
+        },
+        {
+          "filename": "CS50_Flute_F#1_1.wav",
+          "note": 30
+        },
+        {
+          "filename": "CS50_Flute_F#2_1.wav",
+          "note": 42
+        },
+        {
+          "filename": "CS50_Flute_F#3_1.wav",
+          "note": 54
+        },
+        {
+          "filename": "CS50_Flute_F#4_1.wav",
+          "note": 66
+        }
+      ]
+    },
+    {
+      "id": "cs50-memory",
+      "title": "CS50 Memory",
+      "sounds": [
+        {
+          "filename": "CS50_Memory_A1.wav",
+          "note": 33
+        },
+        {
+          "filename": "CS50_Memory_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "CS50_Memory_A3.wav",
+          "note": 57
+        },
+        {
+          "filename": "CS50_Memory_A4.wav",
+          "note": 69
+        },
+        {
+          "filename": "CS50_Memory_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "CS50_Memory_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "CS50_Memory_C3.wav",
+          "note": 48
+        },
+        {
+          "filename": "CS50_Memory_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "CS50_Memory_C5.wav",
+          "note": 72
+        },
+        {
+          "filename": "CS50_Memory_D#1.wav",
+          "note": 27
+        },
+        {
+          "filename": "CS50_Memory_D#2.wav",
+          "note": 39
+        },
+        {
+          "filename": "CS50_Memory_D#3.wav",
+          "note": 51
+        },
+        {
+          "filename": "CS50_Memory_D#4.wav",
+          "note": 63
+        },
+        {
+          "filename": "CS50_Memory_F#1.wav",
+          "note": 30
+        },
+        {
+          "filename": "CS50_Memory_F#2.wav",
+          "note": 42
+        },
+        {
+          "filename": "CS50_Memory_F#3.wav",
+          "note": 54
+        },
+        {
+          "filename": "CS50_Memory_F#4.wav",
+          "note": 66
+        }
+      ]
+    },
+    {
+      "id": "cs50-memory-bright",
+      "title": "CS50 Memory Bright",
+      "sounds": [
+        {
+          "filename": "CS50_Memory_Bright_A1_3.wav",
+          "note": 33
+        },
+        {
+          "filename": "CS50_Memory_Bright_A2_3.wav",
+          "note": 45
+        },
+        {
+          "filename": "CS50_Memory_Bright_A3_3.wav",
+          "note": 57
+        },
+        {
+          "filename": "CS50_Memory_Bright_A4_3.wav",
+          "note": 69
+        },
+        {
+          "filename": "CS50_Memory_Bright_C1_3.wav",
+          "note": 24
+        },
+        {
+          "filename": "CS50_Memory_Bright_C2_3.wav",
+          "note": 36
+        },
+        {
+          "filename": "CS50_Memory_Bright_C3_3.wav",
+          "note": 48
+        },
+        {
+          "filename": "CS50_Memory_Bright_C4_3.wav",
+          "note": 60
+        },
+        {
+          "filename": "CS50_Memory_Bright_C5_2.wav",
+          "note": 72
+        },
+        {
+          "filename": "CS50_Memory_Bright_D#1_3.wav",
+          "note": 27
+        },
+        {
+          "filename": "CS50_Memory_Bright_D#2_3.wav",
+          "note": 39
+        },
+        {
+          "filename": "CS50_Memory_Bright_D#3_3.wav",
+          "note": 51
+        },
+        {
+          "filename": "CS50_Memory_Bright_D#4_3.wav",
+          "note": 63
+        },
+        {
+          "filename": "CS50_Memory_Bright_F#1_3.wav",
+          "note": 30
+        },
+        {
+          "filename": "CS50_Memory_Bright_F#2_3.wav",
+          "note": 42
+        },
+        {
+          "filename": "CS50_Memory_Bright_F#3_3.wav",
+          "note": 54
+        },
+        {
+          "filename": "CS50_Memory_Bright_F#4_3.wav",
+          "note": 66
+        }
+      ]
+    },
+    {
+      "id": "cz-elec-piano",
+      "title": "CZ Elec. Piano",
+      "sounds": [
+        {
+          "filename": "CZ_Elec._Piano-A1-127-UEO9.wav",
+          "note": 33
+        },
+        {
+          "filename": "CZ_Elec._Piano-A2-127-RD2K.wav",
+          "note": 45
+        },
+        {
+          "filename": "CZ_Elec._Piano-A3-127-FB5P.wav",
+          "note": 57
+        },
+        {
+          "filename": "CZ_Elec._Piano-A4-127-BVCO.wav",
+          "note": 69
+        },
+        {
+          "filename": "CZ_Elec._Piano-A5-127-HPFH.wav",
+          "note": 81
+        },
+        {
+          "filename": "CZ_Elec._Piano-C1-127-13QY.wav",
+          "note": 24
+        },
+        {
+          "filename": "CZ_Elec._Piano-C2-127-AK6N.wav",
+          "note": 36
+        },
+        {
+          "filename": "CZ_Elec._Piano-C3-127-5RUZ.wav",
+          "note": 48
+        },
+        {
+          "filename": "CZ_Elec._Piano-C4-127-FZX4.wav",
+          "note": 60
+        },
+        {
+          "filename": "CZ_Elec._Piano-C5-127-M9MO.wav",
+          "note": 72
+        },
+        {
+          "filename": "CZ_Elec._Piano-C6-127-9M3U.wav",
+          "note": 84
+        },
+        {
+          "filename": "CZ_Elec._Piano-D#1-127-NZXL.wav",
+          "note": 27
+        },
+        {
+          "filename": "CZ_Elec._Piano-D#2-127-O5K4.wav",
+          "note": 39
+        },
+        {
+          "filename": "CZ_Elec._Piano-D#3-127-T76K.wav",
+          "note": 51
+        },
+        {
+          "filename": "CZ_Elec._Piano-D#4-127-05HJ.wav",
+          "note": 63
+        },
+        {
+          "filename": "CZ_Elec._Piano-D#5-127-HIHN.wav",
+          "note": 75
+        },
+        {
+          "filename": "CZ_Elec._Piano-F#1-127-852N.wav",
+          "note": 30
+        },
+        {
+          "filename": "CZ_Elec._Piano-F#2-127-SJU5.wav",
+          "note": 42
+        },
+        {
+          "filename": "CZ_Elec._Piano-F#3-127-ZNF6.wav",
+          "note": 54
+        },
+        {
+          "filename": "CZ_Elec._Piano-F#4-127-BETO.wav",
+          "note": 66
+        },
+        {
+          "filename": "CZ_Elec._Piano-F#5-127-VIPL.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "cassette-pluck-big",
+      "title": "Cassette Pluck Big",
+      "sounds": [
+        {
+          "filename": "CassettePluckBig_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "CassettePluckBig_A5.wav",
+          "note": 81
+        },
+        {
+          "filename": "CassettePluckBig_B1.wav",
+          "note": 35
+        },
+        {
+          "filename": "CassettePluckBig_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "CassettePluckBig_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "CassettePluckBig_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "CassettePluckBig_C7.wav",
+          "note": 96
+        },
+        {
+          "filename": "CassettePluckBig_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "CassettePluckBig_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "CassettePluckBig_E2.wav",
+          "note": 40
+        },
+        {
+          "filename": "CassettePluckBig_E5.wav",
+          "note": 76
+        },
+        {
+          "filename": "CassettePluckBig_F1.wav",
+          "note": 29
+        },
+        {
+          "filename": "CassettePluckBig_F4.wav",
+          "note": 65
+        },
+        {
+          "filename": "CassettePluckBig_G3.wav",
+          "note": 55
+        },
+        {
+          "filename": "CassettePluckBig_G6.wav",
+          "note": 91
+        }
+      ]
+    },
+    {
+      "id": "cassette-pluck",
+      "title": "Cassette Pluck",
+      "sounds": [
+        {
+          "filename": "CassettePluck_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "CassettePluck_A5.wav",
+          "note": 81
+        },
+        {
+          "filename": "CassettePluck_B1.wav",
+          "note": 35
+        },
+        {
+          "filename": "CassettePluck_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "CassettePluck_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "CassettePluck_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "CassettePluck_C7.wav",
+          "note": 96
+        },
+        {
+          "filename": "CassettePluck_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "CassettePluck_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "CassettePluck_E2.wav",
+          "note": 40
+        },
+        {
+          "filename": "CassettePluck_E5.wav",
+          "note": 76
+        },
+        {
+          "filename": "CassettePluck_F1.wav",
+          "note": 29
+        },
+        {
+          "filename": "CassettePluck_F4.wav",
+          "note": 65
+        },
+        {
+          "filename": "CassettePluck_G3.wav",
+          "note": 55
+        },
+        {
+          "filename": "CassettePluck_G6.wav",
+          "note": 91
+        }
+      ]
+    },
+    {
+      "id": "champagne-marimba-short",
+      "title": "Champagne Marimba Short",
+      "sounds": [
+        {
+          "filename": "ChampagneMarimbaShort_A3.wav",
+          "note": 57
+        },
+        {
+          "filename": "ChampagneMarimbaShort_A6.wav",
+          "note": 93
+        },
+        {
+          "filename": "ChampagneMarimbaShort_B2.wav",
+          "note": 47
+        },
+        {
+          "filename": "ChampagneMarimbaShort_B5.wav",
+          "note": 83
+        },
+        {
+          "filename": "ChampagneMarimbaShort_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "ChampagneMarimbaShort_C5.wav",
+          "note": 72
+        },
+        {
+          "filename": "ChampagneMarimbaShort_D4.wav",
+          "note": 62
+        },
+        {
+          "filename": "ChampagneMarimbaShort_E3.wav",
+          "note": 52
+        },
+        {
+          "filename": "ChampagneMarimbaShort_E6.wav",
+          "note": 88
+        },
+        {
+          "filename": "ChampagneMarimbaShort_F2.wav",
+          "note": 41
+        },
+        {
+          "filename": "ChampagneMarimbaShort_F5.wav",
+          "note": 77
+        },
+        {
+          "filename": "ChampagneMarimbaShort_G4.wav",
+          "note": 67
+        }
+      ]
+    },
+    {
+      "id": "champagne-marimba",
+      "title": "Champagne Marimba",
+      "sounds": [
+        {
+          "filename": "ChampagneMarimba_A3.wav",
+          "note": 57
+        },
+        {
+          "filename": "ChampagneMarimba_A6.wav",
+          "note": 93
+        },
+        {
+          "filename": "ChampagneMarimba_B2.wav",
+          "note": 47
+        },
+        {
+          "filename": "ChampagneMarimba_B5.wav",
+          "note": 83
+        },
+        {
+          "filename": "ChampagneMarimba_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "ChampagneMarimba_C5.wav",
+          "note": 72
+        },
+        {
+          "filename": "ChampagneMarimba_D4.wav",
+          "note": 62
+        },
+        {
+          "filename": "ChampagneMarimba_E3.wav",
+          "note": 52
+        },
+        {
+          "filename": "ChampagneMarimba_E6.wav",
+          "note": 88
+        },
+        {
+          "filename": "ChampagneMarimba_F2.wav",
+          "note": 41
+        },
+        {
+          "filename": "ChampagneMarimba_F5.wav",
+          "note": 77
+        },
+        {
+          "filename": "ChampagneMarimba_G4.wav",
+          "note": 67
+        }
+      ]
+    },
+    {
+      "id": "cheap-koto",
+      "title": "Cheap Koto",
+      "sounds": [
+        {
+          "filename": "CheapKoto_A#2.wav",
+          "note": 46
+        },
+        {
+          "filename": "CheapKoto_A4.wav",
+          "note": 69
+        },
+        {
+          "filename": "CheapKoto_A5.wav",
+          "note": 81
+        },
+        {
+          "filename": "CheapKoto_B3.wav",
+          "note": 59
+        },
+        {
+          "filename": "CheapKoto_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "CheapKoto_C#4.wav",
+          "note": 61
+        },
+        {
+          "filename": "CheapKoto_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "CheapKoto_C6.wav",
+          "note": 84
+        },
+        {
+          "filename": "CheapKoto_D5.wav",
+          "note": 74
+        },
+        {
+          "filename": "CheapKoto_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "CheapKoto_E4.wav",
+          "note": 64
+        },
+        {
+          "filename": "CheapKoto_E5.wav",
+          "note": 76
+        },
+        {
+          "filename": "CheapKoto_F#4.wav",
+          "note": 66
+        },
+        {
+          "filename": "CheapKoto_F2.wav",
+          "note": 41
+        },
+        {
+          "filename": "CheapKoto_G#3.wav",
+          "note": 56
+        },
+        {
+          "filename": "CheapKoto_G5.wav",
+          "note": 79
+        }
+      ]
+    },
+    {
+      "id": "chroma",
+      "title": "Chroma",
+      "sounds": [
+        {
+          "filename": "Chroma_B5-A0-86-RP41.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-A1-86-Y0WA.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-A2-86-DH1Q.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-A3-86-VR0P.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-A4-86-QV46.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-A5-86-PFZ2.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-A6-86-FKZR.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-C0-86-ENT4.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-C1-86-APDP.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-C2-86-A4CN.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-C3-86-X02A.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-C4-86-6KZ0.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-C5-86-7RS3.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-C6-86-3GRB.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-C7-86-D34Q.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-D#0-86-02KE.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-D#1-86-7NVT.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-D#2-86-T3UU.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-D#3-86-7K4B.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-D#4-86-YXEO.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-D#5-86-04YA.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-D#6-86-EWF9.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-F#0-86-LY2W.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-F#1-86-KYQL.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-F#2-86-WZWK.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-F#3-86-96C3.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-F#4-86-EKU5.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-F#5-86-VF8T.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_B5-F#6-86-H781.wav",
+          "note": 83
+        },
+        {
+          "filename": "Chroma_C1-A0-86-PF49.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-A1-86-KRZL.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-A2-86-7BHW.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-A3-86-KB89.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-A4-86-QQN4.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-A5-86-CEY5.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-A6-86-M7XV.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-C0-86-9EVR.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-C1-86-CCSD.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-C2-86-JPLZ.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-C3-86-RWU4.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-C4-86-DMRT.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-C5-86-XWRA.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-C6-86-A3E6.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-C7-86-EU7S.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-D#0-86-IC7Y.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-D#1-86-U0FO.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-D#2-86-YA8V.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-D#3-86-VUHS.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-D#4-86-LQ84.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-D#5-86-X0J2.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-D#6-86-2FLQ.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-F#0-86-8QB3.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-F#1-86-XQJS.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-F#2-86-DIXF.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-F#3-86-BC9M.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-F#4-86-N22P.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-F#5-86-OBB3.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C1-F#6-86-2L96.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_C3-A0-86-SJQT.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-A1-86-862M.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-A2-86-1T8B.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-A3-86-EO9D.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-A4-86-PTA0.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-A5-86-50KN.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-A6-86-P1QZ.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-C0-86-NM6L.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-C1-86-P9SA.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-C2-86-A6QF.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-C3-86-VP7B.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-C4-86-6WD1.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-C5-86-UWM2.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-C6-86-BAKO.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-C7-86-1K36.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-D#0-86-VYTZ.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-D#1-86-JO4F.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-D#2-86-ZK0T.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-D#3-86-4S8P.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-D#4-86-TJVX.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-D#5-86-XC15.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-D#6-86-1R59.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-F#0-86-MH6W.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-F#1-86-KL49.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-F#2-86-HZ83.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-F#3-86-EVJZ.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-F#4-86-83F9.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-F#5-86-CKK4.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_C3-F#6-86-8HBZ.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_E4-A0-105-MXJB.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-A1-105-TPNW.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-A2-105-G1YL.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-A3-105-6551.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-A4-105-88DJ.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-A5-105-J21Q.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-A6-105-I4VD.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-C0-105-Q4KW.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-C1-105-ZE3R.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-C2-105-DBE9.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-C3-105-19K1.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-C4-105-IX79.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-C5-105-SNRX.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-C6-105-Y90J.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-C7-105-ELVD.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-D#0-105-KJWV.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-D#1-105-UZZP.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-D#2-105-2KSL.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-D#3-105-2TY8.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-D#4-105-SOFM.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-D#5-105-1PSF.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-D#6-105-QI0G.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-F#0-105-ZC82.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-F#1-105-WM4C.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-F#2-105-RMRZ.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-F#3-105-QCIW.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-F#4-105-J47J.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-F#5-105-WN5T.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E4-F#6-105-OR9W.wav",
+          "note": 64
+        },
+        {
+          "filename": "Chroma_E9-A0-127-XTKR.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-A1-127-4TRE.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-A2-127-YVAS.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-A3-127-H52U.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-A4-127-DKBL.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-A5-127-8K8I.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-C0-127-G39H.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-C1-127-C5C1.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-C2-127-TCB2.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-C3-127-TFIA.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-C4-127-W70L.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-C5-127-9KFR.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-C6-127-A57Y.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-D#0-127-ET87.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-D#1-127-UESJ.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-D#2-127-9F0W.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-D#3-127-EVF5.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-D#4-127-GJLX.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-D#5-127-BPL3.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-F#0-127-7NQG.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-F#1-127-PFZU.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-F#2-127-DW1I.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-F#3-127-FIQ9.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-F#4-127-F8CU.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_E9-F#5-127-G8PT.wav",
+          "note": 124
+        },
+        {
+          "filename": "Chroma_F2-A0-104-H0IV.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-A1-104-S00M.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-A2-104-852C.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-A3-104-Q33F.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-A4-104-DY67.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-A5-104-ZKNJ.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-A6-104-E43N.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-C0-104-YZSX.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-C1-104-E8QD.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-C2-104-FA9K.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-C3-104-YABF.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-C4-104-EN9G.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-C5-104-RU8O.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-C6-104-GO1B.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-C7-104-IM3R.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-D#0-104-XD43.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-D#1-104-WTFL.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-D#2-104-L6KH.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-D#3-104-QHMP.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-D#4-104-58OT.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-D#5-104-29AE.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-D#6-104-82JN.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-F#0-104-ATBU.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-F#1-104-W5JF.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-F#2-104-XZBP.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-F#3-104-PB5L.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-F#4-104-VJNR.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-F#5-104-48L6.wav",
+          "note": 41
+        },
+        {
+          "filename": "Chroma_F2-F#6-104-DF9Q.wav",
+          "note": 41
+        }
+      ]
+    },
+    {
+      "id": "chroma-j5",
+      "title": "Chroma J5",
+      "sounds": [
+        {
+          "filename": "Chroma_J5-A0-127-FMVU.wav",
+          "note": 9
+        },
+        {
+          "filename": "Chroma_J5-A1-127-5O1V.wav",
+          "note": 33
+        },
+        {
+          "filename": "Chroma_J5-A2-127-JRFV.wav",
+          "note": 45
+        },
+        {
+          "filename": "Chroma_J5-A3-127-61GV.wav",
+          "note": 57
+        },
+        {
+          "filename": "Chroma_J5-A4-127-72EK.wav",
+          "note": 69
+        },
+        {
+          "filename": "Chroma_J5-A5-127-2CUV.wav",
+          "note": 81
+        },
+        {
+          "filename": "Chroma_J5-C0-127-WS0I.wav",
+          "note": 0
+        },
+        {
+          "filename": "Chroma_J5-C1-127-FOG5.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_J5-C2-127-DPK8.wav",
+          "note": 36
+        },
+        {
+          "filename": "Chroma_J5-C3-127-MJ0R.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_J5-C4-127-3NKS.wav",
+          "note": 60
+        },
+        {
+          "filename": "Chroma_J5-C5-127-TZUY.wav",
+          "note": 72
+        },
+        {
+          "filename": "Chroma_J5-C6-127-52LC.wav",
+          "note": 84
+        },
+        {
+          "filename": "Chroma_J5-D#0-127-Y44Y.wav",
+          "note": 3
+        },
+        {
+          "filename": "Chroma_J5-D#1-127-3GV3.wav",
+          "note": 27
+        },
+        {
+          "filename": "Chroma_J5-D#2-127-H7EP.wav",
+          "note": 39
+        },
+        {
+          "filename": "Chroma_J5-D#3-127-UD9U.wav",
+          "note": 51
+        },
+        {
+          "filename": "Chroma_J5-D#4-127-KKLB.wav",
+          "note": 63
+        },
+        {
+          "filename": "Chroma_J5-D#5-127-AZWI.wav",
+          "note": 75
+        },
+        {
+          "filename": "Chroma_J5-F#0-127-DY8X.wav",
+          "note": 6
+        },
+        {
+          "filename": "Chroma_J5-F#1-127-JH9Y.wav",
+          "note": 30
+        },
+        {
+          "filename": "Chroma_J5-F#2-127-CDSB.wav",
+          "note": 42
+        },
+        {
+          "filename": "Chroma_J5-F#3-127-STUR.wav",
+          "note": 54
+        },
+        {
+          "filename": "Chroma_J5-F#4-127-HXHQ.wav",
+          "note": 66
+        },
+        {
+          "filename": "Chroma_J5-F#5-127-I1G2.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "chroma-k7",
+      "title": "Chroma K7",
+      "sounds": [
+        {
+          "filename": "Chroma_K7-A0-80-L65H.wav",
+          "note": 9
+        },
+        {
+          "filename": "Chroma_K7-A1-80-51BC.wav",
+          "note": 33
+        },
+        {
+          "filename": "Chroma_K7-A2-80-1PLS.wav",
+          "note": 45
+        },
+        {
+          "filename": "Chroma_K7-A3-80-W1MQ.wav",
+          "note": 57
+        },
+        {
+          "filename": "Chroma_K7-A4-80-MQAD.wav",
+          "note": 69
+        },
+        {
+          "filename": "Chroma_K7-A5-80-OGOV.wav",
+          "note": 81
+        },
+        {
+          "filename": "Chroma_K7-A6-80-4R4B.wav",
+          "note": 93
+        },
+        {
+          "filename": "Chroma_K7-C0-80-7SMO.wav",
+          "note": 0
+        },
+        {
+          "filename": "Chroma_K7-C1-80-TZB5.wav",
+          "note": 24
+        },
+        {
+          "filename": "Chroma_K7-C2-80-BMOX.wav",
+          "note": 36
+        },
+        {
+          "filename": "Chroma_K7-C3-80-TJ7D.wav",
+          "note": 48
+        },
+        {
+          "filename": "Chroma_K7-C4-80-24YF.wav",
+          "note": 60
+        },
+        {
+          "filename": "Chroma_K7-C5-80-S21V.wav",
+          "note": 72
+        },
+        {
+          "filename": "Chroma_K7-C6-80-66R5.wav",
+          "note": 84
+        },
+        {
+          "filename": "Chroma_K7-C7-80-8WHE.wav",
+          "note": 96
+        },
+        {
+          "filename": "Chroma_K7-D#0-80-3IMD.wav",
+          "note": 3
+        },
+        {
+          "filename": "Chroma_K7-D#1-80-AVYR.wav",
+          "note": 27
+        },
+        {
+          "filename": "Chroma_K7-D#2-80-X1SN.wav",
+          "note": 39
+        },
+        {
+          "filename": "Chroma_K7-D#3-80-0OEZ.wav",
+          "note": 51
+        },
+        {
+          "filename": "Chroma_K7-D#4-80-IMWF.wav",
+          "note": 63
+        },
+        {
+          "filename": "Chroma_K7-D#5-80-TJ8V.wav",
+          "note": 75
+        },
+        {
+          "filename": "Chroma_K7-D#6-80-7I6V.wav",
+          "note": 87
+        },
+        {
+          "filename": "Chroma_K7-F#0-80-V27H.wav",
+          "note": 6
+        },
+        {
+          "filename": "Chroma_K7-F#1-80-4Z2O.wav",
+          "note": 30
+        },
+        {
+          "filename": "Chroma_K7-F#2-80-Y5C8.wav",
+          "note": 42
+        },
+        {
+          "filename": "Chroma_K7-F#3-80-PM4N.wav",
+          "note": 54
+        },
+        {
+          "filename": "Chroma_K7-F#4-80-WDIU.wav",
+          "note": 66
+        },
+        {
+          "filename": "Chroma_K7-F#5-80-VKA0.wav",
+          "note": 78
+        },
+        {
+          "filename": "Chroma_K7-F#6-80-76HC.wav",
+          "note": 90
+        }
+      ]
+    },
+    {
+      "id": "chromatom",
+      "title": "Chromatom",
+      "sounds": [
+        {
+          "filename": "Chromatom_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "Chromatom_A4.wav",
+          "note": 69
+        },
+        {
+          "filename": "Chromatom_B1.wav",
+          "note": 35
+        },
+        {
+          "filename": "Chromatom_C#1.wav",
+          "note": 25
+        },
+        {
+          "filename": "Chromatom_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "Chromatom_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "Chromatom_E2.wav",
+          "note": 40
+        },
+        {
+          "filename": "Chromatom_F4.wav",
+          "note": 65
+        },
+        {
+          "filename": "Chromatom_G#1.wav",
+          "note": 32
+        },
+        {
+          "filename": "Chromatom_G3.wav",
+          "note": 55
+        }
+      ]
+    },
+    {
+      "id": "crowbar-bass",
+      "title": "Crowbar Bass",
+      "sounds": [
+        {
+          "filename": "Crowbar_Bass-B5-V127-STOS.wav",
+          "note": 83
+        },
+        {
+          "filename": "Crowbar_Bass-C1-V127-8QWY.wav",
+          "note": 24
+        },
+        {
+          "filename": "Crowbar_Bass-C2-V127-3IYP.wav",
+          "note": 36
+        },
+        {
+          "filename": "Crowbar_Bass-C3-V127-M7EN.wav",
+          "note": 48
+        },
+        {
+          "filename": "Crowbar_Bass-C4-V127-7G5D.wav",
+          "note": 60
+        },
+        {
+          "filename": "Crowbar_Bass-C5-V127-VJOC.wav",
+          "note": 72
+        },
+        {
+          "filename": "Crowbar_Bass-F#1-V127-LN8F.wav",
+          "note": 30
+        },
+        {
+          "filename": "Crowbar_Bass-F#2-V127-WAU8.wav",
+          "note": 42
+        },
+        {
+          "filename": "Crowbar_Bass-F#3-V127-8BDA.wav",
+          "note": 54
+        },
+        {
+          "filename": "Crowbar_Bass-F#4-V127-LOS3.wav",
+          "note": 66
+        },
+        {
+          "filename": "Crowbar_Bass-F#5-V127-1FR9.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "dx-heaven",
+      "title": "DX Heaven",
+      "sounds": [
+        {
+          "filename": "DXHeaven_A#2.wav",
+          "note": 46
+        },
+        {
+          "filename": "DXHeaven_A5.wav",
+          "note": 81
+        },
+        {
+          "filename": "DXHeaven_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "DXHeaven_C#4.wav",
+          "note": 61
+        },
+        {
+          "filename": "DXHeaven_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "DXHeaven_D#3.wav",
+          "note": 51
+        },
+        {
+          "filename": "DXHeaven_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "DXHeaven_E5.wav",
+          "note": 76
+        },
+        {
+          "filename": "DXHeaven_F#4.wav",
+          "note": 66
+        },
+        {
+          "filename": "DXHeaven_F2.wav",
+          "note": 41
+        },
+        {
+          "filename": "DXHeaven_G#3.wav",
+          "note": 56
+        },
+        {
+          "filename": "DXHeaven_G6.wav",
+          "note": 91
+        }
+      ]
+    },
+    {
+      "id": "dusty-flute-stereo",
+      "title": "Dusty Flute Stereo",
+      "sounds": [
+        {
+          "filename": "DustyFluteStereo_Ab3.wav",
+          "note": 56
+        },
+        {
+          "filename": "DustyFluteStereo_B2.wav",
+          "note": 47
+        },
+        {
+          "filename": "DustyFluteStereo_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "DustyFluteStereo_C#4.wav",
+          "note": 61
+        },
+        {
+          "filename": "DustyFluteStereo_Eb3.wav",
+          "note": 51
+        },
+        {
+          "filename": "DustyFluteStereo_Eb5.wav",
+          "note": 75
+        },
+        {
+          "filename": "DustyFluteStereo_F#2.wav",
+          "note": 42
+        },
+        {
+          "filename": "DustyFluteStereo_F#4.wav",
+          "note": 66
+        },
+        {
+          "filename": "DustyFluteStereo_F3.wav",
+          "note": 53
+        }
+      ]
+    },
+    {
+      "id": "dusty-flute",
+      "title": "Dusty Flute",
+      "sounds": [
+        {
+          "filename": "DustyFlute_B2.wav",
+          "note": 47
+        },
+        {
+          "filename": "DustyFlute_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "DustyFlute_C#4.wav",
+          "note": 61
+        },
+        {
+          "filename": "DustyFlute_D#3.wav",
+          "note": 51
+        },
+        {
+          "filename": "DustyFlute_D#5.wav",
+          "note": 75
+        },
+        {
+          "filename": "DustyFlute_F#2.wav",
+          "note": 42
+        },
+        {
+          "filename": "DustyFlute_F3.wav",
+          "note": 53
+        },
+        {
+          "filename": "DustyFlute_G#3.wav",
+          "note": 56
+        }
+      ]
+    },
+    {
+      "id": "esq-fairy-fountain",
+      "title": "ESQ Fairy Fountain",
+      "sounds": [
+        {
+          "filename": "ESQ_Fairy_Fountain-A1-127-2SDK.wav",
+          "note": 33
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-A2-127-XK9C.wav",
+          "note": 45
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-A3-127-94I4.wav",
+          "note": 57
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-A4-127-4Z1P.wav",
+          "note": 69
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-A5-127-2I9N.wav",
+          "note": 81
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-A6-127-QRP6.wav",
+          "note": 93
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-C1-127-9IOL.wav",
+          "note": 24
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-C2-127-K6ZU.wav",
+          "note": 36
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-C3-127-DAIV.wav",
+          "note": 48
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-C4-127-TLKC.wav",
+          "note": 60
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-C5-127-B9GX.wav",
+          "note": 72
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-C6-127-KWOF.wav",
+          "note": 84
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-C7-127-8L57.wav",
+          "note": 96
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-D#1-127-MPB6.wav",
+          "note": 27
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-D#2-127-7CHY.wav",
+          "note": 39
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-D#3-127-EI8V.wav",
+          "note": 51
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-D#4-127-F3FK.wav",
+          "note": 63
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-D#5-127-VQAG.wav",
+          "note": 75
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-D#6-127-RFOU.wav",
+          "note": 87
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-F#1-127-4FBY.wav",
+          "note": 30
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-F#2-127-N0MO.wav",
+          "note": 42
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-F#3-127-KGPR.wav",
+          "note": 54
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-F#4-127-288C.wav",
+          "note": 66
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-F#5-127-B0XE.wav",
+          "note": 78
+        },
+        {
+          "filename": "ESQ_Fairy_Fountain-F#6-127-MVP3.wav",
+          "note": 90
+        }
+      ]
+    },
+    {
+      "id": "esq-fake-solina",
+      "title": "ESQ Fake Solina",
+      "sounds": [
+        {
+          "filename": "ESQ_Fake_Solina-A0-127-KYRA.wav",
+          "note": 9
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A0-42-DY84.wav",
+          "note": 9
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A0-85-5XA3.wav",
+          "note": 9
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A1-127-6YHO.wav",
+          "note": 33
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A1-42-675N.wav",
+          "note": 33
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A1-85-HV8G.wav",
+          "note": 33
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A2-127-GQCM.wav",
+          "note": 45
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A2-42-LRKE.wav",
+          "note": 45
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A2-85-IEXE.wav",
+          "note": 45
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A3-127-4UTA.wav",
+          "note": 57
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A3-42-SPST.wav",
+          "note": 57
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A3-85-M7DN.wav",
+          "note": 57
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A4-127-4X7Y.wav",
+          "note": 69
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A4-42-C4UE.wav",
+          "note": 69
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A4-85-AE6N.wav",
+          "note": 69
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A5-127-6OQR.wav",
+          "note": 81
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A5-42-IYF4.wav",
+          "note": 81
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A5-85-407S.wav",
+          "note": 81
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A6-127-P8Z7.wav",
+          "note": 93
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A6-42-U233.wav",
+          "note": 93
+        },
+        {
+          "filename": "ESQ_Fake_Solina-A6-85-RZDB.wav",
+          "note": 93
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C#7-127-LR61.wav",
+          "note": 97
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C#7-42-MGXR.wav",
+          "note": 97
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C#7-85-UNJW.wav",
+          "note": 97
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C0-127-9X7S.wav",
+          "note": 0
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C0-42-B7SK.wav",
+          "note": 0
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C0-85-JOOL.wav",
+          "note": 0
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C1-127-73GQ.wav",
+          "note": 24
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C1-42-P26T.wav",
+          "note": 24
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C1-85-A0HO.wav",
+          "note": 24
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C2-127-8HA1.wav",
+          "note": 36
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C2-42-ESL4.wav",
+          "note": 36
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C2-85-71S5.wav",
+          "note": 36
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C3-127-TQND.wav",
+          "note": 48
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C3-42-X7XT.wav",
+          "note": 48
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C3-85-FSB5.wav",
+          "note": 48
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C4-127-O64L.wav",
+          "note": 60
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C4-42-6N77.wav",
+          "note": 60
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C4-85-YIX0.wav",
+          "note": 60
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C5-127-MLXE.wav",
+          "note": 72
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C5-42-6S24.wav",
+          "note": 72
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C5-85-M0VU.wav",
+          "note": 72
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C6-127-NRIW.wav",
+          "note": 84
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C6-42-UBKS.wav",
+          "note": 84
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C6-85-VB5Y.wav",
+          "note": 84
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C7-127-1NHQ.wav",
+          "note": 96
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C7-42-849M.wav",
+          "note": 96
+        },
+        {
+          "filename": "ESQ_Fake_Solina-C7-85-3246.wav",
+          "note": 96
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#0-127-IMMJ.wav",
+          "note": 3
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#0-42-8NYX.wav",
+          "note": 3
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#0-85-6DO6.wav",
+          "note": 3
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#1-127-RU1G.wav",
+          "note": 27
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#1-42-ABMS.wav",
+          "note": 27
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#1-85-6RCC.wav",
+          "note": 27
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#2-127-GPW6.wav",
+          "note": 39
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#2-42-6RIF.wav",
+          "note": 39
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#2-85-MKY1.wav",
+          "note": 39
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#3-127-E4P6.wav",
+          "note": 51
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#3-42-JPLP.wav",
+          "note": 51
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#3-85-Q6ZO.wav",
+          "note": 51
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#4-127-KQST.wav",
+          "note": 63
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#4-42-8ZYH.wav",
+          "note": 63
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#4-85-0590.wav",
+          "note": 63
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#5-127-TMJE.wav",
+          "note": 75
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#5-42-H1PK.wav",
+          "note": 75
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#5-85-3I0R.wav",
+          "note": 75
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#6-127-TQHZ.wav",
+          "note": 87
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#6-42-N71N.wav",
+          "note": 87
+        },
+        {
+          "filename": "ESQ_Fake_Solina-D#6-85-792Y.wav",
+          "note": 87
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#0-127-LYPE.wav",
+          "note": 6
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#0-42-AGEI.wav",
+          "note": 6
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#0-85-JHQG.wav",
+          "note": 6
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#1-127-Q9L2.wav",
+          "note": 30
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#1-42-F7NY.wav",
+          "note": 30
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#1-85-7484.wav",
+          "note": 30
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#2-127-WP4D.wav",
+          "note": 42
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#2-42-GQHA.wav",
+          "note": 42
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#2-85-97ZV.wav",
+          "note": 42
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#3-127-YOY8.wav",
+          "note": 54
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#3-42-KPVQ.wav",
+          "note": 54
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#3-85-1FEX.wav",
+          "note": 54
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#4-127-IG64.wav",
+          "note": 66
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#4-42-0IGL.wav",
+          "note": 66
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#4-85-19F1.wav",
+          "note": 66
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#5-127-D45Q.wav",
+          "note": 78
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#5-42-R29N.wav",
+          "note": 78
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#5-85-YM2A.wav",
+          "note": 78
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#6-127-JCNW.wav",
+          "note": 90
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#6-42-Q2M4.wav",
+          "note": 90
+        },
+        {
+          "filename": "ESQ_Fake_Solina-F#6-85-NCRP.wav",
+          "note": 90
+        }
+      ]
+    },
+    {
+      "id": "esq-moog-or-die",
+      "title": "ESQ Moog or Die",
+      "sounds": [
+        {
+          "filename": "ESQ_Moog_or_Die-A1-127-RALT.wav",
+          "note": 33
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-A2-127-UAFY.wav",
+          "note": 45
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-A3-127-FI9M.wav",
+          "note": 57
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-A4-127-GVCU.wav",
+          "note": 69
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-A5-127-DXPB.wav",
+          "note": 81
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-A6-127-B1EL.wav",
+          "note": 93
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-C1-127-DEZV.wav",
+          "note": 24
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-C2-127-O8H3.wav",
+          "note": 36
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-C3-127-TGG5.wav",
+          "note": 48
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-C4-127-JHI3.wav",
+          "note": 60
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-C5-127-42NF.wav",
+          "note": 72
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-C6-127-5231.wav",
+          "note": 84
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-C7-127-Z6US.wav",
+          "note": 96
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-D#1-127-V1CB.wav",
+          "note": 27
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-D#2-127-BLH2.wav",
+          "note": 39
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-D#3-127-X74V.wav",
+          "note": 51
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-D#4-127-KRVR.wav",
+          "note": 63
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-D#5-127-21KR.wav",
+          "note": 75
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-D#6-127-VO6C.wav",
+          "note": 87
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-F#1-127-PC92.wav",
+          "note": 30
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-F#2-127-R0AI.wav",
+          "note": 42
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-F#3-127-3ERS.wav",
+          "note": 54
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-F#4-127-4UCG.wav",
+          "note": 66
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-F#5-127-ZQDG.wav",
+          "note": 78
+        },
+        {
+          "filename": "ESQ_Moog_or_Die-F#6-127-9RB3.wav",
+          "note": 90
+        }
+      ]
+    },
+    {
+      "id": "esq-noise-strings",
+      "title": "ESQ Noise Strings",
+      "sounds": [
+        {
+          "filename": "ESQ_Noise_Strings-A1-77-MM44.wav",
+          "note": 33
+        },
+        {
+          "filename": "ESQ_Noise_Strings-A2-77-NNS3.wav",
+          "note": 45
+        },
+        {
+          "filename": "ESQ_Noise_Strings-A3-77-C0PT.wav",
+          "note": 57
+        },
+        {
+          "filename": "ESQ_Noise_Strings-A4-77-SDDV.wav",
+          "note": 69
+        },
+        {
+          "filename": "ESQ_Noise_Strings-A5-77-LG1H.wav",
+          "note": 81
+        },
+        {
+          "filename": "ESQ_Noise_Strings-A6-77-BKVM.wav",
+          "note": 93
+        },
+        {
+          "filename": "ESQ_Noise_Strings-C1-77-MFIL.wav",
+          "note": 24
+        },
+        {
+          "filename": "ESQ_Noise_Strings-C2-77-DY6S.wav",
+          "note": 36
+        },
+        {
+          "filename": "ESQ_Noise_Strings-C3-77-M01D.wav",
+          "note": 48
+        },
+        {
+          "filename": "ESQ_Noise_Strings-C4-77-8KAG.wav",
+          "note": 60
+        },
+        {
+          "filename": "ESQ_Noise_Strings-C5-77-FWC2.wav",
+          "note": 72
+        },
+        {
+          "filename": "ESQ_Noise_Strings-C6-77-BVTZ.wav",
+          "note": 84
+        },
+        {
+          "filename": "ESQ_Noise_Strings-C7-77-HU4G.wav",
+          "note": 96
+        },
+        {
+          "filename": "ESQ_Noise_Strings-D#1-77-S9NZ.wav",
+          "note": 27
+        },
+        {
+          "filename": "ESQ_Noise_Strings-D#2-77-DFFY.wav",
+          "note": 39
+        },
+        {
+          "filename": "ESQ_Noise_Strings-D#3-77-R8MX.wav",
+          "note": 51
+        },
+        {
+          "filename": "ESQ_Noise_Strings-D#4-77-5BXG.wav",
+          "note": 63
+        },
+        {
+          "filename": "ESQ_Noise_Strings-D#5-77-8N5T.wav",
+          "note": 75
+        },
+        {
+          "filename": "ESQ_Noise_Strings-D#6-77-B50I.wav",
+          "note": 87
+        },
+        {
+          "filename": "ESQ_Noise_Strings-F#1-77-6E51.wav",
+          "note": 30
+        },
+        {
+          "filename": "ESQ_Noise_Strings-F#2-77-F1PU.wav",
+          "note": 42
+        },
+        {
+          "filename": "ESQ_Noise_Strings-F#3-77-TCTC.wav",
+          "note": 54
+        },
+        {
+          "filename": "ESQ_Noise_Strings-F#4-77-K6W5.wav",
+          "note": 66
+        },
+        {
+          "filename": "ESQ_Noise_Strings-F#5-77-RO99.wav",
+          "note": 78
+        },
+        {
+          "filename": "ESQ_Noise_Strings-F#6-77-C96V.wav",
+          "note": 90
+        }
+      ]
+    },
+    {
+      "id": "glitchtar",
+      "title": "Glitchtar",
+      "sounds": [
+        {
+          "filename": "Glitchtar_A#4.wav",
+          "note": 70
+        },
+        {
+          "filename": "Glitchtar_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "Glitchtar_B1.wav",
+          "note": 35
+        },
+        {
+          "filename": "Glitchtar_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "Glitchtar_C6.wav",
+          "note": 84
+        },
+        {
+          "filename": "Glitchtar_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "Glitchtar_D5.wav",
+          "note": 74
+        },
+        {
+          "filename": "Glitchtar_E2.wav",
+          "note": 40
+        },
+        {
+          "filename": "Glitchtar_F4.wav",
+          "note": 65
+        },
+        {
+          "filename": "Glitchtar_F6.wav",
+          "note": 89
+        },
+        {
+          "filename": "Glitchtar_G3.wav",
+          "note": 55
+        },
+        {
+          "filename": "Glitchtar_G5.wav",
+          "note": 79
+        }
+      ]
+    },
+    {
+      "id": "low-battery",
+      "title": "Low Battery",
+      "sounds": [
+        {
+          "filename": "Low_Battery_A#1.wav",
+          "note": 34
+        },
+        {
+          "filename": "Low_Battery_A#6.wav",
+          "note": 94
+        },
+        {
+          "filename": "Low_Battery_A4.wav",
+          "note": 69
+        },
+        {
+          "filename": "Low_Battery_B3.wav",
+          "note": 59
+        },
+        {
+          "filename": "Low_Battery_C#3.wav",
+          "note": 49
+        },
+        {
+          "filename": "Low_Battery_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "Low_Battery_C6.wav",
+          "note": 84
+        },
+        {
+          "filename": "Low_Battery_D#2.wav",
+          "note": 39
+        },
+        {
+          "filename": "Low_Battery_D#7.wav",
+          "note": 99
+        },
+        {
+          "filename": "Low_Battery_D5.wav",
+          "note": 74
+        },
+        {
+          "filename": "Low_Battery_E4.wav",
+          "note": 64
+        },
+        {
+          "filename": "Low_Battery_F#3.wav",
+          "note": 54
+        },
+        {
+          "filename": "Low_Battery_F1.wav",
+          "note": 29
+        },
+        {
+          "filename": "Low_Battery_F6.wav",
+          "note": 89
+        },
+        {
+          "filename": "Low_Battery_G#2.wav",
+          "note": 44
+        },
+        {
+          "filename": "Low_Battery_G#7.wav",
+          "note": 104
+        },
+        {
+          "filename": "Low_Battery_G5.wav",
+          "note": 79
+        }
+      ]
+    },
+    {
+      "id": "m1-bassically",
+      "title": "M1 Bassically",
+      "sounds": [
+        {
+          "filename": "M1_Bassically-A-1-80-P0FV.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Bassically-A0-80-Z4DF.wav",
+          "note": 9
+        },
+        {
+          "filename": "M1_Bassically-A1-80-29M3.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Bassically-A2-80-Y7O8.wav",
+          "note": 45
+        },
+        {
+          "filename": "M1_Bassically-A3-80-GQDW.wav",
+          "note": 57
+        },
+        {
+          "filename": "M1_Bassically-A4-80-L79W.wav",
+          "note": 69
+        },
+        {
+          "filename": "M1_Bassically-A5-80-0NBN.wav",
+          "note": 81
+        },
+        {
+          "filename": "M1_Bassically-C-1-80-H258.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Bassically-C0-80-BO78.wav",
+          "note": 0
+        },
+        {
+          "filename": "M1_Bassically-C1-80-BD0Y.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Bassically-C2-80-9MG1.wav",
+          "note": 36
+        },
+        {
+          "filename": "M1_Bassically-C3-80-5WXG.wav",
+          "note": 48
+        },
+        {
+          "filename": "M1_Bassically-C4-80-P7A7.wav",
+          "note": 60
+        },
+        {
+          "filename": "M1_Bassically-C5-80-S9ZE.wav",
+          "note": 72
+        },
+        {
+          "filename": "M1_Bassically-C6-80-4SJ4.wav",
+          "note": 84
+        },
+        {
+          "filename": "M1_Bassically-D#-1-80-VLL3.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Bassically-D#0-80-7SPZ.wav",
+          "note": 3
+        },
+        {
+          "filename": "M1_Bassically-D#1-80-80KT.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Bassically-D#2-80-ECR2.wav",
+          "note": 39
+        },
+        {
+          "filename": "M1_Bassically-D#3-80-XLH8.wav",
+          "note": 51
+        },
+        {
+          "filename": "M1_Bassically-D#4-80-UUA3.wav",
+          "note": 63
+        },
+        {
+          "filename": "M1_Bassically-D#5-80-77JH.wav",
+          "note": 75
+        },
+        {
+          "filename": "M1_Bassically-F#-1-80-0H2H.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Bassically-F#0-80-96RS.wav",
+          "note": 6
+        },
+        {
+          "filename": "M1_Bassically-F#1-80-XTYW.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Bassically-F#2-80-6FPQ.wav",
+          "note": 42
+        },
+        {
+          "filename": "M1_Bassically-F#3-80-D9NE.wav",
+          "note": 54
+        },
+        {
+          "filename": "M1_Bassically-F#4-80-LY7T.wav",
+          "note": 66
+        },
+        {
+          "filename": "M1_Bassically-F#5-80-RNJ1.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "m1-dark-clouds",
+      "title": "M1 Dark Clouds",
+      "sounds": [
+        {
+          "filename": "M1_Dark_Clouds-A-1-80-1TVU.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Dark_Clouds-A0-80-VYI6.wav",
+          "note": 9
+        },
+        {
+          "filename": "M1_Dark_Clouds-A1-80-GA0N.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Dark_Clouds-A2-80-BRDB.wav",
+          "note": 45
+        },
+        {
+          "filename": "M1_Dark_Clouds-A3-80-M7OE.wav",
+          "note": 57
+        },
+        {
+          "filename": "M1_Dark_Clouds-A4-80-V62N.wav",
+          "note": 69
+        },
+        {
+          "filename": "M1_Dark_Clouds-A5-80-88SQ.wav",
+          "note": 81
+        },
+        {
+          "filename": "M1_Dark_Clouds-C-1-80-2RQ7.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Dark_Clouds-C0-80-I0X8.wav",
+          "note": 0
+        },
+        {
+          "filename": "M1_Dark_Clouds-C1-80-SISN.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Dark_Clouds-C2-80-HS77.wav",
+          "note": 36
+        },
+        {
+          "filename": "M1_Dark_Clouds-C3-80-67OS.wav",
+          "note": 48
+        },
+        {
+          "filename": "M1_Dark_Clouds-C4-80-01CU.wav",
+          "note": 60
+        },
+        {
+          "filename": "M1_Dark_Clouds-C5-80-4IN5.wav",
+          "note": 72
+        },
+        {
+          "filename": "M1_Dark_Clouds-C6-80-QCNH.wav",
+          "note": 84
+        },
+        {
+          "filename": "M1_Dark_Clouds-D#-1-80-2O5V.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Dark_Clouds-D#0-80-JW8F.wav",
+          "note": 3
+        },
+        {
+          "filename": "M1_Dark_Clouds-D#1-80-1P7B.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Dark_Clouds-D#2-80-DONO.wav",
+          "note": 39
+        },
+        {
+          "filename": "M1_Dark_Clouds-D#3-80-3O79.wav",
+          "note": 51
+        },
+        {
+          "filename": "M1_Dark_Clouds-D#4-80-JT06.wav",
+          "note": 63
+        },
+        {
+          "filename": "M1_Dark_Clouds-D#5-80-SZ41.wav",
+          "note": 75
+        },
+        {
+          "filename": "M1_Dark_Clouds-F#-1-80-N4E8.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Dark_Clouds-F#0-80-03VR.wav",
+          "note": 6
+        },
+        {
+          "filename": "M1_Dark_Clouds-F#1-80-0J3I.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Dark_Clouds-F#2-80-CIVT.wav",
+          "note": 42
+        },
+        {
+          "filename": "M1_Dark_Clouds-F#3-80-252Q.wav",
+          "note": 54
+        },
+        {
+          "filename": "M1_Dark_Clouds-F#4-80-Z2VI.wav",
+          "note": 66
+        },
+        {
+          "filename": "M1_Dark_Clouds-F#5-80-POU8.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "m1-fantasy-guitar",
+      "title": "M1 Fantasy Guitar",
+      "sounds": [
+        {
+          "filename": "M1_Fantasy_Guitar-A-1-77-6G5M.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-A0-77-MYVO.wav",
+          "note": 9
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-A1-77-GUSQ.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-A2-77-RZ8T.wav",
+          "note": 45
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-A3-77-1Q6N.wav",
+          "note": 57
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-A4-77-HQS4.wav",
+          "note": 69
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-A5-77-WXU8.wav",
+          "note": 81
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-C-1-77-JPQA.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-C0-77-WOIN.wav",
+          "note": 0
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-C1-77-VKN5.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-C2-77-ZX3G.wav",
+          "note": 36
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-C3-77-T4AP.wav",
+          "note": 48
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-C4-77-QTPD.wav",
+          "note": 60
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-C5-77-2LBH.wav",
+          "note": 72
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-D#-1-77-DKAI.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-D#0-77-LKWK.wav",
+          "note": 3
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-D#1-77-WU8J.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-D#2-77-28WP.wav",
+          "note": 39
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-D#3-77-80QK.wav",
+          "note": 51
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-D#4-77-I6DD.wav",
+          "note": 63
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-D#5-77-7DB8.wav",
+          "note": 75
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-F#-1-77-HA8F.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-F#0-77-KF4B.wav",
+          "note": 6
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-F#1-77-7SNZ.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-F#2-77-GJSQ.wav",
+          "note": 42
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-F#3-77-VG1N.wav",
+          "note": 54
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-F#4-77-0XDA.wav",
+          "note": 66
+        },
+        {
+          "filename": "M1_Fantasy_Guitar-F#5-77-BDFD.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "m1-sad-brass",
+      "title": "M1 Sad Brass",
+      "sounds": [
+        {
+          "filename": "M1_Sad_Brass-A-1-80-CMVH.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Sad_Brass-A0-80-3NV9.wav",
+          "note": 9
+        },
+        {
+          "filename": "M1_Sad_Brass-A1-80-3RGD.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Sad_Brass-A2-80-X37C.wav",
+          "note": 45
+        },
+        {
+          "filename": "M1_Sad_Brass-A3-80-H1JK.wav",
+          "note": 57
+        },
+        {
+          "filename": "M1_Sad_Brass-A4-80-TTO9.wav",
+          "note": 69
+        },
+        {
+          "filename": "M1_Sad_Brass-A5-80-K849.wav",
+          "note": 81
+        },
+        {
+          "filename": "M1_Sad_Brass-C-1-80-23PY.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Sad_Brass-C0-80-UUWO.wav",
+          "note": 0
+        },
+        {
+          "filename": "M1_Sad_Brass-C1-80-0CLU.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Sad_Brass-C2-80-RILT.wav",
+          "note": 36
+        },
+        {
+          "filename": "M1_Sad_Brass-C3-80-JABE.wav",
+          "note": 48
+        },
+        {
+          "filename": "M1_Sad_Brass-C4-80-4TB0.wav",
+          "note": 60
+        },
+        {
+          "filename": "M1_Sad_Brass-C5-80-J3SX.wav",
+          "note": 72
+        },
+        {
+          "filename": "M1_Sad_Brass-C6-80-P1P1.wav",
+          "note": 84
+        },
+        {
+          "filename": "M1_Sad_Brass-D#-1-80-T26P.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Sad_Brass-D#0-80-M8VD.wav",
+          "note": 3
+        },
+        {
+          "filename": "M1_Sad_Brass-D#1-80-LT4X.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Sad_Brass-D#2-80-0AY5.wav",
+          "note": 39
+        },
+        {
+          "filename": "M1_Sad_Brass-D#3-80-5C41.wav",
+          "note": 51
+        },
+        {
+          "filename": "M1_Sad_Brass-D#4-80-XFKL.wav",
+          "note": 63
+        },
+        {
+          "filename": "M1_Sad_Brass-D#5-80-I5SA.wav",
+          "note": 75
+        },
+        {
+          "filename": "M1_Sad_Brass-F#-1-80-XBAW.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Sad_Brass-F#0-80-6S22.wav",
+          "note": 6
+        },
+        {
+          "filename": "M1_Sad_Brass-F#1-80-MKK8.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Sad_Brass-F#2-80-JYL5.wav",
+          "note": 42
+        },
+        {
+          "filename": "M1_Sad_Brass-F#3-80-Y5PP.wav",
+          "note": 54
+        },
+        {
+          "filename": "M1_Sad_Brass-F#4-80-BT90.wav",
+          "note": 66
+        },
+        {
+          "filename": "M1_Sad_Brass-F#5-80-WM2M.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "m1-water-temple",
+      "title": "M1 Water Temple",
+      "sounds": [
+        {
+          "filename": "M1_Water_Temple-A-1-80-I88D.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Water_Temple-A0-80-WDWN.wav",
+          "note": 9
+        },
+        {
+          "filename": "M1_Water_Temple-A1-80-H61B.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Water_Temple-A2-80-OJAA.wav",
+          "note": 45
+        },
+        {
+          "filename": "M1_Water_Temple-A3-80-WH22.wav",
+          "note": 57
+        },
+        {
+          "filename": "M1_Water_Temple-A4-80-2YTB.wav",
+          "note": 69
+        },
+        {
+          "filename": "M1_Water_Temple-A5-80-BNSI.wav",
+          "note": 81
+        },
+        {
+          "filename": "M1_Water_Temple-C-1-80-QSAX.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Water_Temple-C0-80-9X2Y.wav",
+          "note": 0
+        },
+        {
+          "filename": "M1_Water_Temple-C1-80-YPRL.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Water_Temple-C2-80-NGCB.wav",
+          "note": 36
+        },
+        {
+          "filename": "M1_Water_Temple-C3-80-9B5S.wav",
+          "note": 48
+        },
+        {
+          "filename": "M1_Water_Temple-C4-80-TWU6.wav",
+          "note": 60
+        },
+        {
+          "filename": "M1_Water_Temple-C5-80-HW5H.wav",
+          "note": 72
+        },
+        {
+          "filename": "M1_Water_Temple-C6-80-DHUD.wav",
+          "note": 84
+        },
+        {
+          "filename": "M1_Water_Temple-D#-1-80-GPJR.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Water_Temple-D#0-80-HSU4.wav",
+          "note": 3
+        },
+        {
+          "filename": "M1_Water_Temple-D#1-80-Z6GY.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Water_Temple-D#2-80-XR0Y.wav",
+          "note": 39
+        },
+        {
+          "filename": "M1_Water_Temple-D#3-80-PRWO.wav",
+          "note": 51
+        },
+        {
+          "filename": "M1_Water_Temple-D#4-80-H25O.wav",
+          "note": 63
+        },
+        {
+          "filename": "M1_Water_Temple-D#5-80-JE2M.wav",
+          "note": 75
+        },
+        {
+          "filename": "M1_Water_Temple-F#-1-80-ZDPH.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Water_Temple-F#0-80-3H2I.wav",
+          "note": 6
+        },
+        {
+          "filename": "M1_Water_Temple-F#1-80-4S4M.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Water_Temple-F#2-80-JSU5.wav",
+          "note": 42
+        },
+        {
+          "filename": "M1_Water_Temple-F#3-80-H4QW.wav",
+          "note": 54
+        },
+        {
+          "filename": "M1_Water_Temple-F#4-80-6GNP.wav",
+          "note": 66
+        },
+        {
+          "filename": "M1_Water_Temple-F#5-80-JOLY.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "m1-wizard-bass",
+      "title": "M1 Wizard Bass",
+      "sounds": [
+        {
+          "filename": "M1_Wizard_Bass-A0-77-K3T4.wav",
+          "note": 9
+        },
+        {
+          "filename": "M1_Wizard_Bass-A1-77-6BHJ.wav",
+          "note": 33
+        },
+        {
+          "filename": "M1_Wizard_Bass-A2-77-5VKB.wav",
+          "note": 45
+        },
+        {
+          "filename": "M1_Wizard_Bass-A3-77-ZRGH.wav",
+          "note": 57
+        },
+        {
+          "filename": "M1_Wizard_Bass-A4-77-1RMD.wav",
+          "note": 69
+        },
+        {
+          "filename": "M1_Wizard_Bass-A5-77-ARH1.wav",
+          "note": 81
+        },
+        {
+          "filename": "M1_Wizard_Bass-C0-77-PWCR.wav",
+          "note": 0
+        },
+        {
+          "filename": "M1_Wizard_Bass-C1-77-R6HX.wav",
+          "note": 24
+        },
+        {
+          "filename": "M1_Wizard_Bass-C2-77-5XMB.wav",
+          "note": 36
+        },
+        {
+          "filename": "M1_Wizard_Bass-C3-77-441D.wav",
+          "note": 48
+        },
+        {
+          "filename": "M1_Wizard_Bass-C4-77-459W.wav",
+          "note": 60
+        },
+        {
+          "filename": "M1_Wizard_Bass-C5-77-GQLA.wav",
+          "note": 72
+        },
+        {
+          "filename": "M1_Wizard_Bass-C6-77-JM7Q.wav",
+          "note": 84
+        },
+        {
+          "filename": "M1_Wizard_Bass-D#0-77-F58S.wav",
+          "note": 3
+        },
+        {
+          "filename": "M1_Wizard_Bass-D#1-77-BCRV.wav",
+          "note": 27
+        },
+        {
+          "filename": "M1_Wizard_Bass-D#2-77-D2UO.wav",
+          "note": 39
+        },
+        {
+          "filename": "M1_Wizard_Bass-D#3-77-6XB2.wav",
+          "note": 51
+        },
+        {
+          "filename": "M1_Wizard_Bass-D#4-77-Z62I.wav",
+          "note": 63
+        },
+        {
+          "filename": "M1_Wizard_Bass-D#5-77-8XUX.wav",
+          "note": 75
+        },
+        {
+          "filename": "M1_Wizard_Bass-F#0-77-5703.wav",
+          "note": 6
+        },
+        {
+          "filename": "M1_Wizard_Bass-F#1-77-UNIN.wav",
+          "note": 30
+        },
+        {
+          "filename": "M1_Wizard_Bass-F#2-77-B3KW.wav",
+          "note": 42
+        },
+        {
+          "filename": "M1_Wizard_Bass-F#3-77-EJQQ.wav",
+          "note": 54
+        },
+        {
+          "filename": "M1_Wizard_Bass-F#4-77-3SP5.wav",
+          "note": 66
+        },
+        {
+          "filename": "M1_Wizard_Bass-F#5-77-OMT0.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "moog-mod-patch-1",
+      "title": "Moog Mod Patch 1",
+      "sounds": [
+        {
+          "filename": "Moog_Mod_Patch_1-C1-V127-UHQA.wav",
+          "note": 24
+        },
+        {
+          "filename": "Moog_Mod_Patch_1-C2-V127-9A07.wav",
+          "note": 36
+        },
+        {
+          "filename": "Moog_Mod_Patch_1-C3-V127-MAFF.wav",
+          "note": 48
+        },
+        {
+          "filename": "Moog_Mod_Patch_1-C4-V127-OLPM.wav",
+          "note": 60
+        },
+        {
+          "filename": "Moog_Mod_Patch_1-F#1-V127-AO6X.wav",
+          "note": 30
+        },
+        {
+          "filename": "Moog_Mod_Patch_1-F#2-V127-VY0P.wav",
+          "note": 42
+        },
+        {
+          "filename": "Moog_Mod_Patch_1-F#3-V127-ZSC2.wav",
+          "note": 54
+        }
+      ]
+    },
+    {
+      "id": "moog-mod-patch-2",
+      "title": "Moog Mod Patch 2",
+      "sounds": [
+        {
+          "filename": "Moog_Mod_Patch_2-C1-V127-CKHU.wav",
+          "note": 24
+        },
+        {
+          "filename": "Moog_Mod_Patch_2-C3-V127-G0IX.wav",
+          "note": 48
+        },
+        {
+          "filename": "Moog_Mod_Patch_2-C4-V127-52VT.wav",
+          "note": 60
+        },
+        {
+          "filename": "Moog_Mod_Patch_2-F#1-V127-74XN.wav",
+          "note": 30
+        },
+        {
+          "filename": "Moog_Mod_Patch_2-F#2-V127-PJMF.wav",
+          "note": 42
+        },
+        {
+          "filename": "Moog_Mod_Patch_2-F#3-V127-NZJB.wav",
+          "note": 54
+        },
+        {
+          "filename": "Moog_Mod_Patch_2-F#4-V127-DSGL.wav",
+          "note": 66
+        }
+      ]
+    },
+    {
+      "id": "ob-lush",
+      "title": "OB Lush",
+      "sounds": [
+        {
+          "filename": "OB_Lush-C1-127-XAI5.wav",
+          "note": 24
+        },
+        {
+          "filename": "OB_Lush-C2-127-IRVE.wav",
+          "note": 36
+        },
+        {
+          "filename": "OB_Lush-C3-127-XI8S.wav",
+          "note": 48
+        },
+        {
+          "filename": "OB_Lush-C4-127-BPZ3.wav",
+          "note": 60
+        },
+        {
+          "filename": "OB_Lush-C5-127-DMBB.wav",
+          "note": 72
+        },
+        {
+          "filename": "OB_Lush-C6-127-ABJW.wav",
+          "note": 84
+        },
+        {
+          "filename": "OB_Lush-E1-127-PAFM.wav",
+          "note": 28
+        },
+        {
+          "filename": "OB_Lush-E2-127-JC8F.wav",
+          "note": 40
+        },
+        {
+          "filename": "OB_Lush-E3-127-LVFH.wav",
+          "note": 52
+        },
+        {
+          "filename": "OB_Lush-E4-127-FMAY.wav",
+          "note": 64
+        },
+        {
+          "filename": "OB_Lush-E5-127-AB3C.wav",
+          "note": 76
+        },
+        {
+          "filename": "OB_Lush-G#1-127-3APB.wav",
+          "note": 32
+        },
+        {
+          "filename": "OB_Lush-G#2-127-Z3SD.wav",
+          "note": 44
+        },
+        {
+          "filename": "OB_Lush-G#3-127-6Y0L.wav",
+          "note": 56
+        },
+        {
+          "filename": "OB_Lush-G#4-127-73LU.wav",
+          "note": 68
+        },
+        {
+          "filename": "OB_Lush-G#5-127-AXJ0.wav",
+          "note": 80
+        }
+      ]
+    },
+    {
+      "id": "ob-pad",
+      "title": "OB Pad",
+      "sounds": [
+        {
+          "filename": "OB_Pad-B5-V127-29J8.wav",
+          "note": 83
+        },
+        {
+          "filename": "OB_Pad-C1-V127-KTHK.wav",
+          "note": 24
+        },
+        {
+          "filename": "OB_Pad-C2-V127-TMAT.wav",
+          "note": 36
+        },
+        {
+          "filename": "OB_Pad-C3-V127-Y9AX.wav",
+          "note": 48
+        },
+        {
+          "filename": "OB_Pad-C4-V127-T9U8.wav",
+          "note": 60
+        },
+        {
+          "filename": "OB_Pad-C5-V127-SUPO.wav",
+          "note": 72
+        },
+        {
+          "filename": "OB_Pad-F#2-V127-N4IU.wav",
+          "note": 42
+        },
+        {
+          "filename": "OB_Pad-F#4-V127-06PT.wav",
+          "note": 66
+        }
+      ]
+    },
+    {
+      "id": "p5-111-jun-6-chorus",
+      "title": "P5 111 Jun 6 Chorus",
+      "sounds": [
+        {
+          "filename": "P5_111_Jun-6_Chorus-B5-V127-RACT.wav",
+          "note": 83
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-C1-V127-M3XE.wav",
+          "note": 24
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-C2-V127-9QQX.wav",
+          "note": 36
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-C3-V127-DWSK.wav",
+          "note": 48
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-C4-V127-MNWZ.wav",
+          "note": 60
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-C5-V127-9EG1.wav",
+          "note": 72
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-F#1-V127-KENP.wav",
+          "note": 30
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-F#2-V127-3B98.wav",
+          "note": 42
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-F#3-V127-XK1N.wav",
+          "note": 54
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-F#4-V127-75JQ.wav",
+          "note": 66
+        },
+        {
+          "filename": "P5_111_Jun-6_Chorus-F#5-V127-P7AM.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "p5-125-jun-6-chorus-atr",
+      "title": "P5 125 Jun 6 Chorus ATR",
+      "sounds": [
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-B5-V127-J8FZ.wav",
+          "note": 83
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-C1-V127-56DT.wav",
+          "note": 24
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-C2-V127-RR8D.wav",
+          "note": 36
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-C3-V127-ZMTU.wav",
+          "note": 48
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-C4-V127-5HK7.wav",
+          "note": 60
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-C5-V127-J2LG.wav",
+          "note": 72
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-F#2-V127-0219.wav",
+          "note": 42
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-F#3-V127-8962.wav",
+          "note": 54
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-F#4-V127-20C3.wav",
+          "note": 66
+        },
+        {
+          "filename": "P5_125_Jun-6_Chorus_ATR-F#5-V127-CT55.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "p5-243-jun-6-chorus",
+      "title": "P5 243 Jun 6 Chorus",
+      "sounds": [
+        {
+          "filename": "P5_243_Jun-6_Chorus-B5-V127-OT5P.wav",
+          "note": 83
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-C1-V127-XK9N.wav",
+          "note": 24
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-C2-V127-51MN.wav",
+          "note": 36
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-C3-V127-5FW5.wav",
+          "note": 48
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-C4-V127-9A75.wav",
+          "note": 60
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-C5-V127-CM88.wav",
+          "note": 72
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-F#1-V127-M007.wav",
+          "note": 30
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-F#2-V127-0MSY.wav",
+          "note": 42
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-F#3-V127-FATU.wav",
+          "note": 54
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-F#4-V127-UQIJ.wav",
+          "note": 66
+        },
+        {
+          "filename": "P5_243_Jun-6_Chorus-F#5-V127-1ATW.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "ps20-strings",
+      "title": "PS20 Strings",
+      "sounds": [
+        {
+          "filename": "PS20_Strings_A0.wav",
+          "note": 9
+        },
+        {
+          "filename": "PS20_Strings_A1.wav",
+          "note": 33
+        },
+        {
+          "filename": "PS20_Strings_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "PS20_Strings_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "PS20_Strings_D#1.wav",
+          "note": 27
+        },
+        {
+          "filename": "PS20_Strings_D#2.wav",
+          "note": 39
+        },
+        {
+          "filename": "PS20_Strings_F#0.wav",
+          "note": 6
+        },
+        {
+          "filename": "PS20_Strings_F#1.wav",
+          "note": 30
+        },
+        {
+          "filename": "PS20_Strings_F#2.wav",
+          "note": 42
+        }
+      ]
+    },
+    {
+      "id": "ps20-vibra",
+      "title": "PS20 Vibra",
+      "sounds": [
+        {
+          "filename": "PS20_Vibra_A0.wav",
+          "note": 9
+        },
+        {
+          "filename": "PS20_Vibra_A1.wav",
+          "note": 33
+        },
+        {
+          "filename": "PS20_Vibra_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "PS20_Vibra_A3.wav",
+          "note": 57
+        },
+        {
+          "filename": "PS20_Vibra_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "PS20_Vibra_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "PS20_Vibra_C3.wav",
+          "note": 48
+        },
+        {
+          "filename": "PS20_Vibra_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "PS20_Vibra_D#1.wav",
+          "note": 27
+        },
+        {
+          "filename": "PS20_Vibra_D#2.wav",
+          "note": 39
+        },
+        {
+          "filename": "PS20_Vibra_D#3.wav",
+          "note": 51
+        },
+        {
+          "filename": "PS20_Vibra_F#0.wav",
+          "note": 6
+        },
+        {
+          "filename": "PS20_Vibra_F#1.wav",
+          "note": 30
+        },
+        {
+          "filename": "PS20_Vibra_F#2.wav",
+          "note": 42
+        },
+        {
+          "filename": "PS20_Vibra_F#3.wav",
+          "note": 54
+        }
+      ]
+    },
+    {
+      "id": "pop-guitar-echo",
+      "title": "Pop Guitar Echo",
+      "sounds": [
+        {
+          "filename": "Pop_Guitar_Echo-B1-V127-TZKK.wav",
+          "note": 35
+        },
+        {
+          "filename": "Pop_Guitar_Echo-B2-V127-7G1U.wav",
+          "note": 47
+        },
+        {
+          "filename": "Pop_Guitar_Echo-B3-V127-FO0F.wav",
+          "note": 59
+        },
+        {
+          "filename": "Pop_Guitar_Echo-D2-V127-XRKU.wav",
+          "note": 38
+        },
+        {
+          "filename": "Pop_Guitar_Echo-D3-V127-0IJX.wav",
+          "note": 50
+        },
+        {
+          "filename": "Pop_Guitar_Echo-D4-V127-04AE.wav",
+          "note": 62
+        },
+        {
+          "filename": "Pop_Guitar_Echo-F1-V127-KMII.wav",
+          "note": 29
+        },
+        {
+          "filename": "Pop_Guitar_Echo-F2-V127-CIKF.wav",
+          "note": 41
+        },
+        {
+          "filename": "Pop_Guitar_Echo-F3-V127-ME2R.wav",
+          "note": 53
+        },
+        {
+          "filename": "Pop_Guitar_Echo-F4-V127-V9Y4.wav",
+          "note": 65
+        },
+        {
+          "filename": "Pop_Guitar_Echo-G#1-V127-3OT9.wav",
+          "note": 32
+        },
+        {
+          "filename": "Pop_Guitar_Echo-G#2-V127-ZLDN.wav",
+          "note": 44
+        },
+        {
+          "filename": "Pop_Guitar_Echo-G#3-V127-NC61.wav",
+          "note": 56
+        }
+      ]
+    },
+    {
+      "id": "ray-gun",
+      "title": "Ray Gun",
+      "sounds": [
+        {
+          "filename": "RayGun_A#2.wav",
+          "note": 46
+        },
+        {
+          "filename": "RayGun_C#4.wav",
+          "note": 61
+        },
+        {
+          "filename": "RayGun_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "RayGun_D#3.wav",
+          "note": 51
+        },
+        {
+          "filename": "RayGun_D1.wav",
+          "note": 26
+        },
+        {
+          "filename": "RayGun_F#4.wav",
+          "note": 66
+        },
+        {
+          "filename": "RayGun_F2.wav",
+          "note": 41
+        },
+        {
+          "filename": "RayGun_G#3.wav",
+          "note": 56
+        },
+        {
+          "filename": "RayGun_G1.wav",
+          "note": 31
+        }
+      ]
+    },
+    {
+      "id": "robot-guitar-amp",
+      "title": "Robot Guitar Amp",
+      "sounds": [
+        {
+          "filename": "RobotGuitarAmp_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "RobotGuitarAmp_B1.wav",
+          "note": 35
+        },
+        {
+          "filename": "RobotGuitarAmp_Bb4.wav",
+          "note": 70
+        },
+        {
+          "filename": "RobotGuitarAmp_Bb5.wav",
+          "note": 82
+        },
+        {
+          "filename": "RobotGuitarAmp_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "RobotGuitarAmp_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "RobotGuitarAmp_D5.wav",
+          "note": 74
+        },
+        {
+          "filename": "RobotGuitarAmp_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "RobotGuitarAmp_E2.wav",
+          "note": 40
+        },
+        {
+          "filename": "RobotGuitarAmp_F#5.wav",
+          "note": 78
+        },
+        {
+          "filename": "RobotGuitarAmp_F4.wav",
+          "note": 65
+        },
+        {
+          "filename": "RobotGuitarAmp_G3.wav",
+          "note": 55
+        }
+      ]
+    },
+    {
+      "id": "robot-guitar-di",
+      "title": "Robot Guitar DI",
+      "sounds": [
+        {
+          "filename": "RobotGuitarDI_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "RobotGuitarDI_B1.wav",
+          "note": 35
+        },
+        {
+          "filename": "RobotGuitarDI_Bb4.wav",
+          "note": 70
+        },
+        {
+          "filename": "RobotGuitarDI_Bb5.wav",
+          "note": 82
+        },
+        {
+          "filename": "RobotGuitarDI_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "RobotGuitarDI_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "RobotGuitarDI_D5.wav",
+          "note": 74
+        },
+        {
+          "filename": "RobotGuitarDI_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "RobotGuitarDI_E2.wav",
+          "note": 40
+        },
+        {
+          "filename": "RobotGuitarDI_F#5.wav",
+          "note": 78
+        },
+        {
+          "filename": "RobotGuitarDI_F4.wav",
+          "note": 65
+        },
+        {
+          "filename": "RobotGuitarDI_G3.wav",
+          "note": 55
+        }
+      ]
+    },
+    {
+      "id": "roland-super-jx10-chorus-piano",
+      "title": "Roland Super JX10 Chorus Piano",
+      "sounds": [
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-B5-V127-UYI1.wav",
+          "note": 83
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-B5-V64-QH0W.wav",
+          "note": 83
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C1-V127-ZITH.wav",
+          "note": 24
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C1-V64-4OML.wav",
+          "note": 24
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C2-V127-5QGH.wav",
+          "note": 36
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C2-V64-9PCT.wav",
+          "note": 36
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C3-V127-3JR3.wav",
+          "note": 48
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C3-V64-DAJ8.wav",
+          "note": 48
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C4-V127-QUHP.wav",
+          "note": 60
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C4-V64-UF3A.wav",
+          "note": 60
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C5-V127-USBZ.wav",
+          "note": 72
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-C5-V64-UYY0.wav",
+          "note": 72
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#1-V127-OZAD.wav",
+          "note": 30
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#1-V64-RUKO.wav",
+          "note": 30
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#2-V127-QAI8.wav",
+          "note": 42
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#2-V64-Z2CG.wav",
+          "note": 42
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#3-V127-B2D6.wav",
+          "note": 54
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#3-V64-JOBD.wav",
+          "note": 54
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#4-V127-KW02.wav",
+          "note": 66
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#4-V64-JOL5.wav",
+          "note": 66
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#5-V127-RLX2.wav",
+          "note": 78
+        },
+        {
+          "filename": "Roland_Super_JX10_Chorus_Piano-F#5-V64-JCMV.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "roland-super-jx10-mellow-pad",
+      "title": "Roland Super JX10 Mellow Pad",
+      "sounds": [
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-B5-V127-1ZE4.wav",
+          "note": 83
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-C1-V127-UISB.wav",
+          "note": 24
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-C2-V127-2OTC.wav",
+          "note": 36
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-C3-V127-FMFJ.wav",
+          "note": 48
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-C4-V127-AF38.wav",
+          "note": 60
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-C5-V127-ZJP3.wav",
+          "note": 72
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-F#1-V127-LHQO.wav",
+          "note": 30
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-F#2-V127-K75J.wav",
+          "note": 42
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-F#3-V127-LK2U.wav",
+          "note": 54
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-F#4-V127-GSF7.wav",
+          "note": 66
+        },
+        {
+          "filename": "Roland_Super_JX10_Mellow_Pad-F#5-V127-QD98.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "roland-super-jx10-polysynth",
+      "title": "Roland Super JX10 Polysynth",
+      "sounds": [
+        {
+          "filename": "Roland_Super_JX10_Polysynth-B5-V127-I16L.wav",
+          "note": 83
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-C1-V127-7S12.wav",
+          "note": 24
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-C2-V127-748M.wav",
+          "note": 36
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-C3-V127-K0HN.wav",
+          "note": 48
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-C4-V127-RL83.wav",
+          "note": 60
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-C5-V127-WX38.wav",
+          "note": 72
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-F#1-V127-E0OQ.wav",
+          "note": 30
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-F#2-V127-04XZ.wav",
+          "note": 42
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-F#3-V127-XX1N.wav",
+          "note": 54
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-F#4-V127-5BPD.wav",
+          "note": 66
+        },
+        {
+          "filename": "Roland_Super_JX10_Polysynth-F#5-V127-HQJ2.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "sallys-army",
+      "title": "Sally's Army",
+      "sounds": [
+        {
+          "filename": "Sally's_Army-B5-V127-D3TL.wav",
+          "note": 83
+        },
+        {
+          "filename": "Sally's_Army-B5-V42-JUKW.wav",
+          "note": 83
+        },
+        {
+          "filename": "Sally's_Army-B5-V85-D7CQ.wav",
+          "note": 83
+        },
+        {
+          "filename": "Sally's_Army-C1-V42-71BZ.wav",
+          "note": 24
+        },
+        {
+          "filename": "Sally's_Army-C1-V85-IF9T.wav",
+          "note": 24
+        },
+        {
+          "filename": "Sally's_Army-C2-V127-QZTA.wav",
+          "note": 36
+        },
+        {
+          "filename": "Sally's_Army-C2-V42-NH46.wav",
+          "note": 36
+        },
+        {
+          "filename": "Sally's_Army-C2-V85-FGM8.wav",
+          "note": 36
+        },
+        {
+          "filename": "Sally's_Army-C3-V127-XQSU.wav",
+          "note": 48
+        },
+        {
+          "filename": "Sally's_Army-C3-V42-OH5X.wav",
+          "note": 48
+        },
+        {
+          "filename": "Sally's_Army-C3-V85-Z6LG.wav",
+          "note": 48
+        },
+        {
+          "filename": "Sally's_Army-C4-V127-Y3XU.wav",
+          "note": 60
+        },
+        {
+          "filename": "Sally's_Army-C4-V42-JIP3.wav",
+          "note": 60
+        },
+        {
+          "filename": "Sally's_Army-C4-V85-52JI.wav",
+          "note": 60
+        },
+        {
+          "filename": "Sally's_Army-C5-V127-6722.wav",
+          "note": 72
+        },
+        {
+          "filename": "Sally's_Army-C5-V42-FLOM.wav",
+          "note": 72
+        },
+        {
+          "filename": "Sally's_Army-C5-V85-RFCU.wav",
+          "note": 72
+        },
+        {
+          "filename": "Sally's_Army-F#1-V127-KJEE.wav",
+          "note": 30
+        },
+        {
+          "filename": "Sally's_Army-F#1-V42-NVCF.wav",
+          "note": 30
+        },
+        {
+          "filename": "Sally's_Army-F#1-V85-TSB0.wav",
+          "note": 30
+        },
+        {
+          "filename": "Sally's_Army-F#2-V127-Q81C.wav",
+          "note": 42
+        },
+        {
+          "filename": "Sally's_Army-F#2-V42-CFNC.wav",
+          "note": 42
+        },
+        {
+          "filename": "Sally's_Army-F#2-V85-9HBA.wav",
+          "note": 42
+        },
+        {
+          "filename": "Sally's_Army-F#3-V127-G40O.wav",
+          "note": 54
+        },
+        {
+          "filename": "Sally's_Army-F#3-V42-OVVA.wav",
+          "note": 54
+        },
+        {
+          "filename": "Sally's_Army-F#4-V127-Z7RJ.wav",
+          "note": 66
+        },
+        {
+          "filename": "Sally's_Army-F#4-V42-3Y8J.wav",
+          "note": 66
+        },
+        {
+          "filename": "Sally's_Army-F#4-V85-VD5H.wav",
+          "note": 66
+        },
+        {
+          "filename": "Sally's_Army-F#5-V127-F578.wav",
+          "note": 78
+        },
+        {
+          "filename": "Sally's_Army-F#5-V42-FWF9.wav",
+          "note": 78
+        },
+        {
+          "filename": "Sally's_Army-F#5-V85-5JLS.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "shiver-brass",
+      "title": "Shiver Brass",
+      "sounds": [
+        {
+          "filename": "ShiverBrass_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "ShiverBrass_A5.wav",
+          "note": 81
+        },
+        {
+          "filename": "ShiverBrass_B1.wav",
+          "note": 35
+        },
+        {
+          "filename": "ShiverBrass_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "ShiverBrass_B7.wav",
+          "note": 107
+        },
+        {
+          "filename": "ShiverBrass_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "ShiverBrass_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "ShiverBrass_C7.wav",
+          "note": 96
+        },
+        {
+          "filename": "ShiverBrass_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "ShiverBrass_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "ShiverBrass_E2.wav",
+          "note": 40
+        },
+        {
+          "filename": "ShiverBrass_E5.wav",
+          "note": 76
+        },
+        {
+          "filename": "ShiverBrass_F1.wav",
+          "note": 29
+        },
+        {
+          "filename": "ShiverBrass_F4.wav",
+          "note": 65
+        },
+        {
+          "filename": "ShiverBrass_F7.wav",
+          "note": 101
+        },
+        {
+          "filename": "ShiverBrass_G3.wav",
+          "note": 55
+        },
+        {
+          "filename": "ShiverBrass_G6.wav",
+          "note": 91
+        }
+      ]
+    },
+    {
+      "id": "solid-state08",
+      "title": "Solid State08",
+      "sounds": [
+        {
+          "filename": "SolidState08_A#1.wav",
+          "note": 34
+        },
+        {
+          "filename": "SolidState08_A#5.wav",
+          "note": 82
+        },
+        {
+          "filename": "SolidState08_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "SolidState08_C3.wav",
+          "note": 48
+        },
+        {
+          "filename": "SolidState08_C5.wav",
+          "note": 72
+        },
+        {
+          "filename": "SolidState08_D#2.wav",
+          "note": 39
+        },
+        {
+          "filename": "SolidState08_D#4.wav",
+          "note": 63
+        },
+        {
+          "filename": "SolidState08_D#6.wav",
+          "note": 87
+        },
+        {
+          "filename": "SolidState08_F1.wav",
+          "note": 29
+        },
+        {
+          "filename": "SolidState08_F3.wav",
+          "note": 53
+        },
+        {
+          "filename": "SolidState08_F5.wav",
+          "note": 77
+        },
+        {
+          "filename": "SolidState08_G#2.wav",
+          "note": 44
+        },
+        {
+          "filename": "SolidState08_G#4.wav",
+          "note": 68
+        }
+      ]
+    },
+    {
+      "id": "starcrunch",
+      "title": "Starcrunch",
+      "sounds": [
+        {
+          "filename": "Starcrunch_A#2.wav",
+          "note": 46
+        },
+        {
+          "filename": "Starcrunch_A5.wav",
+          "note": 81
+        },
+        {
+          "filename": "Starcrunch_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "Starcrunch_C#4.wav",
+          "note": 61
+        },
+        {
+          "filename": "Starcrunch_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "Starcrunch_D#3.wav",
+          "note": 51
+        },
+        {
+          "filename": "Starcrunch_D5.wav",
+          "note": 74
+        },
+        {
+          "filename": "Starcrunch_E5.wav",
+          "note": 76
+        },
+        {
+          "filename": "Starcrunch_F#4.wav",
+          "note": 66
+        },
+        {
+          "filename": "Starcrunch_F2.wav",
+          "note": 41
+        },
+        {
+          "filename": "Starcrunch_G#3.wav",
+          "note": 56
+        }
+      ]
+    },
+    {
+      "id": "suiko-brass",
+      "title": "Suiko Brass",
+      "sounds": [
+        {
+          "filename": "SuikoBrass_A#2.wav",
+          "note": 46
+        },
+        {
+          "filename": "SuikoBrass_A5.wav",
+          "note": 81
+        },
+        {
+          "filename": "SuikoBrass_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "SuikoBrass_C#4.wav",
+          "note": 61
+        },
+        {
+          "filename": "SuikoBrass_C2.wav",
+          "note": 36
+        },
+        {
+          "filename": "SuikoBrass_D#3.wav",
+          "note": 51
+        },
+        {
+          "filename": "SuikoBrass_D1.wav",
+          "note": 26
+        },
+        {
+          "filename": "SuikoBrass_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "SuikoBrass_E5.wav",
+          "note": 76
+        },
+        {
+          "filename": "SuikoBrass_F#4.wav",
+          "note": 66
+        },
+        {
+          "filename": "SuikoBrass_F2.wav",
+          "note": 41
+        },
+        {
+          "filename": "SuikoBrass_G#3.wav",
+          "note": 56
+        },
+        {
+          "filename": "SuikoBrass_G1.wav",
+          "note": 31
+        },
+        {
+          "filename": "SuikoBrass_G6.wav",
+          "note": 91
+        }
+      ]
+    },
+    {
+      "id": "synbelle",
+      "title": "Synbelle",
+      "sounds": [
+        {
+          "filename": "Synbelle-C1-127-QPMH.wav",
+          "note": 24
+        },
+        {
+          "filename": "Synbelle-C2-127-8ACV.wav",
+          "note": 36
+        },
+        {
+          "filename": "Synbelle-C3-127-D1GN.wav",
+          "note": 48
+        },
+        {
+          "filename": "Synbelle-C4-127-8VS4.wav",
+          "note": 60
+        },
+        {
+          "filename": "Synbelle-C5-127-YJSI.wav",
+          "note": 72
+        },
+        {
+          "filename": "Synbelle-C6-127-TODO.wav",
+          "note": 84
+        },
+        {
+          "filename": "Synbelle-E1-127-WADG.wav",
+          "note": 28
+        },
+        {
+          "filename": "Synbelle-E2-127-WRQY.wav",
+          "note": 40
+        },
+        {
+          "filename": "Synbelle-E3-127-TR5Z.wav",
+          "note": 52
+        },
+        {
+          "filename": "Synbelle-E4-127-4KT7.wav",
+          "note": 64
+        },
+        {
+          "filename": "Synbelle-E5-127-89QR.wav",
+          "note": 76
+        },
+        {
+          "filename": "Synbelle-G#1-127-Y0IV.wav",
+          "note": 32
+        },
+        {
+          "filename": "Synbelle-G#2-127-RM3R.wav",
+          "note": 44
+        },
+        {
+          "filename": "Synbelle-G#3-127-NTOF.wav",
+          "note": 56
+        },
+        {
+          "filename": "Synbelle-G#4-127-ND6T.wav",
+          "note": 68
+        },
+        {
+          "filename": "Synbelle-G#5-127-3H4X.wav",
+          "note": 80
+        }
+      ]
+    },
+    {
+      "id": "underwater-dialup",
+      "title": "Underwater Dialup",
+      "sounds": [
+        {
+          "filename": "UnderwaterDialup_A2.wav",
+          "note": 45
+        },
+        {
+          "filename": "UnderwaterDialup_A5.wav",
+          "note": 81
+        },
+        {
+          "filename": "UnderwaterDialup_B1.wav",
+          "note": 35
+        },
+        {
+          "filename": "UnderwaterDialup_B4.wav",
+          "note": 71
+        },
+        {
+          "filename": "UnderwaterDialup_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "UnderwaterDialup_C4.wav",
+          "note": 60
+        },
+        {
+          "filename": "UnderwaterDialup_C7.wav",
+          "note": 96
+        },
+        {
+          "filename": "UnderwaterDialup_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "UnderwaterDialup_D6.wav",
+          "note": 86
+        },
+        {
+          "filename": "UnderwaterDialup_E2.wav",
+          "note": 40
+        },
+        {
+          "filename": "UnderwaterDialup_E5.wav",
+          "note": 76
+        },
+        {
+          "filename": "UnderwaterDialup_F1.wav",
+          "note": 29
+        },
+        {
+          "filename": "UnderwaterDialup_F4.wav",
+          "note": 65
+        },
+        {
+          "filename": "UnderwaterDialup_G3.wav",
+          "note": 55
+        },
+        {
+          "filename": "UnderwaterDialup_G6.wav",
+          "note": 91
+        }
+      ]
+    },
+    {
+      "id": "warp-drive",
+      "title": "Warp Drive",
+      "sounds": [
+        {
+          "filename": "WarpDrive_A#1.wav",
+          "note": 34
+        },
+        {
+          "filename": "WarpDrive_A4.wav",
+          "note": 69
+        },
+        {
+          "filename": "WarpDrive_B3.wav",
+          "note": 59
+        },
+        {
+          "filename": "WarpDrive_C#3.wav",
+          "note": 49
+        },
+        {
+          "filename": "WarpDrive_C1.wav",
+          "note": 24
+        },
+        {
+          "filename": "WarpDrive_C6.wav",
+          "note": 84
+        },
+        {
+          "filename": "WarpDrive_D#2.wav",
+          "note": 39
+        },
+        {
+          "filename": "WarpDrive_D5.wav",
+          "note": 74
+        },
+        {
+          "filename": "WarpDrive_E4.wav",
+          "note": 64
+        },
+        {
+          "filename": "WarpDrive_F#3.wav",
+          "note": 54
+        },
+        {
+          "filename": "WarpDrive_F1.wav",
+          "note": 29
+        },
+        {
+          "filename": "WarpDrive_G#2.wav",
+          "note": 44
+        },
+        {
+          "filename": "WarpDrive_G5.wav",
+          "note": 79
+        }
+      ]
+    },
+    {
+      "id": "windows94",
+      "title": "Windows94",
+      "sounds": [
+        {
+          "filename": "Windows94_A4.wav",
+          "note": 69
+        },
+        {
+          "filename": "Windows94_B3.wav",
+          "note": 59
+        },
+        {
+          "filename": "Windows94_C3.wav",
+          "note": 48
+        },
+        {
+          "filename": "Windows94_D3.wav",
+          "note": 50
+        },
+        {
+          "filename": "Windows94_D5.wav",
+          "note": 74
+        },
+        {
+          "filename": "Windows94_E4.wav",
+          "note": 64
+        },
+        {
+          "filename": "Windows94_F3.wav",
+          "note": 53
+        },
+        {
+          "filename": "Windows94_G2.wav",
+          "note": 43
+        }
+      ]
+    },
+    {
+      "id": "xp-a-moments-peace",
+      "title": "XP A Moment's Peace",
+      "sounds": [
+        {
+          "filename": "XP_A_Moment's_Peace-A-1-80-WBWF.wav",
+          "note": 33
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-A0-80-8SZ3.wav",
+          "note": 9
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-A1-80-0R15.wav",
+          "note": 33
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-A2-80-1BYK.wav",
+          "note": 45
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-A3-80-MTF0.wav",
+          "note": 57
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-A4-80-C3I2.wav",
+          "note": 69
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-A5-80-HKYV.wav",
+          "note": 81
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-C-1-80-XGTV.wav",
+          "note": 24
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-C0-80-WBZN.wav",
+          "note": 0
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-C1-80-YJMC.wav",
+          "note": 24
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-C2-80-ZR1M.wav",
+          "note": 36
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-C3-80-I76A.wav",
+          "note": 48
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-C4-80-0DPE.wav",
+          "note": 60
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-C5-80-RXI1.wav",
+          "note": 72
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-C6-80-2RS1.wav",
+          "note": 84
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-D#-1-80-PRAW.wav",
+          "note": 27
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-D#0-80-0CI1.wav",
+          "note": 3
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-D#1-80-FGAS.wav",
+          "note": 27
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-D#2-80-15IU.wav",
+          "note": 39
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-D#3-80-NN4B.wav",
+          "note": 51
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-D#4-80-IP1F.wav",
+          "note": 63
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-D#5-80-UW8U.wav",
+          "note": 75
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-F#-1-80-5E7Z.wav",
+          "note": 30
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-F#0-80-0USP.wav",
+          "note": 6
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-F#1-80-5WJC.wav",
+          "note": 30
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-F#2-80-N72Q.wav",
+          "note": 42
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-F#3-80-4HUO.wav",
+          "note": 54
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-F#4-80-RWXL.wav",
+          "note": 66
+        },
+        {
+          "filename": "XP_A_Moment's_Peace-F#5-80-ERYB.wav",
+          "note": 78
+        }
+      ]
+    },
+    {
+      "id": "xp-yoshis-island",
+      "title": "XP Yoshi's Island",
+      "sounds": [
+        {
+          "filename": "XP_Yoshi's_Island-A-1-102-RMX3.wav",
+          "note": 33
+        },
+        {
+          "filename": "XP_Yoshi's_Island-A0-102-7GG9.wav",
+          "note": 9
+        },
+        {
+          "filename": "XP_Yoshi's_Island-A1-102-CKPU.wav",
+          "note": 33
+        },
+        {
+          "filename": "XP_Yoshi's_Island-A2-102-MG07.wav",
+          "note": 45
+        },
+        {
+          "filename": "XP_Yoshi's_Island-A3-102-XDHT.wav",
+          "note": 57
+        },
+        {
+          "filename": "XP_Yoshi's_Island-A4-102-IMJB.wav",
+          "note": 69
+        },
+        {
+          "filename": "XP_Yoshi's_Island-A5-102-P7S8.wav",
+          "note": 81
+        },
+        {
+          "filename": "XP_Yoshi's_Island-C-1-102-8BR4.wav",
+          "note": 24
+        },
+        {
+          "filename": "XP_Yoshi's_Island-C0-102-6VTL.wav",
+          "note": 0
+        },
+        {
+          "filename": "XP_Yoshi's_Island-C1-102-YIOV.wav",
+          "note": 24
+        },
+        {
+          "filename": "XP_Yoshi's_Island-C2-102-JIB0.wav",
+          "note": 36
+        },
+        {
+          "filename": "XP_Yoshi's_Island-C3-102-6Q8F.wav",
+          "note": 48
+        },
+        {
+          "filename": "XP_Yoshi's_Island-C4-102-C8KC.wav",
+          "note": 60
+        },
+        {
+          "filename": "XP_Yoshi's_Island-C5-102-W5TI.wav",
+          "note": 72
+        },
+        {
+          "filename": "XP_Yoshi's_Island-C6-102-5EG1.wav",
+          "note": 84
+        },
+        {
+          "filename": "XP_Yoshi's_Island-D#-1-102-73RX.wav",
+          "note": 27
+        },
+        {
+          "filename": "XP_Yoshi's_Island-D#0-102-J16I.wav",
+          "note": 3
+        },
+        {
+          "filename": "XP_Yoshi's_Island-D#1-102-CVCE.wav",
+          "note": 27
+        },
+        {
+          "filename": "XP_Yoshi's_Island-D#2-102-R5S6.wav",
+          "note": 39
+        },
+        {
+          "filename": "XP_Yoshi's_Island-D#3-102-H3H6.wav",
+          "note": 51
+        },
+        {
+          "filename": "XP_Yoshi's_Island-D#4-102-NIW0.wav",
+          "note": 63
+        },
+        {
+          "filename": "XP_Yoshi's_Island-D#5-102-2NDT.wav",
+          "note": 75
+        },
+        {
+          "filename": "XP_Yoshi's_Island-F#-1-102-8LI9.wav",
+          "note": 30
+        },
+        {
+          "filename": "XP_Yoshi's_Island-F#0-102-NLK4.wav",
+          "note": 6
+        },
+        {
+          "filename": "XP_Yoshi's_Island-F#1-102-2FC3.wav",
+          "note": 30
+        },
+        {
+          "filename": "XP_Yoshi's_Island-F#2-102-GE4O.wav",
+          "note": 42
+        },
+        {
+          "filename": "XP_Yoshi's_Island-F#3-102-XSHY.wav",
+          "note": 54
+        },
+        {
+          "filename": "XP_Yoshi's_Island-F#4-102-GVLL.wav",
+          "note": 66
+        },
+        {
+          "filename": "XP_Yoshi's_Island-F#5-102-1EZX.wav",
+          "note": 78
+        }
+      ]
+    }
+  ]
+}
