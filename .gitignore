@@ -5,6 +5,7 @@ build/
 xcode-build/
 release-build/
 out/
+dist/
 vs-build/
 **/Builds
 **/JuceLibraryCode

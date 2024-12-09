@@ -2,10 +2,14 @@
 
 
 do_notarize=false
-all_wavs=false
 do_upload=false
 
-pathToResources="/Library/Application Support/BlackwatchStudiosDevelopment"
+
+
+
+pathToResources="$(cd "$(dirname "$0")" && pwd)/resources"
+pathToTemp="$(cd "$(dirname "$0")" && pwd)/out/temp"
+pathToDist="$(cd "$(dirname "$0")" && pwd)/dist"
 
 
 set -e
@@ -74,6 +78,7 @@ function notarize_app() {
 
 echo "Clear out dir..."
 rm -rf out/*
+rm -rf "$pathToTemp"
 
 echo "Run pre-build..."
 ./plugin/pre-build.sh
@@ -117,24 +122,23 @@ sign_installer out/temp_installers/unsigned_pkgs/vst3.pkg out/temp_installers/si
 
 if true; then
 echo "Build wavs pkg..."
-rm -rf "$pathToResources/pkgs"
-mkdir -p "$pathToResources/pkgs/unsigned"
-mkdir -p "$pathToResources/pkgs/signed"
-wavsSrcPath="$pathToResources/$( [ "$all_wavs" = true ] && echo "wavs" || echo "wavs_dev" )"
-pkgbuild --root "$wavsSrcPath" \
-         --install-location "$pathToResources/wavs" \
+rm -rf "$pathToTemp/pkgs"
+mkdir -p "$pathToTemp/pkgs/unsigned"
+mkdir -p "$pathToTemp/pkgs/signed"
+pkgbuild --root "$pathToResources" \
+         --install-location "/Library/Application\ Support/BlackwatchStudios/wavs" \
          --identifier com.allstarapps.blackwatchpluginwavs \
          --version 1.0 \
-         "$pathToResources/pkgs/unsigned/wavs.pkg"
+         "$pathToTemp/pkgs/unsigned/wavs.pkg"
 echo "Sign wavs.pkg..."
-sign_installer "$pathToResources/pkgs/unsigned/wavs.pkg" "$pathToResources/pkgs/signed/wavs.pkg"
+sign_installer "$pathToTemp/pkgs/unsigned/wavs.pkg" "$pathToTemp/pkgs/signed/wavs.pkg"
 fi
 
 echo "Combine installers..."
 mkdir -p out/installers
 productbuild --distribution productbuild.xml \
              --package-path out/temp_installers/signed_pkgs \
-             --package-path "$pathToResources/pkgs/signed" \
+             --package-path "$pathToTemp/pkgs/signed" \
              --sign "Developer ID Installer: All Star Apps, LLC (768Z86F8ET)" \
              out/temp_installers/InstallBlackwatchUnsigned.pkg
 sign_installer out/temp_installers/InstallBlackwatchUnsigned.pkg out/installers/InstallBlackwatch.pkg
@@ -143,7 +147,7 @@ echo "Notarize..."
 notarize_app out/installers/InstallBlackwatch.pkg
 
 echo "Copy installer to output..."
-mv out/installers/InstallBlackwatch.pkg "$pathToResources/InstallBlackwatch.pkg"
+mv out/installers/InstallBlackwatch.pkg "$pathToDist/InstallBlackwatch.pkg"
 
 if $do_upload; then
   echo "Uploading..."
@@ -152,7 +156,7 @@ if $do_upload; then
   export RCLONE_CONFIG_MYR2_ACCESS_KEY_ID="$CLOUDFLARE_BLACKWATCH_KEY"
   export RCLONE_CONFIG_MYR2_SECRET_ACCESS_KEY="$CLOUDFLARE_BLACKWATCH_SECRET"
   export RCLONE_CONFIG_MYR2_ENDPOINT="$CLOUDFLARE_BLACKWATCH_ENDPOINT"
-  rclone copyto --progress "$pathToResources/InstallBlackwatch.pkg"g MYR2:blackwatch/installers/InstallBlackwatch_Mac_MSeries.pkg
+  rclone copyto --progress "$pathToDist/InstallBlackwatch.pkg"g MYR2:blackwatch/installers/InstallBlackwatch_Mac_MSeries.pkg
 
   echo ""
   echo "Download from:"

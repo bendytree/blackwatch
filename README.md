@@ -1,3 +1,19 @@
+# Blackwatch Plugin
+
+This codebase was forked from https://github.com/JanWilczek/audio-plugin-template
+
+A few notes about this Blackwatch Plugin:
+
+ • `/release.sh` builds, signs, notarizes, and creates the installer
+ • The resulting installer is at `/dist/InstallBlackwatch.pkg`
+ • Currently the goal is AU and VST3 for m-series mac
+ • Install both keychain certificates from `/certs`
+ • The plugin GUI is a web browser showing `plugin/include/BlackwatchStudios/index.html`
+ • That html file is bundled from `./gui-web` & is built within `./release.sh`
+ • `/resources/wavs` contains a small sample of wav files. The real plugin has 2GB+ of wav files.
+ • I don't know wtf I'm doing
+
+
 # 🐺 WolfSound's Audio Plugin Template
 
 ![Cmake workflow success badge](https://github.com/JanWilczek/audio-plugin-template/actions/workflows/cmake.yml/badge.svg)
