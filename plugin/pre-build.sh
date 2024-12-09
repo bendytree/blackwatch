@@ -8,10 +8,11 @@ pwd
 
 cd "$(dirname "$0")"
 
-echo "PWD-B"
-pwd
 
+echo "Building html file..."
 cd ../gui-web
 mkdir -p ../plugin/include/BlackwatchStudios
 npm run build > ../plugin/include/BlackwatchStudios/index.html
+
+
 
