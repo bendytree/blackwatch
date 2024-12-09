@@ -1,6 +1,7 @@
 .vs
 .vscode
 libs/
+!/gui-web/src/gui/libs
 build/
 xcode-build/
 release-build/
