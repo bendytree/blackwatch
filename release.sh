@@ -3,7 +3,7 @@
 
 do_notarize=false
 do_upload=false
-
+CLOUDFLARE_BLACKWATCH_KEY="yellow-4"
 
 
 pathToResources="$(cd "$(dirname "$0")" && pwd)/resources"
@@ -23,7 +23,7 @@ sign_installer() {
     local item=$1
     local target=$2
     echo "Signing $item..."
-    productsign --sign "Developer ID Installer: All Star Apps, LLC (768Z86F8ET)" "$item" "$target"
+    productsign --sign "thuyet-test-code-signing" "$item" "$target"
     echo "Verifying pkg sig..."
     pkgutil --check-signature "$target"
 }
@@ -31,7 +31,7 @@ sign_installer() {
 sign_file() {
     local item=$1
     echo "Signing $item..."
-    codesign --entitlements ./entitlements.plist --deep --force --verbose --options runtime --sign "Developer ID Application: All Star Apps, LLC (768Z86F8ET)" "$item"
+    codesign --entitlements ./entitlements.plist --deep --force --verbose --options runtime --sign "thuyet-test-code-signing" "$item"
     echo "Verifying signature..."
     codesign --verify --verbose "$item"
 }
@@ -105,6 +105,9 @@ cmake -S . -B out/plugins/arm64  -DCMAKE_BUILD_TYPE=Debug -DCMAKE_OSX_ARCHITECTU
 
 echo "Building plugins..."
 cmake --build ./out/plugins/arm64 -j 6 --config Debug
+
+echo "Sign Standalone..."
+sign_file out/plugins/arm64/plugin/BlackwatchPlugin_artefacts/Debug/Standalone/BlackwatchPlugin.app
 
 echo "Sign AU..."
 sign_file out/plugins/arm64/plugin/BlackwatchPlugin_artefacts/Debug/AU/BlackwatchPlugin.component
