@@ -7,13 +7,14 @@ cmake_minimum_required(VERSION 3.29)
 add_definitions(-w)
 
 # Sets a few variables, like PROJECT_NAME
-project(BlackWatchStudio VERSION 0.1.1)
+project(BlackWatchStudio)
 
 # Always use the newest C++ standard on green-field projects if possible.
 set(CMAKE_CXX_STANDARD 23)
 if (APPLE)
     # On Mac, we need to wait for a new JUCE version that fixes the compilation issue
     set(CMAKE_CXX_STANDARD 20)
+    set(CMAKE_OSX_DEPLOYMENT_TARGET "11" CACHE STRING "Minimum OS X deployment target" FORCE)
 endif()
 
 set(CMAKE_BUILD_TYPE Debug)
