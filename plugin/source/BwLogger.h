@@ -18,8 +18,8 @@ public:
 
     // Static method that uses the current() singleton
     static void log(const juce::String& message) {
-      shared();
-      juce::Logger::writeToLog(message);
+      //shared();
+      //juce::Logger::writeToLog(message);
     }
 
 private:

@@ -102,18 +102,13 @@ set(SourceFiles
         source/MainGui.h
         source/MainGui.cpp
 )
-#target_sources(${PROJECT_NAME} INTERFACE ${SourceFiles})
+target_sources(${PROJECT_NAME} PRIVATE ${SourceFiles})
 
 # Sets the include directories of the plugin project.
 target_include_directories(${PROJECT_NAME}
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-
-target_sources(${PROJECT_NAME}
-    PRIVATE
-        PluginEditor.cpp
-        PluginProcessor.cpp)
 
 # `target_compile_definitions` adds some preprocessor definitions to our target. In a Projucer
 # project, these might be passed in the 'Preprocessor Definitions' field. JUCE modules also make use
@@ -155,7 +150,12 @@ juce_add_binary_data(MyBinaryData
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
         MyBinaryData              # If we'd created a binary data target, we'd link to it here
+        juce::juce_core
         juce::juce_audio_utils
+        juce::juce_audio_processors
+        juce::juce_dsp
+        juce::juce_gui_basics
+        juce::juce_gui_extra
         nlohmann_json::nlohmann_json
         httplib::httplib
     PUBLIC

@@ -83,6 +83,7 @@ juce::String BwLogger::readLogs() {
 }
 
 std::string BwLogger::getStackTrace(){
+    return {};
     try {
         void* addrlist[64];
         int addrlen = backtrace(addrlist, sizeof(addrlist) / sizeof(void*));
