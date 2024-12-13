@@ -43,17 +43,6 @@ juce_add_plugin(${PROJECT_NAME}
 add_custom_command(TARGET "${PROJECT_NAME}" PRE_BUILD
 COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh)
 
-include(FetchContent)
-FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
-FetchContent_MakeAvailable(json)
-
-FetchContent_Declare(
-    httplib
-    GIT_REPOSITORY https://github.com/yhirose/cpp-httplib.git
-    GIT_TAG v0.12.3
-)
-FetchContent_MakeAvailable(httplib)
-
 # `juce_generate_juce_header` will create a JuceHeader.h for a given target, which will be generated
 # into your build tree. This should be included with `#include <JuceHeader.h>`. The include path for
 # this header will be automatically added to the target. The main function of the JuceHeader is to
@@ -124,7 +113,6 @@ target_compile_definitions(${PROJECT_NAME}
         JUCE_USE_CURL=0     # If you remove this, add `NEEDS_CURL TRUE` to the `juce_add_plugin` call
         JUCE_VST3_CAN_REPLACE_VST2=0
         JUCE_USE_WIN_WEBVIEW2_WITH_STATIC_LINKING=1
-        CMAKE_BUILD_TYPE="${CMAKE_BUILD_TYPE}"
         PRODUCT_NAME_WITHOUT_VERSION="Blackwatch"
     )
 

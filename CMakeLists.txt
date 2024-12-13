@@ -42,5 +42,23 @@ CPMAddPackage(
     SOURCE_DIR ${LIB_DIR}/juce
 )
 
+CPMAddPackage(
+  NAME nlohmann_json
+  GIT_TAG v3.11.2
+  GITHUB_REPOSITORY nlohmann/json
+  SOURCE_DIR ${LIB_DIR}/nlohmann_json
+)
+
+CPMAddPackage(
+  NAME httplib
+  GIT_TAG v0.12.3
+  GITHUB_REPOSITORY yhirose/cpp-httplib
+  SOURCE_DIR ${LIB_DIR}/httplib
+  OPTIONS
+    "BROTLI_USE_STATIC_LIBS ON"
+    "OPENSSL_USE_STATIC_LIBS ON"
+    "HTTPLIB_USE_BROTLI_IF_AVAILABLE OFF"
+)
+
 # Adds all the targets configured in the "plugin" folder.
 add_subdirectory(plugin)
