@@ -10,14 +10,12 @@
 class BwLogger {
 public:
 
-    static BwLogger& shared() {
-        static BwLogger instance;
-        return instance;
-    }
     static std::string getStackTrace();
 
     // Static method that uses the current() singleton
     static void log(const juce::String& message) {
+      // todo: this class is not good, should be removed
+      return;
       shared();
       juce::Logger::writeToLog(message);
     }
@@ -28,7 +26,10 @@ private:
     void setupLogger();
     juce::File logFile;
     juce::String readLogs();
-
+        static BwLogger& shared() {
+        static BwLogger instance;
+        return instance;
+    }
 };
 
 
