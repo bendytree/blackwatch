@@ -189,7 +189,8 @@ void MainAudio::getStateInformation(
   // You could do that either as raw data, or use the XML or ValueTree classes
   // as intermediaries to make it easy to save and load complex data.
   BwLogger::log("MainAudio.JUCECALLED.getState!");
-  settingsRepo.getStateInformation(destData);
+  // todo: crashing here, should refactor
+  //settingsRepo.getStateInformation(destData);
 }
 
 void MainAudio::setStateInformation(const void* data,
@@ -198,7 +199,8 @@ void MainAudio::setStateInformation(const void* data,
   // block, whose contents will have been created by the getStateInformation()
   // call.
   BwLogger::log("MainAudio.JUCECALLED.setState!");
-  settingsRepo.setStateInformation(data, sizeInBytes);
+  // todo: crashing here, should refactor
+  //settingsRepo.setStateInformation(data, sizeInBytes);
 }
 
 // This creates new instances of the plugin.

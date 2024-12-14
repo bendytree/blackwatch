@@ -3,6 +3,7 @@
 
 do_notarize=false
 do_upload=false
+CLOUDFLARE_BLACKWATCH_KEY="yellow-4"
 
 
 
