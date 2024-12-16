@@ -1,5 +1,5 @@
 # Version is needed by JUCE.
-project(BlackwatchPlugin VERSION 0.1.1)
+project(BlackwatchPlugin VERSION 0.1.2)
 
 add_compile_options(-w) # Suppresses all warnings.
 

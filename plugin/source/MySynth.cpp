@@ -32,6 +32,8 @@ MySynth::MySynth()
 }
 
 void MySynth::reload() {
+  try
+  {
     synth.clearSounds();
 
     BwLogger::log("MySynth.reload...");
@@ -114,6 +116,11 @@ void MySynth::reload() {
 
     BwLogger::log("MySynth.synth.getNumSounds: " + juce::String(MySynth::synth.getNumSounds()));
     BwLogger::log("MySynth.synth.getNumVoices: " + juce::String(MySynth::synth.getNumVoices()));
+  }
+  catch(const std::exception& e)
+  {
+    std::cerr << e.what() << '\n';
+  }
 }
 
 void MySynth::updateSettings() {
