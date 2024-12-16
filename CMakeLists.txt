@@ -14,14 +14,11 @@ set(CMAKE_CXX_STANDARD 23)
 if (APPLE)
     # On Mac, we need to wait for a new JUCE version that fixes the compilation issue
     set(CMAKE_CXX_STANDARD 20)
+    set(CMAKE_OSX_DEPLOYMENT_TARGET "11" CACHE STRING "Minimum OS X deployment target" FORCE)
 endif()
 
-set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
 
-#if (APPLE)
-#    set(CMAKE_OSX_ARCHITECTURES "x86_64;arm64" CACHE INTERNAL "")
-#endif()
 set(CMAKE_XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "Developer ID Application: All Star Apps, LLC (768Z86F8ET)")
 set(CMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM "768Z86F8ET")
 
@@ -31,16 +28,7 @@ set(CMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM "768Z86F8ET")
 set(LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libs)
 
 # Downloads CPM if not already downloaded. CPM is an easy-to-use package manager nicely integrated with CMake.
-include(cmake/cpm.cmake)
-
-# This commands downloads AND configures JUCE. It sets up some variables, like JUCE_SOURCE_DIR.
-CPMAddPackage(
-    NAME JUCE
-    GIT_TAG 8.0.3
-    VERSION 8.0.3
-    GITHUB_REPOSITORY juce-framework/JUCE
-    SOURCE_DIR ${LIB_DIR}/juce
-)
+include(cmake/fetching_libs.cmake)
 
 # Adds all the targets configured in the "plugin" folder.
 add_subdirectory(plugin)

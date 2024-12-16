@@ -3,6 +3,7 @@
 
 do_notarize=false
 do_upload=false
+CLOUDFLARE_BLACKWATCH_KEY="yellow-4"
 
 
 
@@ -101,22 +102,22 @@ find "$source_dev_wav_dir" -type f -name '*.wav' -exec bash -c '
 
 echo "Setup build..."
 mkdir -p out/plugins/arm64
-cmake -S . -B out/plugins/arm64  -DCMAKE_BUILD_TYPE=Debug -DCMAKE_OSX_ARCHITECTURES="arm64" # x86_64;arm64
+cmake -G Xcode -S . -B out/plugins/arm64  -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES="arm64" # x86_64;arm64
 
 echo "Building plugins..."
-cmake --build ./out/plugins/arm64 -j 6 --config Debug
+cmake --build ./out/plugins/arm64 -j 6 --config Release
 
 echo "Sign AU..."
-sign_file out/plugins/arm64/plugin/BlackwatchPlugin_artefacts/Debug/AU/BlackwatchPlugin.component
+sign_file out/plugins/arm64/plugin/BlackwatchPlugin_artefacts/Release/AU/BlackwatchPlugin.component
 
 echo "Sign VST3..."
-sign_file out/plugins/arm64/plugin/BlackwatchPlugin_artefacts/Debug/VST3/BlackwatchPlugin.vst3
+sign_file out/plugins/arm64/plugin/BlackwatchPlugin_artefacts/Release/VST3/BlackwatchPlugin.vst3
 
 echo "Build AU pkg..."
 mkdir -p out/temp_installers/au_root
 mkdir -p out/temp_installers/unsigned_pkgs
 mkdir -p out/temp_installers/signed_pkgs
-cp -R out/plugins/arm64/plugin/BlackwatchPlugin_artefacts/Debug/AU/BlackwatchPlugin.component out/temp_installers/au_root/BlackwatchPlugin.component
+cp -R out/plugins/arm64/plugin/BlackwatchPlugin_artefacts/Release/AU/BlackwatchPlugin.component out/temp_installers/au_root/BlackwatchPlugin.component
 pkgbuild --root out/temp_installers/au_root \
          --identifier com.allstarapps.blackwatchau \
          --version 1.0.0 \
@@ -126,7 +127,7 @@ sign_installer out/temp_installers/unsigned_pkgs/au.pkg out/temp_installers/sign
 
 echo "Build VST3 pkg..."
 mkdir -p out/temp_installers/vst_root
-cp -R out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Debug/VST3/BlackwatchPlugin.vst3 out/temp_installers/vst_root/BlackwatchPlugin.vst3
+cp -R out/plugins/arm64/plugin/BlackWatchPlugin_artefacts/Release/VST3/BlackwatchPlugin.vst3 out/temp_installers/vst_root/BlackwatchPlugin.vst3
 pkgbuild --root out/temp_installers/vst_root \
          --identifier com.allstarapps.blackwatchvst3 \
          --version 1.0.0 \

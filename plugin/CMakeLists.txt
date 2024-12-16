@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.24.1)
-
 # Version is needed by JUCE.
 project(BlackwatchPlugin VERSION 0.1.1)
 
@@ -18,7 +16,7 @@ juce_add_plugin(${PROJECT_NAME}
     IS_SYNTH TRUE # may change this
     NEEDS_MIDI_INPUT TRUE # may change this
     PLUGIN_MANUFACTURER_CODE BLKW # change this
-    PLUGIN_CODE BWST # change this
+    PLUGIN_CODE Bwst # change this
     FORMATS Standalone VST3 AU # may change this
     PRODUCT_NAME "BlackwatchPlugin" # change this
     NEEDS_WEBVIEW2 true
@@ -29,20 +27,6 @@ juce_add_plugin(${PROJECT_NAME}
 
 add_custom_command(TARGET "${PROJECT_NAME}" PRE_BUILD
         COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/pre-build.sh)
-
-
-
-include(FetchContent)
-FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
-FetchContent_MakeAvailable(json)
-
-
-FetchContent_Declare(
-  httplib
-  GIT_REPOSITORY https://github.com/yhirose/cpp-httplib.git
-  GIT_TAG v0.12.3
-)
-FetchContent_MakeAvailable(httplib)
 
 # Manually list all .h and .cpp files for the plugin
 # If you are like me, you'll use globs for your sanity.
@@ -87,7 +71,6 @@ juce_add_binary_data(MyBinaryData
         ${CMAKE_CURRENT_SOURCE_DIR}/../repo.json
 )
 
-
 # Sets the include directories of the plugin project.
 target_include_directories(${PROJECT_NAME}
     PUBLIC
@@ -128,7 +111,6 @@ target_compile_definitions(${PROJECT_NAME}
         JUCE_USE_CURL=0
         JUCE_VST3_CAN_REPLACE_VST2=0
         JUCE_USE_WIN_WEBVIEW2_WITH_STATIC_LINKING=1
-        CMAKE_BUILD_TYPE="${CMAKE_BUILD_TYPE}"
         PRODUCT_NAME_WITHOUT_VERSION="Blackwatch"
 )
 
