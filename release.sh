@@ -141,7 +141,7 @@ rm -rf "$pathToTemp/pkgs"
 mkdir -p "$pathToTemp/pkgs/unsigned"
 mkdir -p "$pathToTemp/pkgs/signed"
 pkgbuild --root "$pathToResources" \
-         --install-location "/Library/Application\ Support/BlackwatchStudios/wavs" \
+         --install-location "/Library/Application Support/BlackwatchStudios/wavs" \
          --identifier com.allstarapps.blackwatchpluginwavs \
          --version 1.0 \
          "$pathToTemp/pkgs/unsigned/wavs.pkg"
